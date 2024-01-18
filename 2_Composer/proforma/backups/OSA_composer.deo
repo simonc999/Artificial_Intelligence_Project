@@ -1,0 +1,4648 @@
+{
+  "file_format_version": "1.1",
+  "claims": [
+    {
+      "id": "17028330898381541",
+      "name": "Disgnosi_OSA_lieve",
+      "caption": "Diagnosi OSA Lieve",
+      "status": ""
+    },
+    {
+      "id": "17028284069914",
+      "name": "Visita_atipica",
+      "caption": "Visita Atipica",
+      "status": ""
+    },
+    {
+      "id": "1702815276560737",
+      "name": "Visita_atipica_si",
+      "caption": "Visita_atipica_si",
+      "status": ""
+    },
+    {
+      "id": "170281381444964",
+      "name": "Visita_anatomica_no",
+      "caption": "Visita_anatomica_no",
+      "status": ""
+    },
+    {
+      "id": "170281379884063",
+      "name": "Visita_anatomica_si",
+      "caption": "Visita_anatomica_si",
+      "status": ""
+    },
+    {
+      "id": "1702830039372284",
+      "name": "Visita_tipica",
+      "caption": "Visita Tipica",
+      "status": ""
+    },
+    {
+      "id": "17028365618883677",
+      "name": "Risposta_trattamento_scarsa",
+      "caption": "Risposta trattamento scarsa",
+      "status": ""
+    },
+    {
+      "id": "17028331138401543",
+      "name": "Diagnosi_OSA_grave",
+      "caption": "Diagnosi OSA Grave",
+      "status": ""
+    },
+    {
+      "id": "17028351384123324",
+      "name": "Dispositivi_orali",
+      "caption": "Dispositivi orali",
+      "status": ""
+    },
+    {
+      "id": "17028362493273536",
+      "name": "Monitoraggio_non_assistito",
+      "caption": "Monitoraggio non assistito",
+      "status": ""
+    },
+    {
+      "id": "17028365496883676",
+      "name": "Risposta_trattamento_buona",
+      "caption": "Risposta trattamento buona",
+      "status": ""
+    },
+    {
+      "id": "1702815288595738",
+      "name": "Visita_atipica_no",
+      "caption": "Visita_atipica_no",
+      "status": ""
+    },
+    {
+      "id": "17028349267863200",
+      "name": "PAP",
+      "caption": "Terapia PAP",
+      "status": ""
+    },
+    {
+      "id": "17028362379463535",
+      "name": "Polisonnografia",
+      "caption": "Polisonnografia",
+      "status": ""
+    },
+    {
+      "id": "17028283977703",
+      "name": "Visita_anatomica",
+      "caption": "Visita Anatomica",
+      "status": ""
+    },
+    {
+      "id": "17028331007391542",
+      "name": "Diagnosi_OSA_moderata",
+      "caption": "Diagnosi OSA Moderata",
+      "status": ""
+    }
+  ],
+  "data": [
+    {
+      "id": "17028360711093398",
+      "name": "Epworth_follow_up",
+      "caption": "Epworth follow up",
+      "status": "",
+      "type": 2,
+      "ontology_coding_name": "Epworth Sleepiness Scale",
+      "ontology_coding_code": "708735004",
+      "ontology_coding_system": "2.16.840.1.113883.6.96",
+      "ontology_system_prefix": "SCT",
+      "ontology_coding_caption": "Epworth Sleepiness Scale",
+      "range": []
+    },
+    {
+      "id": "17028355301103331",
+      "name": "AHI_monitoraggio",
+      "caption": "AHI monitoraggio",
+      "status": "",
+      "type": 3,
+      "ontology_coding_name": "Apnea Hypopnea Index",
+      "ontology_coding_code": "774099003",
+      "ontology_coding_system": "2.16.840.1.113883.6.96",
+      "ontology_system_prefix": "SCT",
+      "ontology_coding_caption": "Apnea Hypopnea Index",
+      "range": []
+    },
+    {
+      "id": "1702810874813161",
+      "name": "Telefono",
+      "caption": "Telefono",
+      "status": "",
+      "type": 1,
+      "range": []
+    },
+    {
+      "id": "1702810600676151",
+      "name": "Altezza",
+      "caption": "Altezza",
+      "status": "",
+      "type": 3,
+      "range": []
+    },
+    {
+      "id": "17051710929763905",
+      "name": "Macroglossia",
+      "caption": "Macroglossia",
+      "status": "",
+      "type": 1,
+      "ontology_coding_name": "Macroglossia due to amyloidosis",
+      "ontology_coding_code": "402455004",
+      "ontology_coding_system": "2.16.840.1.113883.6.96",
+      "ontology_system_prefix": "SCT",
+      "ontology_coding_caption": "Macroglossia due to amyloidosis",
+      "default_value": "\"no\"",
+      "range": [
+        "yes||Yes",
+        "no||No"
+      ]
+    },
+    {
+      "id": "170309672304916",
+      "name": "Seduto_passeggero",
+      "caption": "Seduto_passeggero",
+      "status": "",
+      "type": 2,
+      "default_value": "0",
+      "range": []
+    },
+    {
+      "id": "170334766581686",
+      "name": "auto_passeggero_fp",
+      "caption": "auto_passeggero_fp",
+      "status": "",
+      "type": 2,
+      "default_value": "0",
+      "range": []
+    },
+    {
+      "id": "170280777781922",
+      "name": "Risveglio_soffocamento",
+      "caption": "Risveglio soffocamento",
+      "status": "",
+      "type": 1,
+      "ontology_coding_name": "Breathing-related sleep disorder",
+      "ontology_coding_code": "111489007",
+      "ontology_coding_system": "2.16.840.1.113883.6.96",
+      "ontology_system_prefix": "SCT",
+      "ontology_coding_caption": "Breathing-related sleep disorder",
+      "default_value": "\"no\"",
+      "range": [
+        "yes||Yes",
+        "no||No"
+      ]
+    },
+    {
+      "id": "17028358007123393",
+      "name": "Soddisfazione_partner",
+      "caption": "Soddisfazione del partner",
+      "status": "",
+      "type": 1,
+      "default_value": "\"Negativa\"",
+      "range": [
+        "Positiva||Positiva",
+        "Negativa||Negativa"
+      ]
+    },
+    {
+      "id": "170280768482720",
+      "name": "Diabete_tipo_2",
+      "caption": "Diabete tipo 2",
+      "status": "",
+      "type": 1,
+      "ontology_coding_name": "Type 2 diabetes mellitus",
+      "ontology_coding_code": "44054006",
+      "ontology_coding_system": "2.16.840.1.113883.6.96",
+      "ontology_system_prefix": "SCT",
+      "ontology_coding_caption": "Type 2 diabetes mellitus",
+      "default_value": "\"no\"",
+      "range": [
+        "yes||Yes",
+        "no||No"
+      ]
+    },
+    {
+      "id": "170309670994215",
+      "name": "Seduto_esterno",
+      "caption": "Seduto_esterno",
+      "status": "",
+      "type": 2,
+      "default_value": "0",
+      "range": []
+    },
+    {
+      "id": "1702810846660159",
+      "name": "Peso",
+      "caption": "Peso",
+      "status": "",
+      "type": 3,
+      "range": []
+    },
+    {
+      "id": "17028345152502715",
+      "name": "Perdita_peso",
+      "caption": "Perdita peso",
+      "status": "",
+      "type": 1,
+      "default_value": "\"no\"",
+      "range": [
+        "yes||Yes",
+        "no||No"
+      ]
+    },
+    {
+      "id": "17028345812972717",
+      "name": "Posizione_laterale_sonno",
+      "caption": "Posizione laterale sonno",
+      "status": "",
+      "type": 1,
+      "default_value": "\"no\"",
+      "range": [
+        "yes||Yes",
+        "no||No"
+      ]
+    },
+    {
+      "id": "170310210823286",
+      "name": "BMI",
+      "caption": "Indice di massa corporea.",
+      "status": "",
+      "type": 3,
+      "range": []
+    },
+    {
+      "id": "17028345028092714",
+      "name": "Migliorare_igene_sonno",
+      "caption": "Migliorare igene sonno",
+      "status": "",
+      "type": 1,
+      "default_value": "\"no\"",
+      "range": [
+        "yes||Yes",
+        "no||No"
+      ]
+    },
+    {
+      "id": "1703156987043320",
+      "name": "Data_polisonnografia_FP",
+      "caption": "Data polisonnografia",
+      "status": "",
+      "type": 5,
+      "range": []
+    },
+    {
+      "id": "170280902370154",
+      "name": "Saturazione_minima",
+      "caption": "Saturazione minima",
+      "status": "",
+      "type": 3,
+      "range": []
+    },
+    {
+      "id": "17031495400524",
+      "name": "Menopausa",
+      "caption": "Menopausa",
+      "status": "",
+      "type": 1,
+      "ontology_coding_name": "Menopause",
+      "ontology_coding_code": "161712005",
+      "ontology_coding_system": "2.16.840.1.113883.6.96",
+      "ontology_system_prefix": "SCT",
+      "ontology_coding_caption": "Menopause",
+      "default_value": "\"no\"",
+      "range": [
+        "yes||Yes",
+        "no||No"
+      ]
+    },
+    {
+      "id": "170280863700947",
+      "name": "Parasomnia",
+      "caption": "Parasomnia",
+      "status": "",
+      "type": 1,
+      "ontology_coding_name": "Parasomnia",
+      "ontology_coding_code": "58690002",
+      "ontology_coding_system": "2.16.840.1.113883.6.96",
+      "ontology_system_prefix": "SCT",
+      "ontology_coding_caption": "Parasomnia",
+      "default_value": "\"no\"",
+      "range": [
+        "yes||Yes",
+        "no||No"
+      ]
+    },
+    {
+      "id": "17028346076682718",
+      "name": "Preparazione_ambiente_notturno",
+      "caption": "Preparazione ambiente notturno",
+      "status": "",
+      "type": 1,
+      "default_value": "\"no\"",
+      "range": [
+        "yes||Yes",
+        "no||No"
+      ]
+    },
+    {
+      "id": "17051714472393910",
+      "name": "Retrusione_ioidea",
+      "caption": "Retrusione ioidea",
+      "status": "",
+      "type": 1,
+      "default_value": "\"no\"",
+      "range": [
+        "yes||Yes",
+        "no||No"
+      ]
+    },
+    {
+      "id": "17028359170763397",
+      "name": "Ossimetria_follow_up",
+      "caption": "Ossimetria follow up",
+      "status": "",
+      "type": 1,
+      "default_value": "\"Esame non presente\"",
+      "range": [
+        "Positiva||Positiva",
+        "Negativa||Negativa",
+        "Esame non presente||Esame non presente"
+      ]
+    },
+    {
+      "id": "17051711758223907",
+      "name": "Micrognazia",
+      "caption": "Micrognazia",
+      "status": "",
+      "type": 1,
+      "ontology_coding_name": "Micrognathia, recurrent infections, behavioral abnormalities, mild intellectual disability syndrome",
+      "ontology_coding_code": "1187114007",
+      "ontology_coding_system": "2.16.840.1.113883.6.96",
+      "ontology_system_prefix": "SCT",
+      "ontology_coding_caption": "Micrognathia, recurrent infections, behavioral abnormalities, mild intellectual disability syndrome",
+      "default_value": "\"no\"",
+      "range": [
+        "yes||Yes",
+        "no||No"
+      ]
+    },
+    {
+      "id": "170334830251591",
+      "name": "sdraiato_pomeriggio_fp",
+      "caption": "sdraiato_pomeriggio_fp",
+      "status": "",
+      "type": 2,
+      "default_value": "0",
+      "range": []
+    },
+    {
+      "id": "170280865944248",
+      "name": "Malattia_neurologica",
+      "caption": "Malattia_neurologica",
+      "status": "",
+      "type": 1,
+      "ontology_coding_name": "Neurological deficit",
+      "ontology_coding_code": "264552009",
+      "ontology_coding_system": "2.16.840.1.113883.6.96",
+      "ontology_system_prefix": "SCT",
+      "ontology_coding_caption": "Neurological deficit",
+      "default_value": "\"no\"",
+      "range": [
+        "yes||Yes",
+        "no||No"
+      ]
+    },
+    {
+      "id": "17051715528953912",
+      "name": "Laringotracheomalacia",
+      "caption": "Laringotracheomalacia",
+      "status": "",
+      "type": 1,
+      "default_value": "\"no\"",
+      "range": [
+        "yes||Yes",
+        "no||No"
+      ]
+    },
+    {
+      "id": "17036087011161120",
+      "name": "AWAKE_support_group",
+      "caption": "AWAKE_support_group",
+      "status": "",
+      "type": 1,
+      "default_value": "\"no\"",
+      "range": [
+        "yes||Yes",
+        "no||No"
+      ]
+    },
+    {
+      "id": "170280959775956",
+      "name": "Sesso",
+      "caption": "Sesso",
+      "status": "",
+      "type": 1,
+      "range": [
+        "F||F",
+        "M||M",
+        "No specificato||No specificato"
+      ]
+    },
+    {
+      "id": "170280890064953",
+      "name": "Saturazione_media",
+      "caption": "Saturazione media",
+      "status": "",
+      "type": 3,
+      "range": []
+    },
+    {
+      "id": "1702811745130260",
+      "name": "Neoplasia",
+      "caption": "Neoplasia",
+      "status": "",
+      "type": 1,
+      "ontology_coding_name": "Neoplastic disease",
+      "ontology_coding_code": "55342001",
+      "ontology_coding_system": "2.16.840.1.113883.6.96",
+      "ontology_system_prefix": "SCT",
+      "ontology_coding_caption": "Neoplastic disease",
+      "default_value": "\"no\"",
+      "range": [
+        "yes||Yes",
+        "no||No"
+      ]
+    },
+    {
+      "id": "170334771948188",
+      "name": "seduto_parlando",
+      "caption": "seduto_parlando",
+      "status": "",
+      "type": 2,
+      "default_value": "0",
+      "range": []
+    },
+    {
+      "id": "1702810720709156",
+      "name": "Cognome",
+      "caption": "Cognome",
+      "status": "",
+      "type": 1,
+      "range": []
+    },
+    {
+      "id": "170280771697221",
+      "name": "Circonferenza_collo_elevata",
+      "caption": "Circonferenza collo elevata",
+      "status": "",
+      "type": 1,
+      "ontology_coding_name": "Neck circumference",
+      "ontology_coding_code": "420236003",
+      "ontology_coding_system": "2.16.840.1.113883.6.96",
+      "ontology_system_prefix": "SCT",
+      "ontology_coding_caption": "Neck circumference",
+      "default_value": "\"no\"",
+      "range": [
+        "yes||Yes",
+        "no||No"
+      ]
+    },
+    {
+      "id": "170280861713746",
+      "name": "Malattia_polmonare",
+      "caption": "Malattia polmonare",
+      "status": "",
+      "type": 1,
+      "ontology_coding_name": "Respiratory symptom",
+      "ontology_coding_code": "161920001",
+      "ontology_coding_system": "2.16.840.1.113883.6.96",
+      "ontology_system_prefix": "SCT",
+      "ontology_coding_caption": "Respiratory symptom",
+      "default_value": "\"no\"",
+      "range": [
+        "yes||Yes",
+        "no||No"
+      ]
+    },
+    {
+      "id": "1702811701524258",
+      "name": "Faringe_ridondante",
+      "caption": "Faringe ridondante",
+      "status": "",
+      "type": 1,
+      "ontology_coding_name": "Redundant mucosa",
+      "ontology_coding_code": "129259001",
+      "ontology_coding_system": "2.16.840.1.113883.6.96",
+      "ontology_system_prefix": "SCT",
+      "ontology_coding_caption": "Redundant mucosa",
+      "default_value": "\"no\"",
+      "range": [
+        "yes||Yes",
+        "no||No"
+      ]
+    },
+    {
+      "id": "170309675457218",
+      "name": "Seduto_conversando",
+      "caption": "Seduto_conversando",
+      "status": "",
+      "type": 2,
+      "default_value": "0",
+      "range": []
+    },
+    {
+      "id": "17051714028023909",
+      "name": "Lunghezza_uvulare_eccessiva",
+      "caption": "Lunghezza uvulare eccessiva",
+      "status": "",
+      "type": 1,
+      "default_value": "\"no\"",
+      "range": [
+        "yes||Yes",
+        "no||No"
+      ]
+    },
+    {
+      "id": "17028345435362716",
+      "name": "Riduzione_consumo_alcol",
+      "caption": "Riduzione consumo alcol",
+      "status": "",
+      "type": 1,
+      "default_value": "\"no\"",
+      "range": [
+        "yes||Yes",
+        "no||No"
+      ]
+    },
+    {
+      "id": "1702810709218155",
+      "name": "Nome",
+      "caption": "Nome",
+      "status": "",
+      "type": 1,
+      "range": []
+    },
+    {
+      "id": "170309678642120",
+      "name": "Seduto_auto_traffico",
+      "caption": "Seduto_auto_traffico",
+      "status": "",
+      "type": 2,
+      "default_value": "0",
+      "range": []
+    },
+    {
+      "id": "17028358661133396",
+      "name": "Qualita_vita",
+      "caption": "Qualita_vita",
+      "status": "",
+      "type": 1,
+      "default_value": "\"Negativa\"",
+      "range": [
+        "Positiva||Positiva",
+        "Negativa||Negativa"
+      ]
+    },
+    {
+      "id": "17028355453133332",
+      "name": "AHI_follow_up",
+      "caption": "AHI follow up",
+      "status": "",
+      "type": 3,
+      "range": []
+    },
+    {
+      "id": "170280810110444",
+      "name": "Sonnolenza_diurna",
+      "caption": "Sonnolenza diurna",
+      "status": "",
+      "type": 1,
+      "ontology_coding_name": "Excessive daytime sleepiness - normal night sleep",
+      "ontology_coding_code": "230489007",
+      "ontology_coding_system": "2.16.840.1.113883.6.96",
+      "ontology_system_prefix": "SCT",
+      "ontology_coding_caption": "Excessive daytime sleepiness - normal night sleep",
+      "default_value": "\"no\"",
+      "range": [
+        "yes||Yes",
+        "no||No"
+      ]
+    },
+    {
+      "id": "17028358489613395",
+      "name": "Aderenza_trattamento",
+      "caption": "Aderenza_trattamento",
+      "status": "",
+      "type": 1,
+      "default_value": "\"Assente\"",
+      "range": [
+        "Presente||Presente",
+        "Assente||Assente"
+      ]
+    },
+    {
+      "id": "170334758223184",
+      "name": "Seduto_leggendo_fp",
+      "caption": "Seduto_leggendo_fp",
+      "status": "",
+      "type": 2,
+      "default_value": "0",
+      "range": []
+    },
+    {
+      "id": "170334779563790",
+      "name": "traffico_fp",
+      "caption": "traffico_fp",
+      "status": "",
+      "type": 2,
+      "default_value": "0",
+      "range": []
+    },
+    {
+      "id": "170309667908313",
+      "name": "Seduto_leggendo",
+      "caption": "Seduto_leggendo",
+      "status": "",
+      "type": 2,
+      "default_value": "0",
+      "range": []
+    },
+    {
+      "id": "170280883270150",
+      "name": "Esito_polisonnografia",
+      "caption": "Esito polisonnografia",
+      "status": "",
+      "type": 1,
+      "default_value": "\"Esito assente\"",
+      "range": [
+        "Positivo||Positivo",
+        "Negativo||Negativo",
+        "Esito assente||Esito assente"
+      ]
+    },
+    {
+      "id": "170280765860119",
+      "name": "Ipertensione",
+      "caption": "Ipertensione",
+      "status": "",
+      "type": 1,
+      "ontology_coding_name": "Hypertension clinic",
+      "ontology_coding_code": "702867002",
+      "ontology_coding_system": "2.16.840.1.113883.6.96",
+      "ontology_system_prefix": "SCT",
+      "ontology_coding_caption": "Hypertension clinic",
+      "default_value": "\"no\"",
+      "range": [
+        "yes||Yes",
+        "no||No"
+      ]
+    },
+    {
+      "id": "1702810860447160",
+      "name": "Residenza",
+      "caption": "Residenza",
+      "status": "",
+      "type": 1,
+      "range": []
+    },
+    {
+      "id": "170280802181943",
+      "name": "Apnee_notturne",
+      "caption": "Apnee notturne",
+      "status": "",
+      "type": 1,
+      "ontology_coding_name": "Sleep apnea",
+      "ontology_coding_code": "73430006",
+      "ontology_coding_system": "2.16.840.1.113883.6.96",
+      "ontology_system_prefix": "SCT",
+      "ontology_coding_caption": "Sleep apnea",
+      "default_value": "\"no\"",
+      "range": [
+        "yes||Yes",
+        "no||No"
+      ]
+    },
+    {
+      "id": "170280852106245",
+      "name": "Ossimetria",
+      "caption": "Ossimetria",
+      "status": "",
+      "type": 1,
+      "ontology_coding_name": "Oximetry",
+      "ontology_coding_code": "264598005",
+      "ontology_coding_system": "2.16.840.1.113883.6.96",
+      "ontology_system_prefix": "SCT",
+      "ontology_coding_caption": "Oximetry",
+      "default_value": "\"Esame non presente\"",
+      "range": [
+        "Positiva||Positiva",
+        "Negativa||Negativa",
+        "Esame non presente||Esame non presente"
+      ]
+    },
+    {
+      "id": "17030963715806",
+      "name": "Sedersi_leggere",
+      "caption": "Sedersi_leggere",
+      "status": "",
+      "type": 1,
+      "range": []
+    },
+    {
+      "id": "17051714986013911",
+      "name": "Base_linguale_grande",
+      "caption": "Base linguale grande",
+      "status": "",
+      "type": 1,
+      "default_value": "\"no\"",
+      "range": [
+        "yes||Yes",
+        "no||No"
+      ]
+    },
+    {
+      "id": "170280907830955",
+      "name": "Epworth",
+      "caption": "Epworth",
+      "status": "",
+      "type": 2,
+      "ontology_coding_name": "Epworth Sleepiness Scale",
+      "ontology_coding_code": "708735004",
+      "ontology_coding_system": "2.16.840.1.113883.6.96",
+      "ontology_system_prefix": "SCT",
+      "ontology_coding_caption": "Epworth Sleepiness Scale",
+      "default_value": "0",
+      "range": []
+    },
+    {
+      "id": "170280885487152",
+      "name": "RDI",
+      "caption": "RDI",
+      "status": "",
+      "type": 3,
+      "range": []
+    },
+    {
+      "id": "170334762251585",
+      "name": "seduto_pubblico_fp",
+      "caption": "seduto_pubblico_fp",
+      "status": "",
+      "type": 2,
+      "default_value": "0",
+      "range": []
+    },
+    {
+      "id": "170334747517183",
+      "name": "guardare_tv_fp",
+      "caption": "Guardando la TV",
+      "status": "",
+      "type": 2,
+      "default_value": "0",
+      "range": []
+    },
+    {
+      "id": "170334774841489",
+      "name": "seduto_dopo_pranzo_fp",
+      "caption": "seduto_dopo_pranzo_fp",
+      "status": "",
+      "type": 2,
+      "default_value": "0",
+      "range": []
+    },
+    {
+      "id": "170280884253551",
+      "name": "AHI",
+      "caption": "AHI",
+      "status": "",
+      "type": 3,
+      "ontology_coding_name": "Apnea Hypopnea Index",
+      "ontology_coding_code": "774099003",
+      "ontology_coding_system": "2.16.840.1.113883.6.96",
+      "ontology_system_prefix": "SCT",
+      "ontology_coding_caption": "Apnea Hypopnea Index",
+      "range": []
+    },
+    {
+      "id": "170280790829140",
+      "name": "Russamento_intenso",
+      "caption": "Russamento iintenso",
+      "status": "",
+      "type": 1,
+      "ontology_coding_name": "Snoring",
+      "ontology_coding_code": "72863001",
+      "ontology_coding_system": "2.16.840.1.113883.6.96",
+      "ontology_system_prefix": "SCT",
+      "ontology_coding_caption": "Snoring",
+      "default_value": "\"no\"",
+      "range": [
+        "yes||Yes",
+        "no||No"
+      ]
+    },
+    {
+      "id": "1702810736853157",
+      "name": "Data_nascita",
+      "caption": "Data di nascita",
+      "status": "",
+      "type": 5,
+      "range": []
+    },
+    {
+      "id": "1702810627673152",
+      "name": "CF",
+      "caption": "Codice Fiscale",
+      "status": "",
+      "type": 1,
+      "range": []
+    },
+    {
+      "id": "170280721289112",
+      "name": "CAD",
+      "caption": "Coronary Artery Disease",
+      "status": "",
+      "type": 1,
+      "ontology_coding_name": "Coronary artery disease due to type 2 diabetes mellitus",
+      "ontology_coding_code": "16891151000119103",
+      "ontology_coding_system": "2.16.840.1.113883.6.96",
+      "ontology_system_prefix": "SCT",
+      "ontology_coding_caption": "Coronary artery disease due to type 2 diabetes mellitus",
+      "default_value": "\"no\"",
+      "range": [
+        "yes||Yes",
+        "no||No"
+      ]
+    },
+    {
+      "id": "1702810766026158",
+      "name": "Data_prima_visita",
+      "caption": "Data prima visita",
+      "status": "",
+      "type": 5,
+      "range": []
+    },
+    {
+      "id": "17028327675051485",
+      "name": "Data_polisonnografia",
+      "caption": "Data polisonnografia",
+      "status": "",
+      "type": 5,
+      "range": []
+    },
+    {
+      "id": "17028358181933394",
+      "name": "Complicanze_trattamento",
+      "caption": "Complicanze_trattamento",
+      "status": "",
+      "type": 1,
+      "default_value": "\"Assente\"",
+      "range": [
+        "Presente||Presente",
+        "Assente||Assente"
+      ]
+    },
+    {
+      "id": "17051712543033908",
+      "name": "Ipoplasia_medio_facciale",
+      "caption": "Ipoplasia medio facciale",
+      "status": "",
+      "type": 1,
+      "ontology_coding_name": "Alport syndrome, intellectual disability, midface hypoplasia, elliptocytosis syndrome",
+      "ontology_coding_code": "720982007",
+      "ontology_coding_system": "2.16.840.1.113883.6.96",
+      "ontology_system_prefix": "SCT",
+      "ontology_coding_caption": "Alport syndrome, intellectual disability, midface hypoplasia, elliptocytosis syndrome",
+      "default_value": "\"no\"",
+      "range": [
+        "yes||Yes",
+        "no||No"
+      ]
+    },
+    {
+      "id": "170280720433711",
+      "name": "CVD",
+      "caption": "Cerebrovascular Disease",
+      "status": "",
+      "type": 1,
+      "ontology_coding_name": "Cerebrovascular disease",
+      "ontology_coding_code": "62914000",
+      "ontology_coding_system": "2.16.840.1.113883.6.96",
+      "ontology_system_prefix": "SCT",
+      "ontology_coding_caption": "Cerebrovascular disease",
+      "default_value": "\"no\"",
+      "range": [
+        "yes||Yes",
+        "no||No"
+      ]
+    },
+    {
+      "id": "170280869667949",
+      "name": "Scompenso_cardiaco",
+      "caption": "Scompenso cardiaco",
+      "status": "",
+      "type": 1,
+      "ontology_coding_name": "Heart failure",
+      "ontology_coding_code": "84114007",
+      "ontology_coding_system": "2.16.840.1.113883.6.96",
+      "ontology_system_prefix": "SCT",
+      "ontology_coding_caption": "Heart failure",
+      "default_value": "\"no\"",
+      "range": [
+        "yes||Yes",
+        "no||No"
+      ]
+    },
+    {
+      "id": "1702811403342256",
+      "name": "Apnea_notturna_severa",
+      "caption": "Apnea notturna severa",
+      "status": "",
+      "type": 1,
+      "ontology_coding_name": "Central sleep apnea syndrome",
+      "ontology_coding_code": "27405005",
+      "ontology_coding_system": "2.16.840.1.113883.6.96",
+      "ontology_system_prefix": "SCT",
+      "ontology_coding_caption": "Central sleep apnea syndrome",
+      "default_value": "\"no\"",
+      "range": [
+        "yes||Yes",
+        "no||No"
+      ]
+    },
+    {
+      "id": "170309674322117",
+      "name": "Sdraiato_pomeriggio",
+      "caption": "Sdraiato_pomeriggio",
+      "status": "",
+      "type": 2,
+      "default_value": "0",
+      "range": []
+    },
+    {
+      "id": "1703157058253321",
+      "name": "Data_monitoraggio_FP",
+      "caption": "Data monitoraggio FP",
+      "status": "",
+      "type": 5,
+      "range": []
+    },
+    {
+      "id": "1702810679212154",
+      "name": "Codice_fascicolo_sanitario",
+      "caption": "Codice Fascicolo Sanitario",
+      "status": "",
+      "type": 1,
+      "range": []
+    },
+    {
+      "id": "1702811718818259",
+      "name": "Ipertrofia_tonsillare",
+      "caption": "Ipertrofia tonsillare",
+      "status": "",
+      "type": 1,
+      "ontology_coding_name": "Hypertrophy of tonsils",
+      "ontology_coding_code": "46689006",
+      "ontology_coding_system": "2.16.840.1.113883.6.96",
+      "ontology_system_prefix": "SCT",
+      "ontology_coding_caption": "Hypertrophy of tonsils",
+      "default_value": "\"no\"",
+      "range": [
+        "yes||Yes",
+        "no||No"
+      ]
+    },
+    {
+      "id": "1702811769065261",
+      "name": "Ostruzione_nasale",
+      "caption": "Ostruzione nasale",
+      "status": "",
+      "type": 1,
+      "ontology_coding_name": "Nasal obstruction",
+      "ontology_coding_code": "232209000",
+      "ontology_coding_system": "2.16.840.1.113883.6.96",
+      "ontology_system_prefix": "SCT",
+      "ontology_coding_caption": "Nasal obstruction",
+      "default_value": "\"no\"",
+      "range": [
+        "yes||Yes",
+        "no||No"
+      ]
+    },
+    {
+      "id": "170309669229014",
+      "name": "Guardando_la_TV",
+      "caption": "Guardando_la_TV",
+      "status": "",
+      "type": 2,
+      "default_value": "0",
+      "range": []
+    },
+    {
+      "id": "170280764122018",
+      "name": "Fibrillazione_atriale",
+      "caption": "Fibrillazione atriale",
+      "status": "",
+      "type": 1,
+      "ontology_coding_name": "Atrial fibrillation",
+      "ontology_coding_code": "49436004",
+      "ontology_coding_system": "2.16.840.1.113883.6.96",
+      "ontology_system_prefix": "SCT",
+      "ontology_coding_caption": "Atrial fibrillation",
+      "default_value": "\"no\"",
+      "range": [
+        "yes||Yes",
+        "no||No"
+      ]
+    },
+    {
+      "id": "17051711391153906",
+      "name": "Retrognazia",
+      "caption": "Retrognazia",
+      "status": "",
+      "type": 1,
+      "ontology_coding_name": "Congenital retrognathism",
+      "ontology_coding_code": "109515000",
+      "ontology_coding_system": "2.16.840.1.113883.6.96",
+      "ontology_system_prefix": "SCT",
+      "ontology_coding_caption": "Congenital retrognathism",
+      "default_value": "\"no\"",
+      "range": [
+        "yes||Yes",
+        "no||No"
+      ]
+    },
+    {
+      "id": "170309676842119",
+      "name": "Seduto_dopo_pasti",
+      "caption": "Seduto_dopo_pasti",
+      "status": "",
+      "type": 2,
+      "default_value": "0",
+      "range": []
+    }
+  ],
+  "evidenceSources": [
+    {
+      "id": "170280718339110",
+      "name": "",
+      "caption": "",
+      "status": "",
+      "short_name": "Sleep_Apnea",
+      "pdf_file": "Sleep_Apnea.pdf",
+      "bibliographic_fields": [
+        {
+          "name": "title",
+          "value": ""
+        },
+        {
+          "name": "author",
+          "value": ""
+        }
+      ],
+      "secondary_source_ids": [],
+      "citations": [
+        {
+          "label": "- CVD",
+          "type": "area_highlight",
+          "filename": "C:\\Users\\Giulia\\Desktop\\GIULIA\\UNIVERSITA\u0027\\MAGISTRALE\\SECONDO ANNO\\INTELLIGENZA ARTIFICIALE\\Progetto\\Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170280720433711",
+          "markup_regions": [
+            {
+              "page": 1,
+              "x": 36.928104,
+              "y": 22.60101,
+              "w": 4.738562,
+              "h": 1.3888888
+            }
+          ]
+        },
+        {
+          "label": "- CAD",
+          "type": "area_highlight",
+          "filename": "C:\\Users\\Giulia\\Desktop\\GIULIA\\UNIVERSITA\u0027\\MAGISTRALE\\SECONDO ANNO\\INTELLIGENZA ARTIFICIALE\\Progetto\\Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170280721289112",
+          "markup_regions": [
+            {
+              "page": 1,
+              "x": 36.928104,
+              "y": 24.116161,
+              "w": 17.647058,
+              "h": 1.3888888
+            }
+          ]
+        },
+        {
+          "label": "atrial fibrillation",
+          "type": "area_highlight",
+          "filename": "C:\\Users\\Giulia\\Desktop\\GIULIA\\UNIVERSITA\u0027\\MAGISTRALE\\SECONDO ANNO\\INTELLIGENZA ARTIFICIALE\\Progetto\\Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170280764122018",
+          "markup_regions": [
+            {
+              "page": 1,
+              "x": 37.5817,
+              "y": 28.787876,
+              "w": 13.398693,
+              "h": 1.3888888
+            }
+          ]
+        },
+        {
+          "label": "Hypertension",
+          "type": "area_highlight",
+          "filename": "C:\\Users\\Giulia\\Desktop\\GIULIA\\UNIVERSITA\u0027\\MAGISTRALE\\SECONDO ANNO\\INTELLIGENZA ARTIFICIALE\\Progetto\\Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170280765860119",
+          "markup_regions": [
+            {
+              "page": 1,
+              "x": 55.882355,
+              "y": 22.60101,
+              "w": 10.947712,
+              "h": 1.3888888
+            }
+          ]
+        },
+        {
+          "label": "- Type 2 diabetes",
+          "type": "area_highlight",
+          "filename": "C:\\Users\\Giulia\\Desktop\\GIULIA\\UNIVERSITA\u0027\\MAGISTRALE\\SECONDO ANNO\\INTELLIGENZA ARTIFICIALE\\Progetto\\Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170280768482720",
+          "markup_regions": [
+            {
+              "page": 1,
+              "x": 55.555557,
+              "y": 25.631313,
+              "w": 13.235294,
+              "h": 1.3888888
+            }
+          ]
+        },
+        {
+          "label": "- Large neckatrial fibrillation         ",
+          "type": "area_highlight",
+          "filename": "C:\\Users\\Giulia\\Desktop\\GIULIA\\UNIVERSITA\u0027\\MAGISTRALE\\SECONDO ANNO\\INTELLIGENZA ARTIFICIALE\\Progetto\\Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170280771697221",
+          "markup_regions": [
+            {
+              "page": 1,
+              "x": 55.39216,
+              "y": 27.272724,
+              "w": 9.477124,
+              "h": 1.3888888
+            },
+            {
+              "page": 1,
+              "x": 37.5817,
+              "y": 28.787876,
+              "w": 30.228758,
+              "h": 1.3888888
+            }
+          ]
+        },
+        {
+          "label": "Awakening with choking",
+          "type": "area_highlight",
+          "filename": "C:\\Users\\Giulia\\Desktop\\GIULIA\\UNIVERSITA\u0027\\MAGISTRALE\\SECONDO ANNO\\INTELLIGENZA ARTIFICIALE\\Progetto\\Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170280777781922",
+          "markup_regions": [
+            {
+              "page": 4,
+              "x": 20.751635,
+              "y": 30.934345,
+              "w": 17.156862,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "Ipertensione",
+          "type": "area_highlight",
+          "filename": "C:\\Users\\Giulia\\Desktop\\GIULIA\\UNIVERSITA\u0027\\MAGISTRALE\\SECONDO ANNO\\INTELLIGENZA ARTIFICIALE\\Progetto\\Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170280765860119",
+          "markup_regions": [
+            {
+              "page": 4,
+              "x": 20.751635,
+              "y": 33.333332,
+              "w": 9.150327,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "Intense snoring",
+          "type": "area_highlight",
+          "filename": "C:\\Users\\Giulia\\Desktop\\GIULIA\\UNIVERSITA\u0027\\MAGISTRALE\\SECONDO ANNO\\INTELLIGENZA ARTIFICIALE\\Progetto\\Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170280790829140",
+          "markup_regions": [
+            {
+              "page": 4,
+              "x": 20.588236,
+              "y": 36.11111,
+              "w": 11.274509,
+              "h": 1.3888888
+            }
+          ]
+        },
+        {
+          "label": "Large neck circumference",
+          "type": "area_highlight",
+          "filename": "C:\\Users\\Giulia\\Desktop\\GIULIA\\UNIVERSITA\u0027\\MAGISTRALE\\SECONDO ANNO\\INTELLIGENZA ARTIFICIALE\\Progetto\\Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170280771697221",
+          "markup_regions": [
+            {
+              "page": 4,
+              "x": 20.751635,
+              "y": 37.878788,
+              "w": 17.810457,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "Reported apneas",
+          "type": "area_highlight",
+          "filename": "C:\\Users\\Giulia\\Desktop\\GIULIA\\UNIVERSITA\u0027\\MAGISTRALE\\SECONDO ANNO\\INTELLIGENZA ARTIFICIALE\\Progetto\\Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170280802181943",
+          "markup_regions": [
+            {
+              "page": 4,
+              "x": 27.124184,
+              "y": 44.949493,
+              "w": 5.0653596,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "choking",
+          "type": "area_highlight",
+          "filename": "C:\\Users\\Giulia\\Desktop\\GIULIA\\UNIVERSITA\u0027\\MAGISTRALE\\SECONDO ANNO\\INTELLIGENZA ARTIFICIALE\\Progetto\\Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170280777781922",
+          "markup_regions": [
+            {
+              "page": 4,
+              "x": 34.477123,
+              "y": 44.949493,
+              "w": 5.392157,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "atrial fibrillation",
+          "type": "area_highlight",
+          "filename": "C:\\Users\\Giulia\\Desktop\\GIULIA\\UNIVERSITA\u0027\\MAGISTRALE\\SECONDO ANNO\\INTELLIGENZA ARTIFICIALE\\Progetto\\Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170280764122018",
+          "markup_regions": [
+            {
+              "page": 4,
+              "x": 41.666668,
+              "y": 47.22222,
+              "w": 11.111111,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "Daytime sleepiness",
+          "type": "area_highlight",
+          "filename": "C:\\Users\\Giulia\\Desktop\\GIULIA\\UNIVERSITA\u0027\\MAGISTRALE\\SECONDO ANNO\\INTELLIGENZA ARTIFICIALE\\Progetto\\Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170280810110444",
+          "markup_regions": [
+            {
+              "page": 4,
+              "x": 20.751635,
+              "y": 49.49495,
+              "w": 13.235294,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "hypertension",
+          "type": "area_highlight",
+          "filename": "C:\\Users\\Giulia\\Desktop\\GIULIA\\UNIVERSITA\u0027\\MAGISTRALE\\SECONDO ANNO\\INTELLIGENZA ARTIFICIALE\\Progetto\\Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170280765860119",
+          "markup_regions": [
+            {
+              "page": 7,
+              "x": 51.797386,
+              "y": 58.964645,
+              "w": 9.96732,
+              "h": 2.5252526
+            }
+          ]
+        },
+        {
+          "label": "cerebrovascular disease",
+          "type": "area_highlight",
+          "filename": "C:\\Users\\Giulia\\Desktop\\GIULIA\\UNIVERSITA\u0027\\MAGISTRALE\\SECONDO ANNO\\INTELLIGENZA ARTIFICIALE\\Progetto\\Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170280720433711",
+          "markup_regions": [
+            {
+              "page": 7,
+              "x": 69.93464,
+              "y": 63.257576,
+              "w": 17.810457,
+              "h": 2.5252526
+            }
+          ]
+        },
+        {
+          "label": "coronary artery disease",
+          "type": "area_highlight",
+          "filename": "C:\\Users\\Giulia\\Desktop\\GIULIA\\UNIVERSITA\u0027\\MAGISTRALE\\SECONDO ANNO\\INTELLIGENZA ARTIFICIALE\\Progetto\\Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170280721289112",
+          "markup_regions": [
+            {
+              "page": 7,
+              "x": 23.202614,
+              "y": 65.15152,
+              "w": 18.464052,
+              "h": 2.5252526
+            }
+          ]
+        },
+        {
+          "label": ", large neck circumference",
+          "type": "area_highlight",
+          "filename": "C:\\Users\\Giulia\\Desktop\\GIULIA\\UNIVERSITA\u0027\\MAGISTRALE\\SECONDO ANNO\\INTELLIGENZA ARTIFICIALE\\Progetto\\Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170280771697221",
+          "markup_regions": [
+            {
+              "page": 7,
+              "x": 80.06536,
+              "y": 84.974754,
+              "w": 8.169934,
+              "h": 2.1464646
+            },
+            {
+              "page": 7,
+              "x": 15.196078,
+              "y": 86.48991,
+              "w": 9.803922,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "Awakening with choking",
+          "type": "area_highlight",
+          "filename": "C:\\Users\\Giulia\\Desktop\\GIULIA\\UNIVERSITA\u0027\\MAGISTRALE\\SECONDO ANNO\\INTELLIGENZA ARTIFICIALE\\Progetto\\Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170280777781922",
+          "markup_regions": [
+            {
+              "page": 8,
+              "x": 20.751635,
+              "y": 52.146465,
+              "w": 17.156862,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "Hypertension",
+          "type": "area_highlight",
+          "filename": "C:\\Users\\Giulia\\Desktop\\GIULIA\\UNIVERSITA\u0027\\MAGISTRALE\\SECONDO ANNO\\INTELLIGENZA ARTIFICIALE\\Progetto\\Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170280765860119",
+          "markup_regions": [
+            {
+              "page": 8,
+              "x": 20.751635,
+              "y": 54.545452,
+              "w": 9.150327,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "Intense snoring",
+          "type": "area_highlight",
+          "filename": "C:\\Users\\Giulia\\Desktop\\GIULIA\\UNIVERSITA\u0027\\MAGISTRALE\\SECONDO ANNO\\INTELLIGENZA ARTIFICIALE\\Progetto\\Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170280790829140",
+          "markup_regions": [
+            {
+              "page": 8,
+              "x": 20.751635,
+              "y": 56.81818,
+              "w": 10.457517,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "Large neck circumference",
+          "type": "area_highlight",
+          "filename": "C:\\Users\\Giulia\\Desktop\\GIULIA\\UNIVERSITA\u0027\\MAGISTRALE\\SECONDO ANNO\\INTELLIGENZA ARTIFICIALE\\Progetto\\Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170280771697221",
+          "markup_regions": [
+            {
+              "page": 8,
+              "x": 20.751635,
+              "y": 59.090908,
+              "w": 17.810457,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "apneas",
+          "type": "area_highlight",
+          "filename": "C:\\Users\\Giulia\\Desktop\\GIULIA\\UNIVERSITA\u0027\\MAGISTRALE\\SECONDO ANNO\\INTELLIGENZA ARTIFICIALE\\Progetto\\Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170280802181943",
+          "markup_regions": [
+            {
+              "page": 8,
+              "x": 27.61438,
+              "y": 66.035355,
+              "w": 4.5751634,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "or choking",
+          "type": "area_highlight",
+          "filename": "C:\\Users\\Giulia\\Desktop\\GIULIA\\UNIVERSITA\u0027\\MAGISTRALE\\SECONDO ANNO\\INTELLIGENZA ARTIFICIALE\\Progetto\\Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170280777781922",
+          "markup_regions": [
+            {
+              "page": 8,
+              "x": 34.150326,
+              "y": 66.035355,
+              "w": 5.882353,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "or atrial fibrillation",
+          "type": "area_highlight",
+          "filename": "C:\\Users\\Giulia\\Desktop\\GIULIA\\UNIVERSITA\u0027\\MAGISTRALE\\SECONDO ANNO\\INTELLIGENZA ARTIFICIALE\\Progetto\\Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170280764122018",
+          "markup_regions": [
+            {
+              "page": 8,
+              "x": 41.17647,
+              "y": 68.43435,
+              "w": 11.601307,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "Daytime sleepiness*",
+          "type": "area_highlight",
+          "filename": "C:\\Users\\Giulia\\Desktop\\GIULIA\\UNIVERSITA\u0027\\MAGISTRALE\\SECONDO ANNO\\INTELLIGENZA ARTIFICIALE\\Progetto\\Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170280810110444",
+          "markup_regions": [
+            {
+              "page": 8,
+              "x": 20.751635,
+              "y": 70.70707,
+              "w": 14.052288,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "In patients with a low clinical suspicio",
+          "type": "area_highlight",
+          "filename": "C:\\Users\\Giulia\\Desktop\\GIULIA\\UNIVERSITA\u0027\\MAGISTRALE\\SECONDO ANNO\\INTELLIGENZA ARTIFICIALE\\Progetto\\Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170280852106245",
+          "markup_regions": [
+            {
+              "page": 8,
+              "x": 14.705882,
+              "y": 79.67172,
+              "w": 74.18301,
+              "h": 0.88383836
+            }
+          ]
+        },
+        {
+          "label": "Overnight Oximetry as a Screen for OSA",
+          "type": "area_highlight",
+          "filename": "C:\\Users\\Giulia\\Desktop\\GIULIA\\UNIVERSITA\u0027\\MAGISTRALE\\SECONDO ANNO\\INTELLIGENZA ARTIFICIALE\\Progetto\\Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170280852106245",
+          "markup_regions": [
+            {
+              "page": 9,
+              "x": 15.196078,
+              "y": 59.21717,
+              "w": 30.06536,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "Significant pulmonary disease",
+          "type": "area_highlight",
+          "filename": "C:\\Users\\Giulia\\Desktop\\GIULIA\\UNIVERSITA\u0027\\MAGISTRALE\\SECONDO ANNO\\INTELLIGENZA ARTIFICIALE\\Progetto\\Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170280861713746",
+          "markup_regions": [
+            {
+              "page": 10,
+              "x": 20.915033,
+              "y": 47.09596,
+              "w": 20.588236,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "Unusual sleep-related behaviors (parasom",
+          "type": "area_highlight",
+          "filename": "C:\\Users\\Giulia\\Desktop\\GIULIA\\UNIVERSITA\u0027\\MAGISTRALE\\SECONDO ANNO\\INTELLIGENZA ARTIFICIALE\\Progetto\\Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170280863700947",
+          "markup_regions": [
+            {
+              "page": 10,
+              "x": 20.915033,
+              "y": 60.984848,
+              "w": 32.51634,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "Significant neurological",
+          "type": "area_highlight",
+          "filename": "C:\\Users\\Giulia\\Desktop\\GIULIA\\UNIVERSITA\u0027\\MAGISTRALE\\SECONDO ANNO\\INTELLIGENZA ARTIFICIALE\\Progetto\\Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170280865944248",
+          "markup_regions": [
+            {
+              "page": 10,
+              "x": 20.915033,
+              "y": 64.898994,
+              "w": 16.339869,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "Heart failure, either stable or severe (",
+          "type": "area_highlight",
+          "filename": "C:\\Users\\Giulia\\Desktop\\GIULIA\\UNIVERSITA\u0027\\MAGISTRALE\\SECONDO ANNO\\INTELLIGENZA ARTIFICIALE\\Progetto\\Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170280869667949",
+          "markup_regions": [
+            {
+              "page": 10,
+              "x": 15.196078,
+              "y": 80.80808,
+              "w": 41.666668,
+              "h": 0.88383836
+            }
+          ]
+        },
+        {
+          "label": "Significant\tpulmonary\tdisease,\tincluding",
+          "type": "area_highlight",
+          "filename": "C:\\Users\\Giulia\\Desktop\\GIULIA\\UNIVERSITA\u0027\\MAGISTRALE\\SECONDO ANNO\\INTELLIGENZA ARTIFICIALE\\Progetto\\Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170280861713746",
+          "markup_regions": [
+            {
+              "page": 11,
+              "x": 15.196078,
+              "y": 9.848485,
+              "w": 73.039215,
+              "h": 2.1464646
+            },
+            {
+              "page": 11,
+              "x": 15.196078,
+              "y": 11.489896,
+              "w": 44.77124,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "Unusual nocturnal behaviors (parasomnias",
+          "type": "area_highlight",
+          "filename": "C:\\Users\\Giulia\\Desktop\\GIULIA\\UNIVERSITA\u0027\\MAGISTRALE\\SECONDO ANNO\\INTELLIGENZA ARTIFICIALE\\Progetto\\Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170280863700947",
+          "markup_regions": [
+            {
+              "page": 11,
+              "x": 15.196078,
+              "y": 32.575756,
+              "w": 71.56863,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "Significant\tneurologic\tor\tneuromuscular\t",
+          "type": "area_highlight",
+          "filename": "C:\\Users\\Giulia\\Desktop\\GIULIA\\UNIVERSITA\u0027\\MAGISTRALE\\SECONDO ANNO\\INTELLIGENZA ARTIFICIALE\\Progetto\\Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170280865944248",
+          "markup_regions": [
+            {
+              "page": 11,
+              "x": 15.196078,
+              "y": 43.939392,
+              "w": 34.96732,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "A positive test for OSA",
+          "type": "area_highlight",
+          "filename": "C:\\Users\\Giulia\\Desktop\\GIULIA\\UNIVERSITA\u0027\\MAGISTRALE\\SECONDO ANNO\\INTELLIGENZA ARTIFICIALE\\Progetto\\Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170280883270150",
+          "markup_regions": [
+            {
+              "page": 15,
+              "x": 15.196078,
+              "y": 32.82828,
+              "w": 16.503267,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "AHI",
+          "type": "area_highlight",
+          "filename": "C:\\Users\\Giulia\\Desktop\\GIULIA\\UNIVERSITA\u0027\\MAGISTRALE\\SECONDO ANNO\\INTELLIGENZA ARTIFICIALE\\Progetto\\Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170280884253551",
+          "markup_regions": [
+            {
+              "page": 15,
+              "x": 20.915033,
+              "y": 36.868687,
+              "w": 2.9411764,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "AHI",
+          "type": "area_highlight",
+          "filename": "C:\\Users\\Giulia\\Desktop\\GIULIA\\UNIVERSITA\u0027\\MAGISTRALE\\SECONDO ANNO\\INTELLIGENZA ARTIFICIALE\\Progetto\\Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170280885487152",
+          "markup_regions": [
+            {
+              "page": 15,
+              "x": 25.816994,
+              "y": 36.868687,
+              "w": 3.267974,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "mean oxygen saturation)",
+          "type": "area_highlight",
+          "filename": "C:\\Users\\Giulia\\Desktop\\GIULIA\\UNIVERSITA\u0027\\MAGISTRALE\\SECONDO ANNO\\INTELLIGENZA ARTIFICIALE\\Progetto\\Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170280890064953",
+          "markup_regions": [
+            {
+              "page": 16,
+              "x": 60.620914,
+              "y": 21.085857,
+              "w": 16.666666,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "Mean oxygen saturation",
+          "type": "area_highlight",
+          "filename": "C:\\Users\\Giulia\\Desktop\\GIULIA\\UNIVERSITA\u0027\\MAGISTRALE\\SECONDO ANNO\\INTELLIGENZA ARTIFICIALE\\Progetto\\Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170280890064953",
+          "markup_regions": [
+            {
+              "page": 16,
+              "x": 28.75817,
+              "y": 52.90404,
+              "w": 16.666666,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "(minimum",
+          "type": "area_highlight",
+          "filename": "C:\\Users\\Giulia\\Desktop\\GIULIA\\UNIVERSITA\u0027\\MAGISTRALE\\SECONDO ANNO\\INTELLIGENZA ARTIFICIALE\\Progetto\\Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170280902370154",
+          "markup_regions": [
+            {
+              "page": 16,
+              "x": 50.1634,
+              "y": 21.085857,
+              "w": 7.1895423,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "minimum oxygen saturation",
+          "type": "area_highlight",
+          "filename": "C:\\Users\\Giulia\\Desktop\\GIULIA\\UNIVERSITA\u0027\\MAGISTRALE\\SECONDO ANNO\\INTELLIGENZA ARTIFICIALE\\Progetto\\Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170280902370154",
+          "markup_regions": [
+            {
+              "page": 16,
+              "x": 75.98039,
+              "y": 56.691917,
+              "w": 12.254902,
+              "h": 2.2727273
+            },
+            {
+              "page": 16,
+              "x": 23.856209,
+              "y": 58.459595,
+              "w": 6.6993465,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "The Epworth",
+          "type": "area_highlight",
+          "filename": "C:\\Users\\Giulia\\Desktop\\GIULIA\\UNIVERSITA\u0027\\MAGISTRALE\\SECONDO ANNO\\INTELLIGENZA ARTIFICIALE\\Progetto\\Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170280907830955",
+          "markup_regions": [
+            {
+              "page": 26,
+              "x": 34.477123,
+              "y": 9.974748,
+              "w": 13.888889,
+              "h": 2.7777777
+            }
+          ]
+        },
+        {
+          "label": "gender",
+          "type": "area_highlight",
+          "filename": "C:\\Users\\Giulia\\Desktop\\GIULIA\\UNIVERSITA\u0027\\MAGISTRALE\\SECONDO ANNO\\INTELLIGENZA ARTIFICIALE\\Progetto\\Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170280959775956",
+          "markup_regions": [
+            {
+              "page": 4,
+              "x": 24.836601,
+              "y": 40.27778,
+              "w": 4.5751634,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "Male gender",
+          "type": "area_highlight",
+          "filename": "C:\\Users\\Giulia\\Desktop\\GIULIA\\UNIVERSITA\u0027\\MAGISTRALE\\SECONDO ANNO\\INTELLIGENZA ARTIFICIALE\\Progetto\\Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170280959775956",
+          "markup_regions": [
+            {
+              "page": 8,
+              "x": 24.346405,
+              "y": 61.4899,
+              "w": 5.392157,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "complex sleep apnea",
+          "type": "area_highlight",
+          "filename": "C:\\Users\\Giulia\\Desktop\\GIULIA\\UNIVERSITA\u0027\\MAGISTRALE\\SECONDO ANNO\\INTELLIGENZA ARTIFICIALE\\Progetto\\Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "1702811403342256",
+          "markup_regions": [
+            {
+              "page": 10,
+              "x": 28.267973,
+              "y": 44.82323,
+              "w": 14.215686,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "redundant pharynx,",
+          "type": "area_highlight",
+          "filename": "C:\\Users\\Giulia\\Desktop\\GIULIA\\UNIVERSITA\u0027\\MAGISTRALE\\SECONDO ANNO\\INTELLIGENZA ARTIFICIALE\\Progetto\\Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "1702811701524258",
+          "markup_regions": [
+            {
+              "page": 24,
+              "x": 20.588236,
+              "y": 38.5101,
+              "w": 13.725491,
+              "h": 1.7676767
+            }
+          ]
+        },
+        {
+          "label": "tonsillar hypertrophy",
+          "type": "area_highlight",
+          "filename": "C:\\Users\\Giulia\\Desktop\\GIULIA\\UNIVERSITA\u0027\\MAGISTRALE\\SECONDO ANNO\\INTELLIGENZA ARTIFICIALE\\Progetto\\Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "1702811718818259",
+          "markup_regions": [
+            {
+              "page": 24,
+              "x": 20.915033,
+              "y": 18.055553,
+              "w": 14.379085,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "benign or malignant neoplasms",
+          "type": "area_highlight",
+          "filename": "C:\\Users\\Giulia\\Desktop\\GIULIA\\UNIVERSITA\u0027\\MAGISTRALE\\SECONDO ANNO\\INTELLIGENZA ARTIFICIALE\\Progetto\\Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "1702811745130260",
+          "markup_regions": [
+            {
+              "page": 24,
+              "x": 20.915033,
+              "y": 43.055553,
+              "w": 21.40523,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "nasal obstruction",
+          "type": "area_highlight",
+          "filename": "C:\\Users\\Giulia\\Desktop\\GIULIA\\UNIVERSITA\u0027\\MAGISTRALE\\SECONDO ANNO\\INTELLIGENZA ARTIFICIALE\\Progetto\\Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "1702811769065261",
+          "markup_regions": [
+            {
+              "page": 24,
+              "x": 20.915033,
+              "y": 15.530301,
+              "w": 11.601307,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "Vista_anatomica",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "task",
+          "object_id": "170281356725162",
+          "markup_regions": [
+            {
+              "page": 1,
+              "x": 25.163399,
+              "y": 44.949493,
+              "w": 10.784314,
+              "h": 6.060606
+            }
+          ]
+        },
+        {
+          "label": "Visita_tipica",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "task",
+          "object_id": "1702815139000736",
+          "markup_regions": [
+            {
+              "page": 1,
+              "x": 48.366013,
+              "y": 45.454544,
+              "w": 9.313725,
+              "h": 5.5555553
+            }
+          ]
+        },
+        {
+          "label": "Visita_diagnostica",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "task",
+          "object_id": "1702831115420810",
+          "markup_regions": [
+            {
+              "page": 1,
+              "x": 46.405228,
+              "y": 64.77273,
+              "w": 14.052288,
+              "h": 2.2727273
+            }
+          ]
+        },
+        {
+          "label": "Polisonnografia",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "task",
+          "object_id": "1702831187739811",
+          "markup_regions": [
+            {
+              "page": 4,
+              "x": 51.14379,
+              "y": 65.909096,
+              "w": 12.418301,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "Diagnosi",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "task",
+          "object_id": "17028330333841540",
+          "markup_regions": [
+            {
+              "page": 1,
+              "x": 46.568626,
+              "y": 73.10606,
+              "w": 13.071896,
+              "h": 2.2727273
+            }
+          ]
+        },
+        {
+          "label": "Good sleep hygiene",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "17028345028092714",
+          "markup_regions": [
+            {
+              "page": 17,
+              "x": 20.751635,
+              "y": 47.60101,
+              "w": 13.562092,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "Weight loss",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "17028345152502715",
+          "markup_regions": [
+            {
+              "page": 17,
+              "x": 20.751635,
+              "y": 40.025253,
+              "w": 8.006536,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "Reduced alcohol consumption",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "17028345435362716",
+          "markup_regions": [
+            {
+              "page": 17,
+              "x": 20.751635,
+              "y": 42.550503,
+              "w": 20.751635,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "Lateral body position during sleep",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "17028345812972717",
+          "markup_regions": [
+            {
+              "page": 17,
+              "x": 20.751635,
+              "y": 45.075756,
+              "w": 23.529411,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "PAP preparation into a bedtime routine a",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "17028346076682718",
+          "markup_regions": [
+            {
+              "page": 17,
+              "x": 27.287582,
+              "y": 50.126263,
+              "w": 45.098038,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "and bed partner satisfaction",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "17028358007123393",
+          "markup_regions": [
+            {
+              "page": 22,
+              "x": 28.59477,
+              "y": 79.29293,
+              "w": 16.339869,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "Complications of treatment",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "17028358181933394",
+          "markup_regions": [
+            {
+              "page": 22,
+              "x": 20.915033,
+              "y": 81.818184,
+              "w": 18.79085,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "Adherence with therapy",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "17028358489613395",
+          "markup_regions": [
+            {
+              "page": 22,
+              "x": 20.915033,
+              "y": 89.14142,
+              "w": 16.339869,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "Quality of life",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "17028358661133396",
+          "markup_regions": [
+            {
+              "page": 23,
+              "x": 20.915033,
+              "y": 16.414143,
+              "w": 9.640523,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "Sitting and reading",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170309667908313",
+          "markup_regions": [
+            {
+              "page": 26,
+              "x": 7.026144,
+              "y": 52.525253,
+              "w": 12.908497,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "Watching TV",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170309669229014",
+          "markup_regions": [
+            {
+              "page": 26,
+              "x": 7.026144,
+              "y": 55.80808,
+              "w": 9.150327,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "Sitting, inactive in a public place",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170309670994215",
+          "markup_regions": [
+            {
+              "page": 26,
+              "x": 7.026144,
+              "y": 59.21717,
+              "w": 22.549019,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "As a passenger in a car for an hour with",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170309672304916",
+          "markup_regions": [
+            {
+              "page": 26,
+              "x": 7.026144,
+              "y": 62.626263,
+              "w": 34.80392,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "Lying down to rest in the afternoon when",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170309674322117",
+          "markup_regions": [
+            {
+              "page": 26,
+              "x": 7.026144,
+              "y": 66.035355,
+              "w": 43.300655,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "Sitting and talking to someone",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170309675457218",
+          "markup_regions": [
+            {
+              "page": 26,
+              "x": 7.026144,
+              "y": 69.44445,
+              "w": 20.915033,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "Sitting quietly after a lunch without al",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170309676842119",
+          "markup_regions": [
+            {
+              "page": 26,
+              "x": 7.026144,
+              "y": 72.979805,
+              "w": 29.90196,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "In a car, while stopped for a few minute",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170309678642120",
+          "markup_regions": [
+            {
+              "page": 26,
+              "x": 7.026144,
+              "y": 76.38889,
+              "w": 34.150326,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "Punteggio_epworth_grave",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "task",
+          "object_id": "1702831918438987",
+          "markup_regions": [
+            {
+              "page": 26,
+              "x": 18.79085,
+              "y": 87.121216,
+              "w": 22.058823,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "Punteggio_epworth_moderato",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "task",
+          "object_id": "1702831966110988",
+          "markup_regions": [
+            {
+              "page": 26,
+              "x": 18.79085,
+              "y": 85.479805,
+              "w": 24.183006,
+              "h": 2.1464646
+            },
+            {
+              "page": 26,
+              "x": 42.973858,
+              "y": 85.479805,
+              "w": 0.3267974,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "Punteggio_epworth_lieve",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "task",
+          "object_id": "1702832020675989",
+          "markup_regions": [
+            {
+              "page": 26,
+              "x": 18.79085,
+              "y": 83.96465,
+              "w": 21.40523,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "Punteggio_epworth_normale",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "task",
+          "object_id": "17028323674901098",
+          "markup_regions": [
+            {
+              "page": 26,
+              "x": 19.117647,
+              "y": 82.323235,
+              "w": 0.3267974,
+              "h": 2.1464646
+            },
+            {
+              "page": 26,
+              "x": 19.607843,
+              "y": 82.323235,
+              "w": 21.24183,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "postmenopausal females",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "17031495400524",
+          "markup_regions": [
+            {
+              "page": 4,
+              "x": 31.699347,
+              "y": 40.27778,
+              "w": 16.666666,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "Modifiche_stile_vita",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "task",
+          "object_id": "17028343643292658",
+          "markup_regions": [
+            {
+              "page": 1,
+              "x": 45.098038,
+              "y": 80.42929,
+              "w": 15.196078,
+              "h": 1.2626263
+            }
+          ]
+        },
+        {
+          "label": "Scelta_trattamento",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "task",
+          "object_id": "17028348608993019",
+          "markup_regions": [
+            {
+              "page": 2,
+              "x": 9.640523,
+              "y": 16.919193,
+              "w": 49.019608,
+              "h": 1.6414142
+            }
+          ]
+        },
+        {
+          "label": "Visita_follow_up",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "task",
+          "object_id": "17028351834963325",
+          "markup_regions": [
+            {
+              "page": 2,
+              "x": 29.90196,
+              "y": 34.72222,
+              "w": 23.039215,
+              "h": 1.7676767
+            }
+          ]
+        },
+        {
+          "label": "Risposta_trattamento",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "task",
+          "object_id": "17028362755473601",
+          "markup_regions": [
+            {
+              "page": 2,
+              "x": 36.11111,
+              "y": 56.31313,
+              "w": 10.620915,
+              "h": 1.7676767
+            },
+            {
+              "page": 2,
+              "x": 35.947712,
+              "y": 58.20707,
+              "w": 10.947712,
+              "h": 1.7676767
+            }
+          ]
+        },
+        {
+          "label": "Dispositivi_orali",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "claim",
+          "object_id": "17028351384123324",
+          "markup_regions": [
+            {
+              "page": 2,
+              "x": 12.254902,
+              "y": 22.601013,
+              "w": 30.718954,
+              "h": 1.7676767
+            }
+          ]
+        },
+        {
+          "label": "PAP",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "claim",
+          "object_id": "17028349267863200",
+          "markup_regions": [
+            {
+              "page": 2,
+              "x": 12.254902,
+              "y": 20.70707,
+              "w": 30.555555,
+              "h": 1.7676767
+            }
+          ]
+        },
+        {
+          "label": "PAP",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "claim",
+          "object_id": "17028349267863200",
+          "markup_regions": [
+            {
+              "page": 2,
+              "x": 45.588234,
+              "y": 20.70707,
+              "w": 25.0,
+              "h": 1.7676767
+            }
+          ]
+        },
+        {
+          "label": "Visita_specialistica",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "task",
+          "object_id": "17028363618973602",
+          "markup_regions": [
+            {
+              "page": 2,
+              "x": 35.457516,
+              "y": 69.823235,
+              "w": 13.562092,
+              "h": 1.7676767
+            },
+            {
+              "page": 2,
+              "x": 36.928104,
+              "y": 71.71717,
+              "w": 8.986928,
+              "h": 1.7676767
+            }
+          ]
+        },
+        {
+          "label": "Follow_up_annuale",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "task",
+          "object_id": "17028363636913603",
+          "markup_regions": [
+            {
+              "page": 2,
+              "x": 37.5817,
+              "y": 84.34344,
+              "w": 9.150327,
+              "h": 1.7676767
+            },
+            {
+              "page": 2,
+              "x": 34.640522,
+              "y": 86.23737,
+              "w": 13.562092,
+              "h": 1.7676767
+            }
+          ]
+        },
+        {
+          "label": "BMI",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170310210823286",
+          "markup_regions": [
+            {
+              "page": 1,
+              "x": 55.882355,
+              "y": 24.24242,
+              "w": 10.294118,
+              "h": 1.1363636
+            }
+          ]
+        },
+        {
+          "label": "Dispositivi_orali",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "claim",
+          "object_id": "17028351384123324",
+          "markup_regions": [
+            {
+              "page": 4,
+              "x": 17.810457,
+              "y": 79.79798,
+              "w": 69.281044,
+              "h": 2.1464646
+            },
+            {
+              "page": 4,
+              "x": 17.810457,
+              "y": 81.31313,
+              "w": 33.49673,
+              "h": 2.1464646
+            },
+            {
+              "page": 4,
+              "x": 87.254906,
+              "y": 79.79798,
+              "w": 0.49019608,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "PAP",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "claim",
+          "object_id": "17028349267863200",
+          "markup_regions": [
+            {
+              "page": 4,
+              "x": 17.810457,
+              "y": 83.83839,
+              "w": 63.72549,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "BMI",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170310210823286",
+          "markup_regions": [
+            {
+              "page": 8,
+              "x": 20.751635,
+              "y": 63.762623,
+              "w": 5.2287583,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "Sonnolenza",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "task",
+          "object_id": "1702831309160812",
+          "markup_regions": [
+            {
+              "page": 8,
+              "x": 47.875816,
+              "y": 73.23232,
+              "w": 17.973856,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "Scompenso_cardiaco",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170280869667949",
+          "markup_regions": [
+            {
+              "page": 10,
+              "x": 20.915033,
+              "y": 42.550503,
+              "w": 24.509804,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "Visita_atipica",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "task",
+          "object_id": "1702815139000736",
+          "markup_regions": [
+            {
+              "page": 11,
+              "x": 15.359477,
+              "y": 63.636364,
+              "w": 55.22876,
+              "h": 1.3888888
+            }
+          ]
+        },
+        {
+          "label": "Visita_diagnostica",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "task",
+          "object_id": "1702831115420810",
+          "markup_regions": [
+            {
+              "page": 11,
+              "x": 15.196078,
+              "y": 75.75758,
+              "w": 13.071896,
+              "h": 1.8939394
+            }
+          ]
+        },
+        {
+          "label": "Polisonnografia",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "task",
+          "object_id": "1702831187739811",
+          "markup_regions": [
+            {
+              "page": 11,
+              "x": 20.915033,
+              "y": 86.742424,
+              "w": 14.215686,
+              "h": 2.5252526
+            }
+          ]
+        },
+        {
+          "label": "Polisonnografia_positiva",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "task",
+          "object_id": "1702831702313986",
+          "markup_regions": [
+            {
+              "page": 15,
+              "x": 20.915033,
+              "y": 39.39394,
+              "w": 25.326797,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "Sonnolenza",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "task",
+          "object_id": "1702831309160812",
+          "markup_regions": [
+            {
+              "page": 16,
+              "x": 20.915033,
+              "y": 25.126263,
+              "w": 7.1895423,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "Disgnosi_OSA_lieve",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "claim",
+          "object_id": "17028330898381541",
+          "markup_regions": [
+            {
+              "page": 16,
+              "x": 23.856209,
+              "y": 66.9192,
+              "w": 3.267974,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "Diagnosi",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "task",
+          "object_id": "17028330333841540",
+          "markup_regions": [
+            {
+              "page": 16,
+              "x": 16.339869,
+              "y": 10.858589,
+              "w": 26.797386,
+              "h": 1.2626263
+            }
+          ]
+        },
+        {
+          "label": "Disgnosi_OSA_lieve",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "claim",
+          "object_id": "17028330898381541",
+          "markup_regions": [
+            {
+              "page": 16,
+              "x": 23.856209,
+              "y": 52.90404,
+              "w": 3.75817,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "Disgnosi_OSA_lieve",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "claim",
+          "object_id": "17028330898381541",
+          "markup_regions": [
+            {
+              "page": 16,
+              "x": 23.856209,
+              "y": 27.651516,
+              "w": 3.75817,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "Diagnosi_OSA_moderata",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "claim",
+          "object_id": "17028331007391542",
+          "markup_regions": [
+            {
+              "page": 16,
+              "x": 23.856209,
+              "y": 34.974747,
+              "w": 6.8627453,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "Diagnosi_OSA_moderata",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "claim",
+          "object_id": "17028331007391542",
+          "markup_regions": [
+            {
+              "page": 16,
+              "x": 23.856209,
+              "y": 56.81818,
+              "w": 6.535948,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "Diagnosi_OSA_moderata",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "claim",
+          "object_id": "17028331007391542",
+          "markup_regions": [
+            {
+              "page": 16,
+              "x": 23.856209,
+              "y": 69.318184,
+              "w": 6.535948,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "Diagnosi_OSA_grave",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "claim",
+          "object_id": "17028331138401543",
+          "markup_regions": [
+            {
+              "page": 16,
+              "x": 23.856209,
+              "y": 40.656567,
+              "w": 5.0653596,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "Diagnosi_OSA_grave",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "claim",
+          "object_id": "17028331138401543",
+          "markup_regions": [
+            {
+              "page": 16,
+              "x": 23.856209,
+              "y": 71.59091,
+              "w": 5.0653596,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "Modifiche_stile_vita",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "task",
+          "object_id": "17028343643292658",
+          "markup_regions": [
+            {
+              "page": 17,
+              "x": 15.03268,
+              "y": 33.96465,
+              "w": 23.366013,
+              "h": 1.8939394
+            }
+          ]
+        },
+        {
+          "label": "Riduzione_consumo_alcol",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "17028345435362716",
+          "markup_regions": [
+            {
+              "page": 17,
+              "x": 15.03268,
+              "y": 54.92424,
+              "w": 18.137255,
+              "h": 2.5252526
+            }
+          ]
+        },
+        {
+          "label": "Perdita_peso",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "17028345152502715",
+          "markup_regions": [
+            {
+              "page": 17,
+              "x": 15.03268,
+              "y": 71.33838,
+              "w": 6.372549,
+              "h": 2.5252526
+            }
+          ]
+        },
+        {
+          "label": "Posizione_laterale_sonno",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "17028345812972717",
+          "markup_regions": [
+            {
+              "page": 18,
+              "x": 15.03268,
+              "y": 25.378784,
+              "w": 11.601307,
+              "h": 2.5252526
+            }
+          ]
+        },
+        {
+          "label": "Visita_anatomica",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "task",
+          "object_id": "170281356725162",
+          "markup_regions": [
+            {
+              "page": 21,
+              "x": 15.196078,
+              "y": 23.484848,
+              "w": 16.830065,
+              "h": 2.5252526
+            }
+          ]
+        },
+        {
+          "label": "Scelta_trattamento",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "task",
+          "object_id": "17028348608993019",
+          "markup_regions": [
+            {
+              "page": 18,
+              "x": 15.03268,
+              "y": 59.090908,
+              "w": 47.875816,
+              "h": 1.8939394
+            }
+          ]
+        },
+        {
+          "label": "PAP",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "claim",
+          "object_id": "17028349267863200",
+          "markup_regions": [
+            {
+              "page": 19,
+              "x": 15.03268,
+              "y": 9.848489,
+              "w": 27.61438,
+              "h": 2.5252526
+            }
+          ]
+        },
+        {
+          "label": "Dispositivi_orali",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "claim",
+          "object_id": "17028351384123324",
+          "markup_regions": [
+            {
+              "page": 20,
+              "x": 15.03268,
+              "y": 58.080807,
+              "w": 13.562092,
+              "h": 2.5252526
+            }
+          ]
+        },
+        {
+          "label": "dispositivi_orali_favore",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "evidence",
+          "object_id": "1703106394053540",
+          "markup_regions": [
+            {
+              "page": 20,
+              "x": 15.03268,
+              "y": 60.984848,
+              "w": 50.816994,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "Visita_follow_up",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "task",
+          "object_id": "17028351834963325",
+          "markup_regions": [
+            {
+              "page": 22,
+              "x": 15.196078,
+              "y": 56.565655,
+              "w": 23.69281,
+              "h": 1.8939394
+            }
+          ]
+        },
+        {
+          "label": "Epworth_follow_up",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "task",
+          "object_id": "17028352488163327",
+          "markup_regions": [
+            {
+              "page": 23,
+              "x": 20.915033,
+              "y": 9.848485,
+              "w": 41.830067,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "Ossimetria_follow_up",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "17028359170763397",
+          "markup_regions": [
+            {
+              "page": 23,
+              "x": 20.915033,
+              "y": 63.510105,
+              "w": 13.071896,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "Polisonnografia_follow_up",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "task",
+          "object_id": "17028353983673329",
+          "markup_regions": [
+            {
+              "page": 23,
+              "x": 20.915033,
+              "y": 70.9596,
+              "w": 11.437908,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "Epworth_follow_up",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "task",
+          "object_id": "17028352488163327",
+          "markup_regions": [
+            {
+              "page": 23,
+              "x": 20.915033,
+              "y": 76.0101,
+              "w": 22.549019,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "Visita_anatomica",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "task",
+          "object_id": "170281356725162",
+          "markup_regions": [
+            {
+              "page": 23,
+              "x": 20.915033,
+              "y": 89.14141,
+              "w": 62.7451,
+              "h": 2.5252526
+            }
+          ]
+        },
+        {
+          "label": "Visita_specialistica",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "task",
+          "object_id": "17028363618973602",
+          "markup_regions": [
+            {
+              "page": 23,
+              "x": 20.915033,
+              "y": 84.59596,
+              "w": 67.48366,
+              "h": 2.5252526
+            },
+            {
+              "page": 23,
+              "x": 20.915033,
+              "y": 86.4899,
+              "w": 24.673203,
+              "h": 2.5252526
+            }
+          ]
+        },
+        {
+          "label": "Risposta_trattamento",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "task",
+          "object_id": "17028362755473601",
+          "markup_regions": [
+            {
+              "page": 23,
+              "x": 15.196078,
+              "y": 80.05051,
+              "w": 26.633987,
+              "h": 1.8939394
+            }
+          ]
+        },
+        {
+          "label": "Follow_up_annuale",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "task",
+          "object_id": "17028363636913603",
+          "markup_regions": [
+            {
+              "page": 24,
+              "x": 15.196078,
+              "y": 64.52021,
+              "w": 67.15686,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "Sonnolenza",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "task",
+          "object_id": "1702831309160812",
+          "markup_regions": [
+            {
+              "page": 26,
+              "x": 49.346405,
+              "y": 9.974748,
+              "w": 26.470589,
+              "h": 2.7777777
+            }
+          ]
+        },
+        {
+          "label": "Consiglio_questionario_PAP",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "task",
+          "object_id": "1703157325332322",
+          "markup_regions": [
+            {
+              "page": 30,
+              "x": 28.921568,
+              "y": 9.974748,
+              "w": 51.14379,
+              "h": 2.7777777
+            },
+            {
+              "page": 30,
+              "x": 7.026144,
+              "y": 12.752526,
+              "w": 23.202614,
+              "h": 2.7777777
+            }
+          ]
+        },
+        {
+          "label": "Modifiche_stile_vita",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "task",
+          "object_id": "17028343643292658",
+          "markup_regions": [
+            {
+              "page": 34,
+              "x": 28.921568,
+              "y": 9.974748,
+              "w": 22.222221,
+              "h": 2.7777777
+            }
+          ]
+        },
+        {
+          "label": "in support groupsuch as A.W.A.K.E.",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "17036087011161120",
+          "markup_regions": [
+            {
+              "page": 2,
+              "x": 42.156864,
+              "y": 40.78283,
+              "w": 15.522876,
+              "h": 1.7676767
+            },
+            {
+              "page": 2,
+              "x": 26.30719,
+              "y": 42.676765,
+              "w": 20.261438,
+              "h": 1.7676767
+            }
+          ]
+        },
+        {
+          "label": "AWAKE_support_group",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "17036087011161120",
+          "markup_regions": [
+            {
+              "page": 4,
+              "x": 63.235294,
+              "y": 71.59091,
+              "w": 15.359477,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "Modifiche_stile_vita",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "task",
+          "object_id": "17028343643292658",
+          "markup_regions": [
+            {
+              "page": 4,
+              "x": 68.79085,
+              "y": 69.9495,
+              "w": 14.542483,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "AWAKE_support_group",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "17036087011161120",
+          "markup_regions": [
+            {
+              "page": 23,
+              "x": 54.901962,
+              "y": 36.363636,
+              "w": 33.49673,
+              "h": 2.1464646
+            },
+            {
+              "page": 23,
+              "x": 15.196078,
+              "y": 37.878788,
+              "w": 39.215687,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "Consiglio_pap",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "task",
+          "object_id": "17036105341451385",
+          "markup_regions": [
+            {
+              "page": 27,
+              "x": 28.75817,
+              "y": 10.1010065,
+              "w": 63.72549,
+              "h": 2.7777777
+            },
+            {
+              "page": 27,
+              "x": 7.026144,
+              "y": 12.878785,
+              "w": 20.09804,
+              "h": 2.7777777
+            }
+          ]
+        },
+        {
+          "label": "Monitoraggio_non_assistito",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "claim",
+          "object_id": "17028362493273536",
+          "markup_regions": [
+            {
+              "page": 14,
+              "x": 15.03268,
+              "y": 60.732323,
+              "w": 72.22222,
+              "h": 7.1969695
+            }
+          ]
+        },
+        {
+          "label": "Valutazione_trattamento",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "task",
+          "object_id": "17028352228643326",
+          "markup_regions": [
+            {
+              "page": 22,
+              "x": 14.869281,
+              "y": 77.77778,
+              "w": 51.30719,
+              "h": 1.010101
+            }
+          ]
+        },
+        {
+          "label": "traffico_fp",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170334779563790",
+          "markup_regions": [
+            {
+              "page": 26,
+              "x": 5.2287583,
+              "y": 76.51515,
+              "w": 37.5817,
+              "h": 1.5151515
+            }
+          ]
+        },
+        {
+          "label": "seduto_dopo_pranzo_fp",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170334774841489",
+          "markup_regions": [
+            {
+              "page": 26,
+              "x": 6.535948,
+              "y": 72.85354,
+              "w": 31.535948,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "sdraiato_pomeriggio_fp",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170334830251591",
+          "markup_regions": [
+            {
+              "page": 26,
+              "x": 5.718954,
+              "y": 65.65657,
+              "w": 44.77124,
+              "h": 2.9040403
+            }
+          ]
+        },
+        {
+          "label": "auto_passeggero_fp",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170334766581686",
+          "markup_regions": [
+            {
+              "page": 26,
+              "x": 5.718954,
+              "y": 62.752525,
+              "w": 36.601307,
+              "h": 2.2727273
+            }
+          ]
+        },
+        {
+          "label": "seduto_parlando",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170334771948188",
+          "markup_regions": [
+            {
+              "page": 26,
+              "x": 6.0457516,
+              "y": 69.318184,
+              "w": 22.549019,
+              "h": 2.2727273
+            }
+          ]
+        },
+        {
+          "label": "seduto_pubblico_fp",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170334762251585",
+          "markup_regions": [
+            {
+              "page": 26,
+              "x": 6.2091503,
+              "y": 58.838383,
+              "w": 24.183006,
+              "h": 3.2828283
+            }
+          ]
+        },
+        {
+          "label": "guardare_tv_fp",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170334747517183",
+          "markup_regions": [
+            {
+              "page": 26,
+              "x": 6.535948,
+              "y": 55.681816,
+              "w": 10.130719,
+              "h": 2.2727273
+            }
+          ]
+        },
+        {
+          "label": "Seduto_leggendo_fp",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "170334758223184",
+          "markup_regions": [
+            {
+              "page": 26,
+              "x": 6.2091503,
+              "y": 52.020203,
+              "w": 14.379085,
+              "h": 2.9040403
+            }
+          ]
+        },
+        {
+          "label": "macroglossia,",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "17051710929763905",
+          "markup_regions": [
+            {
+              "page": 24,
+              "x": 20.751635,
+              "y": 20.707073,
+              "w": 9.96732,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "retrognathia,",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "17051711391153906",
+          "markup_regions": [
+            {
+              "page": 24,
+              "x": 20.588236,
+              "y": 23.358585,
+              "w": 9.803922,
+              "h": 1.8939394
+            }
+          ]
+        },
+        {
+          "label": "micrognathia,midface hypoplasia",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "17051711758223907",
+          "markup_regions": [
+            {
+              "page": 24,
+              "x": 20.915033,
+              "y": 25.883835,
+              "w": 9.640523,
+              "h": 2.020202
+            }
+          ]
+        },
+        {
+          "label": "midface hypoplasia",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "17051712543033908",
+          "markup_regions": [
+            {
+              "page": 24,
+              "x": 20.915033,
+              "y": 28.0303,
+              "w": 13.235294,
+              "h": 2.1464646
+            }
+          ]
+        },
+        {
+          "label": "elongated uvular length,",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "17051714028023909",
+          "markup_regions": [
+            {
+              "page": 24,
+              "x": 20.424837,
+              "y": 30.934341,
+              "w": 17.810457,
+              "h": 1.7676767
+            }
+          ]
+        },
+        {
+          "label": "hyoid retrusion,",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "17051714472393910",
+          "markup_regions": [
+            {
+              "page": 24,
+              "x": 20.09804,
+              "y": 33.20707,
+              "w": 12.254902,
+              "h": 1.7676767
+            }
+          ]
+        },
+        {
+          "label": "large tongue base,",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "17051714986013911",
+          "markup_regions": [
+            {
+              "page": 24,
+              "x": 20.261438,
+              "y": 35.353535,
+              "w": 13.562092,
+              "h": 2.020202
+            }
+          ]
+        },
+        {
+          "label": "laryngotracheomalacia,",
+          "type": "area_highlight",
+          "filename": "Sleep_Apnea.pdf",
+          "object_type": "data",
+          "object_id": "17051715528953912",
+          "markup_regions": [
+            {
+              "page": 24,
+              "x": 20.588236,
+              "y": 40.656567,
+              "w": 16.503267,
+              "h": 1.7676767
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "recommendations": [
+    {
+      "id": "170281404747467",
+      "name": "Recommendation_170281404747467",
+      "caption": "Viista_anatomica_si_contro",
+      "status": "",
+      "statement": "",
+      "justification": "",
+      "grade": "",
+      "primary_sources": [],
+      "candidates": [],
+      "user_fields": []
+    },
+    {
+      "id": "170310140236484",
+      "name": "Recommendation_170310140236484",
+      "caption": "risposta_scarsa_C",
+      "status": "",
+      "statement": "",
+      "justification": "",
+      "grade": "",
+      "primary_sources": [],
+      "candidates": [],
+      "user_fields": []
+    },
+    {
+      "id": "17028332198081764",
+      "name": "Recommendation_17028332198081764",
+      "caption": "OSA_lieve_favore",
+      "status": "",
+      "statement": "",
+      "justification": "",
+      "grade": "",
+      "primary_sources": [],
+      "candidates": [],
+      "user_fields": []
+    },
+    {
+      "id": "17028287277459",
+      "name": "Recommendation_17028287277459",
+      "caption": "Visita_atipica_favore",
+      "status": "",
+      "statement": "",
+      "justification": "",
+      "grade": "",
+      "primary_sources": [],
+      "candidates": [],
+      "user_fields": []
+    },
+    {
+      "id": "170281420482369",
+      "name": "Recommendation_170281420482369",
+      "caption": "Visita_anatomica_no_favore",
+      "status": "",
+      "statement": "",
+      "justification": "",
+      "grade": "",
+      "primary_sources": [],
+      "candidates": [],
+      "user_fields": []
+    },
+    {
+      "id": "1702815344552743",
+      "name": "Recommendation_1702815344552743",
+      "caption": "Visita_atipica_no_favore",
+      "status": "",
+      "statement": "",
+      "justification": "",
+      "grade": "",
+      "primary_sources": [],
+      "candidates": [],
+      "user_fields": []
+    },
+    {
+      "id": "17031534911121166",
+      "name": "Recommendation_17031534911121166",
+      "caption": "OSA_moderata_contro",
+      "status": "",
+      "statement": "",
+      "justification": "",
+      "grade": "",
+      "primary_sources": [],
+      "candidates": [],
+      "user_fields": []
+    },
+    {
+      "id": "1703106132792538",
+      "name": "Recommendation_1703106132792538",
+      "caption": "pap_favore",
+      "status": "",
+      "statement": "",
+      "justification": "",
+      "grade": "",
+      "primary_sources": [],
+      "candidates": [],
+      "user_fields": []
+    },
+    {
+      "id": "170310126778982",
+      "name": "Recommendation_170310126778982",
+      "caption": "risposta_scarsa_F",
+      "status": "",
+      "statement": "",
+      "justification": "",
+      "grade": "",
+      "primary_sources": [],
+      "candidates": [],
+      "user_fields": []
+    },
+    {
+      "id": "1702815322229741",
+      "name": "Recommendation_1702815322229741",
+      "caption": "Visita_atipica_si_contro",
+      "status": "",
+      "statement": "",
+      "justification": "",
+      "grade": "",
+      "primary_sources": [],
+      "candidates": [],
+      "user_fields": []
+    },
+    {
+      "id": "1702815305185739",
+      "name": "Recommendation_1702815305185739",
+      "caption": "Visita_atipica_si_favore",
+      "status": "",
+      "statement": "",
+      "justification": "",
+      "grade": "",
+      "primary_sources": [],
+      "candidates": [],
+      "user_fields": []
+    },
+    {
+      "id": "17028284717855",
+      "name": "Recommendation_17028284717855",
+      "caption": "Visita_anatomica_favore",
+      "status": "",
+      "statement": "",
+      "justification": "",
+      "grade": "",
+      "primary_sources": [],
+      "candidates": [],
+      "user_fields": []
+    },
+    {
+      "id": "170310118952781",
+      "name": "Evidence_1",
+      "caption": "risposta_buona_C",
+      "status": "",
+      "statement": "",
+      "justification": "",
+      "grade": "",
+      "primary_sources": [],
+      "candidates": [],
+      "user_fields": []
+    },
+    {
+      "id": "17028285001667",
+      "name": "Recommendation_17028285001667",
+      "caption": "Visita_anatomica_contro",
+      "status": "",
+      "statement": "",
+      "justification": "",
+      "grade": "",
+      "primary_sources": [],
+      "candidates": [],
+      "user_fields": []
+    },
+    {
+      "id": "1703106394053540",
+      "name": "Recommendation_1703106394053540",
+      "caption": "dispositivi_orali_favore",
+      "status": "",
+      "statement": "",
+      "justification": "",
+      "grade": "",
+      "primary_sources": [
+        {
+          "id": "170280718339110",
+          "secondary_sources": [],
+          "location_fields": [
+            {
+              "name": "Page",
+              "value": "21"
+            }
+          ]
+        }
+      ],
+      "candidates": [],
+      "user_fields": []
+    },
+    {
+      "id": "1702830081761287",
+      "name": "Recommendation_1702830081761287",
+      "caption": "Visita_tipica_contro",
+      "status": "",
+      "statement": "",
+      "justification": "",
+      "grade": "",
+      "primary_sources": [],
+      "candidates": [],
+      "user_fields": []
+    },
+    {
+      "id": "17028332752931766",
+      "name": "Recommendation_17028332752931766",
+      "caption": "OSA_moderata_favore",
+      "status": "",
+      "statement": "",
+      "justification": "",
+      "grade": "",
+      "primary_sources": [],
+      "candidates": [],
+      "user_fields": []
+    },
+    {
+      "id": "170310109918378",
+      "name": "Recommendation_170310109918378",
+      "caption": "risposta_buona_F",
+      "status": "",
+      "statement": "",
+      "justification": "",
+      "grade": "",
+      "primary_sources": [],
+      "candidates": [],
+      "user_fields": []
+    },
+    {
+      "id": "170281390771565",
+      "name": "Recommendation_170281390771565",
+      "caption": "Visita_anatomica_si_favore",
+      "status": "",
+      "statement": "",
+      "justification": "",
+      "grade": "",
+      "primary_sources": [],
+      "candidates": [],
+      "user_fields": []
+    },
+    {
+      "id": "170281427000271",
+      "name": "Recommendation_170281427000271",
+      "caption": "Visita_anatomica_no_contro",
+      "status": "",
+      "statement": "",
+      "justification": "",
+      "grade": "",
+      "primary_sources": [],
+      "candidates": [],
+      "user_fields": []
+    },
+    {
+      "id": "17028333269781768",
+      "name": "Recommendation_17028333269781768",
+      "caption": "OSA_grave_favore",
+      "status": "",
+      "statement": "",
+      "justification": "",
+      "grade": "",
+      "primary_sources": [],
+      "candidates": [],
+      "user_fields": []
+    },
+    {
+      "id": "17031531716341164",
+      "name": "Recommendation_17031531716341164",
+      "caption": "OSA_lieve_contro",
+      "status": "",
+      "statement": "",
+      "justification": "",
+      "grade": "",
+      "primary_sources": [],
+      "candidates": [],
+      "user_fields": []
+    },
+    {
+      "id": "1702815365384745",
+      "name": "Recommendation_1702815365384745",
+      "caption": "Visita_atipica_no_contro",
+      "status": "",
+      "statement": "",
+      "justification": "",
+      "grade": "",
+      "primary_sources": [],
+      "candidates": [],
+      "user_fields": []
+    },
+    {
+      "id": "17031539277871168",
+      "name": "Recommendation_17031539277871168",
+      "caption": "OSA_grave_contro",
+      "status": "",
+      "statement": "",
+      "justification": "",
+      "grade": "",
+      "primary_sources": [],
+      "candidates": [],
+      "user_fields": []
+    },
+    {
+      "id": "170282877762211",
+      "name": "Recommendation_170282877762211",
+      "caption": "Visita_atipica_contro",
+      "status": "",
+      "statement": "",
+      "justification": "",
+      "grade": "",
+      "primary_sources": [],
+      "candidates": [],
+      "user_fields": []
+    },
+    {
+      "id": "1703107612075770",
+      "name": "Recommendation_1703107612075770",
+      "caption": "dispositivi_orali_contro",
+      "status": "",
+      "statement": "",
+      "justification": "",
+      "grade": "",
+      "primary_sources": [],
+      "candidates": [],
+      "user_fields": []
+    },
+    {
+      "id": "1702830054120285",
+      "name": "Recommendation_1702830054120285",
+      "caption": "Visita_tipica_favore",
+      "status": "",
+      "statement": "",
+      "justification": "",
+      "grade": "",
+      "primary_sources": [],
+      "candidates": [],
+      "user_fields": []
+    }
+  ],
+  "rules": [
+    {
+      "id": "17028332215061765",
+      "name": "OSA_lieve_favore",
+      "caption": "Gli indici considerati suggeriscono una diagnosi di OSA lieve.",
+      "status": "",
+      "claim": "17028330898381541",
+      "backing": "17028332198081764",
+      "condition_gloss": "",
+      "condition": {
+        "expression": "_"
+      },
+      "weight": {
+        "expression": "_"
+      }
+    },
+    {
+      "id": "17028333290041769",
+      "name": "OSA_grave_favore",
+      "caption": "Gli indici considerati suggeriscono una diagnosi di OSA grave.",
+      "status": "",
+      "claim": "17028331138401543",
+      "backing": "17028333269781768",
+      "condition_gloss": "",
+      "condition": {
+        "expression": "_"
+      },
+      "weight": {
+        "expression": "_"
+      }
+    },
+    {
+      "id": "17028332777711767",
+      "name": "OSA_moderata_favore",
+      "caption": "Gli indici considerati suggeriscono una diagnosi di OSA moderata.",
+      "status": "",
+      "claim": "17028331007391542",
+      "backing": "17028332752931766",
+      "condition_gloss": "",
+      "condition": {
+        "expression": "_"
+      },
+      "weight": {
+        "expression": "_"
+      }
+    },
+    {
+      "id": "17028285015328",
+      "name": "Visita_anatomica_contro",
+      "caption": "La visita non dovrebbe essere di tipo anatomico in quanto il paziente non possiede malformazioni anatomiche.",
+      "status": "",
+      "claim": "17028283977703",
+      "backing": "17028285001667",
+      "condition_gloss": "",
+      "condition": {
+        "expression": "_"
+      },
+      "weight": {
+        "expression": "_"
+      }
+    },
+    {
+      "id": "17028284763276",
+      "name": "Visita_anatomica_favore",
+      "caption": "La visita dovrebbe essere di tipo anatomico in quanto il paziente presenta malformazioni anatomiche.",
+      "status": "",
+      "claim": "17028283977703",
+      "backing": "17028284717855",
+      "condition_gloss": "",
+      "condition": {
+        "expression": "_"
+      },
+      "weight": {
+        "expression": "_"
+      }
+    },
+    {
+      "id": "17031539318601169",
+      "name": "OSA_grave_contro",
+      "caption": "Gli indici considerati non suggeriscono una diagnosi di OSA grave.",
+      "status": "",
+      "claim": "17028331138401543",
+      "backing": "17031539277871168",
+      "condition_gloss": "",
+      "condition": {
+        "expression": "_"
+      },
+      "weight": {
+        "expression": "_"
+      }
+    },
+    {
+      "id": "170282873086910",
+      "name": "Visita_atipica_favore",
+      "caption": "La visita dovrebbe essere di tipo atipico in quanto il paziente presenta sintomi e/o patologie atipiche",
+      "status": "",
+      "claim": "17028284069914",
+      "backing": "17028287277459",
+      "condition_gloss": "",
+      "condition": {
+        "expression": "_"
+      },
+      "weight": {
+        "expression": "_"
+      }
+    },
+    {
+      "id": "1703106397444541",
+      "name": "dispositivi_orali_favore",
+      "caption": "Considerata la gravita\u0027 della diagnosi di OSA e\u0027 consigliato un trattamento con dispositivi orali.",
+      "status": "",
+      "claim": "17028351384123324",
+      "backing": "1703106394053540",
+      "condition_gloss": "",
+      "condition": {
+        "expression": "_"
+      },
+      "weight": {
+        "expression": "_"
+      }
+    },
+    {
+      "id": "1702830058100286",
+      "name": "Visita_tipica_favore",
+      "caption": "La visita dovrebbe essere di tipo tipico in quanto il paziente presenta sintomi e/o patologie tipiche dell\u0027OSA.",
+      "status": "",
+      "claim": "1702830039372284",
+      "backing": "1702830054120285",
+      "condition_gloss": "",
+      "condition": {
+        "expression": "_"
+      },
+      "weight": {
+        "expression": "_"
+      }
+    },
+    {
+      "id": "1703106136808539",
+      "name": "pap_favore",
+      "caption": "Considerata la diagnosi di OSA e\u0027 norma un trattamento con PAP. E\u0027 possibile scegliere tra tre tiplogie di trattamento PAP: CPAP, AutoPAP, Bi-level PAP.",
+      "status": "",
+      "claim": "17028349267863200",
+      "backing": "1703106132792538",
+      "condition_gloss": "",
+      "condition": {
+        "expression": "_"
+      },
+      "weight": {
+        "expression": "_"
+      }
+    },
+    {
+      "id": "170310140487785",
+      "name": "risposta_scarsa_C",
+      "caption": "Gli elementi valutati durante la visita non suggeriscono una scarsa risposta al trattamento",
+      "status": "",
+      "claim": "17028365618883677",
+      "backing": "170310140236484",
+      "condition_gloss": "",
+      "condition": {
+        "expression": "_"
+      },
+      "weight": {
+        "expression": "_"
+      }
+    },
+    {
+      "id": "170282877982912",
+      "name": "Visita_atipica_contro",
+      "caption": "La visita non dovrebbe essere di tipo atipico in quanto il paziente non presenta sintomi e/o patologie atipiche, oppure presenta una o piu malformazione/i anatomica/he.",
+      "status": "",
+      "claim": "17028284069914",
+      "backing": "170282877762211",
+      "condition_gloss": "",
+      "condition": {
+        "expression": "_"
+      },
+      "weight": {
+        "expression": "_"
+      }
+    },
+    {
+      "id": "170310127085483",
+      "name": "risposta_scarsa_F",
+      "caption": "Gli elementi valutati durante la visita suggeriscono una scarsa risposta al trattamento",
+      "status": "",
+      "claim": "17028365618883677",
+      "backing": "170310126778982",
+      "condition_gloss": "",
+      "condition": {
+        "expression": "_"
+      },
+      "weight": {
+        "expression": "_"
+      }
+    },
+    {
+      "id": "17031534959721167",
+      "name": "OSA_moderata_contro",
+      "caption": "Gli indici considerati non suggeriscono una diagnosi di OSA moderata.",
+      "status": "",
+      "claim": "17028331007391542",
+      "backing": "17031534911121166",
+      "condition_gloss": "",
+      "condition": {
+        "expression": "_"
+      },
+      "weight": {
+        "expression": "_"
+      }
+    },
+    {
+      "id": "170310110183779",
+      "name": "risposta_buona_F",
+      "caption": "Gli elementi valutati durante la visita suggeriscono una buona risposta al trattamento",
+      "status": "",
+      "claim": "17028365496883676",
+      "backing": "170310109918378",
+      "condition_gloss": "",
+      "condition": {
+        "expression": "_"
+      },
+      "weight": {
+        "expression": "_"
+      }
+    },
+    {
+      "id": "1703107615324771",
+      "name": "dispositivi_orali_contro",
+      "caption": "Considerata la gravita\u0027 della diagnosi di OSA non e\u0027 consigliato un trattamento con dispositivi orali.",
+      "status": "",
+      "claim": "17028351384123324",
+      "backing": "1703107612075770",
+      "condition_gloss": "",
+      "condition": {
+        "expression": "_"
+      },
+      "weight": {
+        "expression": "_"
+      }
+    },
+    {
+      "id": "1702830083730288",
+      "name": "Visita_tipica_contro",
+      "caption": "La visita non dovrebbe essere di tipo tipico in quanto il paziente non presenta sintomi e/o patologie tipiche dell\u0027OSA o presenta sintomi e/o patologie atipiche e/o anatomiche.",
+      "status": "",
+      "claim": "1702830039372284",
+      "backing": "1702830081761287",
+      "condition_gloss": "",
+      "condition": {
+        "expression": "_"
+      },
+      "weight": {
+        "expression": "_"
+      }
+    },
+    {
+      "id": "170310117093180",
+      "name": "risposta_buona_C",
+      "caption": "Gli elementi valutati durante la visita non suggeriscono una buona risposta al trattamento",
+      "status": "",
+      "claim": "17028365496883676",
+      "backing": "170310118952781",
+      "condition_gloss": "",
+      "condition": {
+        "expression": "_"
+      },
+      "weight": {
+        "expression": "_"
+      }
+    },
+    {
+      "id": "17031531742501165",
+      "name": "OSA_lieve_contro",
+      "caption": "Gli indici considerati non suggeriscono una diagnosi di OSA lieve.",
+      "status": "",
+      "claim": "17028330898381541",
+      "backing": "17031531716341164",
+      "condition_gloss": "",
+      "condition": {
+        "expression": "_"
+      },
+      "weight": {
+        "expression": "_"
+      }
+    }
+  ],
+  "tasks": [
+    {
+      "class": "plan",
+      "id": "1702810407216149",
+      "name": "Visita_preliminare",
+      "caption": "Visita preliminare",
+      "status": "",
+      "parent": "root",
+      "type": "plan",
+      "comment": "Con visita_preliminare si intende la prima visita che subisce un paziente con almeno un sintomo",
+      "icon_path": "com/deontics/proformaconnector/icons/planIcon.png"
+    },
+    {
+      "class": "task",
+      "id": "1702810497380150",
+      "name": "Registrazione_anagrafica",
+      "caption": "Registrazione anagrafica",
+      "status": "",
+      "parent": "1702810407216149",
+      "type": "enquiry",
+      "icon_path": "com/deontics/proformaconnector/icons/enquiryIcon.png"
+    },
+    {
+      "class": "task",
+      "id": "1702811036779254",
+      "name": "Caratteristiche_sonno_funzionale",
+      "caption": "Sintomi relativi al disturbo del sonno",
+      "status": "",
+      "parent": "1702810407216149",
+      "type": "enquiry",
+      "comment": "Inserire i sintomi che il paziente presenta",
+      "icon_path": "com/deontics/proformaconnector/icons/enquiryIcon.png"
+    },
+    {
+      "class": "task",
+      "id": "1702811174048255",
+      "name": "Patologie_atipiche_OSA",
+      "caption": "Patologie atipiche OSA",
+      "status": "",
+      "parent": "1702810407216149",
+      "type": "enquiry",
+      "comment": "Inserire tra i seguenti sintomi e patologie non correlati all\u0027OSA quelli da cui eventualmente e\u0027 affetto il paziente",
+      "icon_path": "com/deontics/proformaconnector/icons/enquiryIcon.png"
+    },
+    {
+      "class": "task",
+      "id": "1702811517785257",
+      "name": "Caratteristiche_sonno_anatomiche",
+      "caption": "Deformazioni anatomiche",
+      "status": "",
+      "parent": "1702810407216149",
+      "type": "enquiry",
+      "comment": "Inserire eventuali deformazioni anatomiche presenti nel paziente",
+      "icon_path": "com/deontics/proformaconnector/icons/enquiryIcon.png"
+    },
+    {
+      "class": "task",
+      "id": "1705143893334272",
+      "name": "No_sintomi",
+      "caption": "Caso paziente senza sintomi correllati OSA",
+      "status": "",
+      "parent": "1702810407216149",
+      "type": "action",
+      "icon_path": "com/deontics/proformaconnector/icons/actionIcon.png"
+    },
+    {
+      "class": "task",
+      "id": "17052323341922252",
+      "name": "Patologie_tipiche_OSA",
+      "caption": "Patologie tipiche OSA",
+      "status": "",
+      "parent": "1702810407216149",
+      "type": "enquiry",
+      "comment": "Inserire tra le seguenti patogie correlate all\u0027OSA quelle da cui eventualmente e\u0027 affetto il paziente",
+      "icon_path": "com/deontics/proformaconnector/icons/enquiryIcon.png"
+    },
+    {
+      "class": "task",
+      "id": "170281356725162",
+      "name": "Visita_anatomica",
+      "caption": "Visita Preliminare Anatomica",
+      "status": "",
+      "parent": "root",
+      "type": "action",
+      "icon_path": "com/deontics/proformaconnector/icons/actionIcon.png"
+    },
+    {
+      "class": "task",
+      "id": "1702815139000736",
+      "name": "Visita_atipica",
+      "caption": "Visita Preliminare Atipica",
+      "status": "",
+      "parent": "root",
+      "type": "action",
+      "icon_path": "com/deontics/proformaconnector/icons/actionIcon.png"
+    },
+    {
+      "class": "task",
+      "id": "17028283432112",
+      "name": "Scelta_tipo_visita",
+      "caption": "Decidere di che tipo di visita preliminare si tratta",
+      "status": "",
+      "parent": "root",
+      "type": "decision",
+      "icon_path": "com/deontics/proformaconnector/icons/decisionIcon.png"
+    },
+    {
+      "class": "task",
+      "id": "1702830481875289",
+      "name": "Visita_tipica",
+      "caption": "Visita Preliminare Tipica",
+      "status": "",
+      "parent": "root",
+      "type": "action",
+      "icon_path": "com/deontics/proformaconnector/icons/actionIcon.png"
+    },
+    {
+      "class": "plan",
+      "id": "1702831115420810",
+      "name": "Visita_diagnostica",
+      "caption": "Visita diagnostica",
+      "status": "",
+      "parent": "root",
+      "type": "plan",
+      "icon_path": "com/deontics/proformaconnector/icons/planIcon.png"
+    },
+    {
+      "class": "task",
+      "id": "1702831187739811",
+      "name": "Polisonnografia",
+      "caption": "Polisonnografia",
+      "status": "",
+      "parent": "1702831115420810",
+      "type": "enquiry",
+      "comment": "Inserire i rusultati ottenuti dalla Polisonnografia",
+      "icon_path": "com/deontics/proformaconnector/icons/enquiryIcon.png"
+    },
+    {
+      "class": "task",
+      "id": "1702831309160812",
+      "name": "Sonnolenza",
+      "caption": "Sonnolenza",
+      "status": "",
+      "parent": "1702831115420810",
+      "type": "enquiry",
+      "comment": "E\u0027 necessario porre delle domande al paziente per compilare il questionario Epwoth. L\u0027obiettivo è quello di valutare quanto è probabile che il paziente si appisoli o addormenti nelle situazioni riportate di seguito. Per ogni valore inserire un numero da 0 a 3.\n0 --\u003e improbabile\n1 --\u003e poco probabile\n2 --\u003e possibile\n3 --\u003e molto possibile\nIl punteggio massimo ottenibile e\u0027 24",
+      "icon_path": "com/deontics/proformaconnector/icons/enquiryIcon.png"
+    },
+    {
+      "class": "task",
+      "id": "1702831481355867",
+      "name": "Saturazione",
+      "caption": "Saturazione",
+      "status": "",
+      "parent": "1702831115420810",
+      "type": "enquiry",
+      "comment": "Inserire i valori della saturazione del paziente.\nATTENZIONE:Inserire valori compresi tra 0 e 1.",
+      "icon_path": "com/deontics/proformaconnector/icons/enquiryIcon.png"
+    },
+    {
+      "class": "task",
+      "id": "1702831702313986",
+      "name": "Polisonnografia_positiva",
+      "caption": "Esito polisonnografia",
+      "status": "",
+      "parent": "1702831115420810",
+      "type": "action",
+      "icon_path": "com/deontics/proformaconnector/icons/actionIcon.png"
+    },
+    {
+      "class": "task",
+      "id": "1702831918438987",
+      "name": "Punteggio_epworth_grave",
+      "caption": "Esito questionario epworth",
+      "status": "",
+      "parent": "1702831115420810",
+      "type": "action",
+      "icon_path": "com/deontics/proformaconnector/icons/actionIcon.png"
+    },
+    {
+      "class": "task",
+      "id": "1702831966110988",
+      "name": "Punteggio_epworth_moderato",
+      "caption": "Esito questionario Epworth",
+      "status": "",
+      "parent": "1702831115420810",
+      "type": "action",
+      "icon_path": "com/deontics/proformaconnector/icons/actionIcon.png"
+    },
+    {
+      "class": "task",
+      "id": "1702832020675989",
+      "name": "Punteggio_epworth_lieve",
+      "caption": "Esito questionario Epworth",
+      "status": "",
+      "parent": "1702831115420810",
+      "type": "action",
+      "icon_path": "com/deontics/proformaconnector/icons/actionIcon.png"
+    },
+    {
+      "class": "task",
+      "id": "17028323674901098",
+      "name": "Punteggio_epworth_normale",
+      "caption": "Esito questionario Epworth",
+      "status": "",
+      "parent": "1702831115420810",
+      "type": "action",
+      "icon_path": "com/deontics/proformaconnector/icons/actionIcon.png"
+    },
+    {
+      "class": "task",
+      "id": "1702831700366985",
+      "name": "Polisonnografia__negativa",
+      "caption": "Esito Polisonnografia",
+      "status": "",
+      "parent": "1702831115420810",
+      "type": "action",
+      "icon_path": "com/deontics/proformaconnector/icons/actionIcon.png"
+    },
+    {
+      "class": "task",
+      "id": "17028330333841540",
+      "name": "Diagnosi",
+      "caption": "Diagnosi",
+      "status": "",
+      "parent": "root",
+      "type": "decision",
+      "icon_path": "com/deontics/proformaconnector/icons/decisionIcon.png"
+    },
+    {
+      "class": "task",
+      "id": "17028343643292658",
+      "name": "Modifiche_stile_vita",
+      "caption": "Modifiche stile di vita",
+      "status": "",
+      "parent": "root",
+      "type": "enquiry",
+      "comment": "Inserire le eventuali modifiche al proprio stile di vita che si consiglia al paziente di prenedere in considerazione. Si raccomanda inoltre di fornire al paziente le indicazioni per seguire una corretta routine e igiene del sonno",
+      "icon_path": "com/deontics/proformaconnector/icons/enquiryIcon.png"
+    },
+    {
+      "class": "task",
+      "id": "17028348608993019",
+      "name": "Scelta_trattamento",
+      "caption": "Scelta Trattamento",
+      "status": "",
+      "parent": "root",
+      "type": "decision",
+      "icon_path": "com/deontics/proformaconnector/icons/decisionIcon.png"
+    },
+    {
+      "class": "plan",
+      "id": "17028351834963325",
+      "name": "Visita_follow_up",
+      "caption": "Visita follow up",
+      "status": "",
+      "parent": "root",
+      "type": "plan",
+      "icon_path": "com/deontics/proformaconnector/icons/planIcon.png"
+    },
+    {
+      "class": "task",
+      "id": "17028352228643326",
+      "name": "Valutazione_trattamento",
+      "caption": "Valutazione trattamento",
+      "status": "",
+      "parent": "17028351834963325",
+      "type": "enquiry",
+      "comment": "Valutare il trattamento prescritto al paziente",
+      "icon_path": "com/deontics/proformaconnector/icons/enquiryIcon.png"
+    },
+    {
+      "class": "task",
+      "id": "17028352488163327",
+      "name": "Epworth_follow_up",
+      "caption": "Epworth follow up",
+      "status": "",
+      "parent": "17028351834963325",
+      "type": "enquiry",
+      "comment": "Eseguire nuovamente il questionario Epworth",
+      "icon_path": "com/deontics/proformaconnector/icons/enquiryIcon.png"
+    },
+    {
+      "class": "task",
+      "id": "17028353038093328",
+      "name": "Scelta_test",
+      "caption": "Scelta test",
+      "status": "",
+      "parent": "17028351834963325",
+      "type": "decision",
+      "comment": "Decidere se effettuare una Polisonnografia o un Monitoraggio non Assistito. Si tratta di una scelta arbitraria del medico.",
+      "icon_path": "com/deontics/proformaconnector/icons/decisionIcon.png"
+    },
+    {
+      "class": "task",
+      "id": "17028353983673329",
+      "name": "Polisonnografia_follow_up",
+      "caption": "Polisonnografia Follow Up",
+      "status": "",
+      "parent": "17028351834963325",
+      "type": "enquiry",
+      "icon_path": "com/deontics/proformaconnector/icons/enquiryIcon.png"
+    },
+    {
+      "class": "task",
+      "id": "17028354006473330",
+      "name": "Monitoraggio_non_assistito",
+      "caption": "Monitoraggio non assistito",
+      "status": "",
+      "parent": "17028351834963325",
+      "type": "enquiry",
+      "icon_path": "com/deontics/proformaconnector/icons/enquiryIcon.png"
+    },
+    {
+      "class": "task",
+      "id": "1703157325332322",
+      "name": "Consiglio_questionario_PAP",
+      "caption": "Questionario PAP",
+      "status": "",
+      "parent": "17028351834963325",
+      "type": "action",
+      "icon_path": "com/deontics/proformaconnector/icons/actionIcon.png"
+    },
+    {
+      "class": "task",
+      "id": "1703349707821477",
+      "name": "Epworth_normale",
+      "caption": "Esito questionario epworth",
+      "status": "",
+      "parent": "17028351834963325",
+      "type": "action",
+      "icon_path": "com/deontics/proformaconnector/icons/actionIcon.png"
+    },
+    {
+      "class": "task",
+      "id": "1703349721067478",
+      "name": "Epworth_lieve",
+      "caption": "Esito questionario epworth",
+      "status": "",
+      "parent": "17028351834963325",
+      "type": "action",
+      "icon_path": "com/deontics/proformaconnector/icons/actionIcon.png"
+    },
+    {
+      "class": "task",
+      "id": "1703349735408479",
+      "name": "Epworth_moderato",
+      "caption": "Esito questionario epworth",
+      "status": "",
+      "parent": "17028351834963325",
+      "type": "action",
+      "icon_path": "com/deontics/proformaconnector/icons/actionIcon.png"
+    },
+    {
+      "class": "task",
+      "id": "1703349756151480",
+      "name": "Epworth_grave",
+      "caption": "Esito questionario epworth",
+      "status": "",
+      "parent": "17028351834963325",
+      "type": "action",
+      "icon_path": "com/deontics/proformaconnector/icons/actionIcon.png"
+    },
+    {
+      "class": "task",
+      "id": "17028362755473601",
+      "name": "Risposta_trattamento",
+      "caption": "Risposta trattamento",
+      "status": "",
+      "parent": "root",
+      "type": "decision",
+      "comment": "Decidere l\u0027esito della visita di Follow up",
+      "icon_path": "com/deontics/proformaconnector/icons/decisionIcon.png"
+    },
+    {
+      "class": "task",
+      "id": "17028363618973602",
+      "name": "Visita_specialistica",
+      "caption": "Visita specialistica",
+      "status": "",
+      "parent": "root",
+      "type": "action",
+      "icon_path": "com/deontics/proformaconnector/icons/actionIcon.png"
+    },
+    {
+      "class": "task",
+      "id": "17028363636913603",
+      "name": "Follow_up_annuale",
+      "caption": "Follow Up Annuale",
+      "status": "",
+      "parent": "root",
+      "type": "action",
+      "icon_path": "com/deontics/proformaconnector/icons/actionIcon.png"
+    },
+    {
+      "class": "task",
+      "id": "17036105341451385",
+      "name": "Consiglio_pap",
+      "caption": "Raccomandazioni aderenza alla terapia",
+      "status": "",
+      "parent": "root",
+      "type": "action",
+      "icon_path": "com/deontics/proformaconnector/icons/actionIcon.png"
+    }
+  ]
+}

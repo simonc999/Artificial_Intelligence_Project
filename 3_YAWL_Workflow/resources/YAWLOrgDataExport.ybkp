@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<orgdata>
+  <participants>
+    <participant id="PA-0c2bfd05-7a83-435e-9222-5607d80ff6e2">
+      <userid>paziente_1</userid>
+      <password>9EQ2fPPonjHOsAE/4NP8QHJDa+s=</password>
+      <firstname>Mario</firstname>
+      <lastname>Rossi</lastname>
+      <description/>
+      <notes/>
+      <isAdministrator>false</isAdministrator>
+      <roles/>
+      <positions/>
+      <capabilities/>
+      <privileges>11111110</privileges>
+    </participant>
+    <participant id="PA-c5babd1e-e357-42ff-8302-042e70d40f8a">
+      <userid>specialista_1</userid>
+      <password>l4ap/3F+u06r3OSfh7dalMLgNZI=</password>
+      <firstname>Tommaso</firstname>
+      <lastname>Verdi</lastname>
+      <description/>
+      <notes/>
+      <isAdministrator>false</isAdministrator>
+      <roles>
+        <role>RO-dd3d6aee-c933-42ed-bdd0-398d6df02292</role>
+      </roles>
+      <positions/>
+      <capabilities/>
+      <privileges>11111110</privileges>
+    </participant>
+    <participant id="PA-141e63c6-82c6-4127-9034-cf896b95f06f">
+      <userid>medico_1</userid>
+      <password>PO2Ab42wMEcL23sgt8O/JtHw8KI=</password>
+      <firstname>Camilla</firstname>
+      <lastname>Simonelli</lastname>
+      <description/>
+      <notes/>
+      <isAdministrator>false</isAdministrator>
+      <roles/>
+      <positions/>
+      <capabilities/>
+      <privileges>11111110</privileges>
+    </participant>
+  </participants>
+  <roles>
+    <role id="RO-df57a9db-8f0f-44e0-b0bf-678202ad5437">
+      <name>Medico</name>
+      <description/>
+      <notes/>
+    </role>
+    <role id="RO-dd3d6aee-c933-42ed-bdd0-398d6df02292">
+      <name>Medico Specialista</name>
+      <description/>
+      <notes/>
+      <belongsToID>RO-df57a9db-8f0f-44e0-b0bf-678202ad5437</belongsToID>
+    </role>
+    <role id="RO-83b3a5ed-1c09-4448-a8c8-b1874a7ca3f3">
+      <name>Paziente</name>
+      <description/>
+      <notes/>
+    </role>
+  </roles>
+  <positions/>
+  <capabilities/>
+  <orggroups/>
+  <nonhumanresources/>
+  <nonhumancategories/>
+</orgdata>
+

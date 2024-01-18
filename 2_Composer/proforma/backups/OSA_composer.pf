@@ -1,0 +1,1909 @@
+/** PROforma version 1.9 (plain text) **/
+
+/** IMPORTANT: Keep all your comments below the engine_version line **/
+engine_version :: '1.9' ;
+
+metadata  :: 'OSA_prova' ;
+end metadata.
+
+metaprops :: '' ;
+
+plan  :: 'OSA' ;
+     component :: 'Visita_preliminare' ;
+          caption :: 'Visita preliminare' ;
+          description :: 'Con visita_preliminare si intende la prima visita che subisce un paziente con almeno un sintomo' ;
+          metaprops :: 'ae.private.component.id=1702810407216149
+ontology.coding=
+' ;
+          task_definition :: 'Visita_preliminare' ;
+          ltwh :: 7,116,0,0;
+     component :: 'Visita_anatomica' ;
+          caption :: 'Visita Preliminare Anatomica' ;
+          metaprops :: 'ae.private.component.id=170281356725162
+ontology.coding=
+' ;
+          task_definition :: 'Visita_anatomica' ;
+          schedule_constraint :: completed('Scelta_tipo_visita') ;
+          ltwh :: 163,21,0,0;
+     component :: 'Visita_atipica' ;
+          caption :: 'Visita Preliminare Atipica' ;
+          metaprops :: 'ae.private.component.id=1702815139000736
+ontology.coding=
+' ;
+          task_definition :: 'Visita_atipica' ;
+          schedule_constraint :: completed('Scelta_tipo_visita') ;
+          ltwh :: 280,80,0,0;
+     component :: 'Scelta_tipo_visita' ;
+          caption :: 'Decidere di che tipo di visita preliminare si tratta' ;
+          metaprops :: 'ae.private.component.id=17028283432112
+ontology.coding=
+' ;
+          task_definition :: 'Scelta_tipo_visita' ;
+          schedule_constraint :: completed('Visita_preliminare') ;
+          ltwh :: 160,121,0,0;
+     component :: 'Visita_tipica' ;
+          caption :: 'Visita Preliminare Tipica' ;
+          metaprops :: 'ae.private.component.id=1702830481875289
+ontology.coding=
+' ;
+          task_definition :: 'Visita_tipica' ;
+          schedule_constraint :: completed('Scelta_tipo_visita') ;
+          ltwh :: 44,250,0,0;
+     component :: 'Visita_diagnostica' ;
+          caption :: 'Visita diagnostica' ;
+          metaprops :: 'ae.private.component.id=1702831115420810
+ontology.coding=
+' ;
+          task_definition :: 'Visita_diagnostica' ;
+          schedule_constraint :: completed('Visita_tipica') ;
+          ltwh :: 156,250,0,0;
+     component :: 'Diagnosi' ;
+          caption :: 'Diagnosi' ;
+          metaprops :: 'ae.private.component.id=17028330333841540
+ontology.coding=
+' ;
+          task_definition :: 'Diagnosi' ;
+          schedule_constraint :: completed('Visita_diagnostica') ;
+          ltwh :: 294,253,0,0;
+     component :: 'Modifiche_stile_vita' ;
+          caption :: 'Modifiche stile di vita' ;
+          description :: 'Inserire le eventuali modifiche al proprio stile di vita che si consiglia al paziente di prenedere in considerazione. Si raccomanda inoltre di fornire al paziente le indicazioni per seguire una corretta routine e igiene del sonno' ;
+          metaprops :: 'ae.private.component.id=17028343643292658
+ontology.coding=
+' ;
+          task_definition :: 'Modifiche_stile_vita' ;
+          schedule_constraint :: completed('Diagnosi') ;
+          ltwh :: 260,180,0,0;
+     component :: 'Scelta_trattamento' ;
+          caption :: 'Scelta Trattamento' ;
+          metaprops :: 'ae.private.component.id=17028348608993019
+ontology.coding=
+' ;
+          task_definition :: 'Scelta_trattamento' ;
+          schedule_constraint :: completed('Diagnosi') ;
+          ltwh :: 356,255,0,0;
+     component :: 'Visita_follow_up' ;
+          caption :: 'Visita follow up' ;
+          metaprops :: 'ae.private.component.id=17028351834963325
+ontology.coding=
+' ;
+          task_definition :: 'Visita_follow_up' ;
+          schedule_constraint :: completed('Consiglio_pap') ;
+          schedule_constraint :: completed('Scelta_trattamento') ;
+          ltwh :: 480,253,0,0;
+     component :: 'Risposta_trattamento' ;
+          caption :: 'Risposta trattamento' ;
+          description :: 'Decidere l\'esito della visita di Follow up' ;
+          metaprops :: 'ae.private.component.id=17028362755473601
+ontology.coding=
+' ;
+          task_definition :: 'Risposta_trattamento' ;
+          schedule_constraint :: completed('Visita_follow_up') ;
+          ltwh :: 463,314,0,0;
+     component :: 'Visita_specialistica' ;
+          caption :: 'Visita specialistica' ;
+          metaprops :: 'ae.private.component.id=17028363618973602
+ontology.coding=
+' ;
+          task_definition :: 'Visita_specialistica' ;
+          schedule_constraint :: completed('Risposta_trattamento') ;
+          ltwh :: 356,400,0,0;
+     component :: 'Follow_up_annuale' ;
+          caption :: 'Follow Up Annuale' ;
+          metaprops :: 'ae.private.component.id=17028363636913603
+ontology.coding=
+' ;
+          task_definition :: 'Follow_up_annuale' ;
+          schedule_constraint :: completed('Risposta_trattamento') ;
+          ltwh :: 515,400,0,0;
+     component :: 'Consiglio_pap' ;
+          caption :: 'Raccomandazioni aderenza alla terapia' ;
+          metaprops :: 'ae.private.component.id=17036105341451385
+ontology.coding=
+' ;
+          task_definition :: 'Consiglio_pap' ;
+          schedule_constraint :: completed('Scelta_trattamento') ;
+          ltwh :: 402,153,0,0;
+end plan.
+
+enquiry  :: 'Registrazione_anagrafica' ;
+     source :: 'Altezza' ;
+          caption :: 'Altezza' ;
+          description :: 'L\'altezza deve essere indicata in m' ;
+          metaprops :: 'ae.private.component.id=1702810600676151
+' ;
+          data_definition :: 'Altezza' ;
+     source :: 'CF' ;
+          caption :: 'Codice Fiscale' ;
+          metaprops :: 'ae.private.component.id=1702810627673152
+' ;
+          data_definition :: 'CF' ;
+     source :: 'Codice_fascicolo_sanitario' ;
+          caption :: 'Codice fascicolo sanitario' ;
+          metaprops :: 'ae.private.component.id=1702810679212154
+' ;
+          data_definition :: 'Codice_fascicolo_sanitario' ;
+          mandatory :: no ;
+     source :: 'Cognome' ;
+          caption :: 'Cognome' ;
+          metaprops :: 'ae.private.component.id=1702810720709156
+' ;
+          data_definition :: 'Cognome' ;
+     source :: 'Data_nascita' ;
+          caption :: 'Data di nascita' ;
+          metaprops :: 'ae.private.component.id=1702810736853157
+' ;
+          data_definition :: 'Data_nascita' ;
+     source :: 'Data_prima_visita' ;
+          caption :: 'Data prima visita' ;
+          metaprops :: 'ae.private.component.id=1702810766026158
+' ;
+          data_definition :: 'Data_prima_visita' ;
+     source :: 'Nome' ;
+          caption :: 'Nome' ;
+          metaprops :: 'ae.private.component.id=1702810709218155
+' ;
+          data_definition :: 'Nome' ;
+     source :: 'Peso' ;
+          caption :: 'Peso' ;
+          description :: 'Il peso deve essere indicato in Kg' ;
+          metaprops :: 'ae.private.component.id=1702810846660159
+' ;
+          data_definition :: 'Peso' ;
+     source :: 'Residenza' ;
+          caption :: 'Residenza' ;
+          metaprops :: 'ae.private.component.id=1702810860447160
+' ;
+          data_definition :: 'Residenza' ;
+          mandatory :: no ;
+     source :: 'Telefono' ;
+          caption :: 'Telefono' ;
+          metaprops :: 'ae.private.component.id=1702810874813161
+' ;
+          data_definition :: 'Telefono' ;
+          mandatory :: no ;
+end enquiry.
+
+enquiry  :: 'Caratteristiche_sonno_funzionale' ;
+     source :: 'Apnee_notturne' ;
+          caption :: 'Apnee notturne' ;
+          metaprops :: 'ae.private.component.id=170280802181943
+' ;
+          data_definition :: 'Apnee_notturne' ;
+          mandatory :: no ;
+     source :: 'Circonferenza_collo_elevata' ;
+          caption :: 'Circonferenza collo elevata' ;
+          metaprops :: 'ae.private.component.id=170280771697221
+' ;
+          data_definition :: 'Circonferenza_collo_elevata' ;
+          mandatory :: no ;
+     source :: 'Ossimetria' ;
+          caption :: 'Ossimetria' ;
+          description :: 'L\'ossimetria notturna, quando presenta un determinato pattern, può essere un fattore di rischio per OSA' ;
+          metaprops :: 'ae.private.component.id=170280852106245
+' ;
+          data_definition :: 'Ossimetria' ;
+          mandatory :: no ;
+     source :: 'Risveglio_soffocamento' ;
+          caption :: 'Risveglio con soffocamento' ;
+          metaprops :: 'ae.private.component.id=170280777781922
+' ;
+          data_definition :: 'Risveglio_soffocamento' ;
+          mandatory :: no ;
+     source :: 'Russamento_intenso' ;
+          caption :: 'Russamento intenso' ;
+          metaprops :: 'ae.private.component.id=170280790829140
+' ;
+          data_definition :: 'Russamento_intenso' ;
+          mandatory :: no ;
+     source :: 'Sonnolenza_diurna' ;
+          caption :: 'Sonnolenza diurna' ;
+          metaprops :: 'ae.private.component.id=170280810110444
+' ;
+          data_definition :: 'Sonnolenza_diurna' ;
+          mandatory :: no ;
+end enquiry.
+
+enquiry  :: 'Patologie_atipiche_OSA' ;
+     precondition ::('Apnee_notturne' = "yes" or 'Circonferenza_collo_elevata' = "yes" or 'Risveglio_soffocamento' = "yes" or 'Russamento_intenso' = "yes" and 'Sonnolenza_diurna' = "yes" or 'CAD' = "yes" or 'CVD' = "yes" or 'Diabete_tipo_2' = "yes" or 'Fibrillazione_atriale' = "yes" or 'BMI' > 30 or 'Ossimetria' = "Positiva");
+     source :: 'Apnea_notturna_severa' ;
+          caption :: 'Apnea notturna severa' ;
+          metaprops :: 'ae.private.component.id=1702811403342256
+' ;
+          data_definition :: 'Apnea_notturna_severa' ;
+          mandatory :: no ;
+     source :: 'Malattia_neurologica' ;
+          caption :: 'Malattia neurologica' ;
+          description :: 'Malattie neurologiche comprese:
+Miopatie, ALS, Disturbo Neurologico Degenerativo' ;
+          metaprops :: 'ae.private.component.id=170280865944248
+' ;
+          data_definition :: 'Malattia_neurologica' ;
+          mandatory :: no ;
+     source :: 'Malattia_polmonare' ;
+          caption :: 'Malattia polmonare' ;
+          description :: 'Malattie Polmonari comprese: 
+Disturbi Ostruttivi Polmonari, Baseline Hypoxemia, Hypercapnia, Polmonary Hypertension' ;
+          metaprops :: 'ae.private.component.id=170280861713746
+' ;
+          data_definition :: 'Malattia_polmonare' ;
+          mandatory :: no ;
+     source :: 'Parasomnia' ;
+          caption :: 'Parasomnia' ;
+          description :: 'Con il termine parasomnia si indica un gruppo di disturbi del sonno associati a movimenti, comportamenti, percezioni e sogni del tutto innaturali e indesiderati che si verificano mentre ci si addormenta, durante il sonno o al risveglio.' ;
+          metaprops :: 'ae.private.component.id=170280863700947
+' ;
+          data_definition :: 'Parasomnia' ;
+          mandatory :: no ;
+     source :: 'Scompenso_cardiaco' ;
+          caption :: 'Scompenso_cardiaco' ;
+          metaprops :: 'ae.private.component.id=170280869667949
+' ;
+          data_definition :: 'Scompenso_cardiaco' ;
+          mandatory :: no ;
+end enquiry.
+
+enquiry  :: 'Caratteristiche_sonno_anatomiche' ;
+     source :: 'Base_linguale_grande' ;
+          caption :: 'Base linguale grande' ;
+          metaprops :: 'ae.private.component.id=17051714986013911
+' ;
+          data_definition :: 'Base_linguale_grande' ;
+          mandatory :: no ;
+     source :: 'Faringe_ridondante' ;
+          caption :: 'Faringe ridondante' ;
+          metaprops :: 'ae.private.component.id=1702811701524258
+' ;
+          data_definition :: 'Faringe_ridondante' ;
+          mandatory :: no ;
+     source :: 'Ipertrofia_tonsillare' ;
+          caption :: 'Ipertrofia tonsillare' ;
+          metaprops :: 'ae.private.component.id=1702811718818259
+' ;
+          data_definition :: 'Ipertrofia_tonsillare' ;
+          mandatory :: no ;
+     source :: 'Ipoplasia_medio_facciale' ;
+          caption :: 'Ipoplasia medio facciale' ;
+          metaprops :: 'ae.private.component.id=17051712543033908
+' ;
+          data_definition :: 'Ipoplasia_medio_facciale' ;
+          mandatory :: no ;
+     source :: 'Laringotracheomalacia' ;
+          caption :: 'Laringotracheomalacia' ;
+          metaprops :: 'ae.private.component.id=17051715528953912
+' ;
+          data_definition :: 'Laringotracheomalacia' ;
+          mandatory :: no ;
+     source :: 'Lunghezza_uvulare_eccessiva' ;
+          caption :: 'Lunghezza uvulare eccessiva' ;
+          metaprops :: 'ae.private.component.id=17051714028023909
+' ;
+          data_definition :: 'Lunghezza_uvulare_eccessiva' ;
+          mandatory :: no ;
+     source :: 'Macroglossia' ;
+          caption :: 'Macroglossia' ;
+          metaprops :: 'ae.private.component.id=17051710929763905
+' ;
+          data_definition :: 'Macroglossia' ;
+          mandatory :: no ;
+     source :: 'Micrognazia' ;
+          caption :: 'Micrognazia' ;
+          metaprops :: 'ae.private.component.id=17051711758223907
+' ;
+          data_definition :: 'Micrognazia' ;
+          mandatory :: no ;
+     source :: 'Neoplasia' ;
+          caption :: 'Neoplasia' ;
+          metaprops :: 'ae.private.component.id=1702811745130260
+' ;
+          data_definition :: 'Neoplasia' ;
+          mandatory :: no ;
+     source :: 'Ostruzione_nasale' ;
+          caption :: 'Ostruzione nasale' ;
+          metaprops :: 'ae.private.component.id=1702811769065261
+' ;
+          data_definition :: 'Ostruzione_nasale' ;
+          mandatory :: no ;
+     source :: 'Retrognazia' ;
+          caption :: 'Retrognazia' ;
+          metaprops :: 'ae.private.component.id=17051711391153906
+' ;
+          data_definition :: 'Retrognazia' ;
+          mandatory :: no ;
+     source :: 'Retrusione_ioidea' ;
+          caption :: 'Retrusione ioidea' ;
+          metaprops :: 'ae.private.component.id=17051714472393910
+' ;
+          data_definition :: 'Retrusione_ioidea' ;
+          mandatory :: no ;
+end enquiry.
+
+action  :: 'No_sintomi' ;
+     precondition ::('Apnee_notturne' = "no" and 'Circonferenza_collo_elevata' = "no" and 'Risveglio_soffocamento' = "no" and 'Russamento_intenso' = "no" and 'Sonnolenza_diurna' = "no" and 'CAD' = "no" and 'CVD' = "no" and 'Diabete_tipo_2' = "no" and 'Fibrillazione_atriale' = "no" and 'BMI' <= 30 and ('Ossimetria' = "Negativa" or 'Ossimetria' = "Esame Non Presente"));
+     procedure :: 'Il paziente presentosi alla visita non riporta alcun sintomo tipico e/o fattori di rischio tipici dell\'OSA, pertanto non si procede con il regolare flusso.' ;
+end action.
+
+enquiry  :: 'Patologie_tipiche_OSA' ;
+     source :: 'CAD' ;
+          caption :: 'Coronary Artery Disease' ;
+          metaprops :: 'ae.private.component.id=170280721289112
+' ;
+          data_definition :: 'CAD' ;
+          mandatory :: no ;
+     source :: 'CVD' ;
+          caption :: 'Cerebrovascular Disease' ;
+          metaprops :: 'ae.private.component.id=170280720433711
+' ;
+          data_definition :: 'CVD' ;
+          mandatory :: no ;
+     source :: 'Diabete_tipo_2' ;
+          caption :: 'Diabete tipo 2' ;
+          metaprops :: 'ae.private.component.id=170280768482720
+' ;
+          data_definition :: 'Diabete_tipo_2' ;
+          mandatory :: no ;
+     source :: 'Fibrillazione_atriale' ;
+          caption :: 'Fibrillazione atriale' ;
+          metaprops :: 'ae.private.component.id=170280764122018
+' ;
+          data_definition :: 'Fibrillazione_atriale' ;
+          mandatory :: no ;
+     source :: 'Ipertensione' ;
+          caption :: 'Ipertensione' ;
+          metaprops :: 'ae.private.component.id=170280765860119
+' ;
+          data_definition :: 'Ipertensione' ;
+          mandatory :: no ;
+end enquiry.
+
+plan  :: 'Visita_preliminare' ;
+     component :: 'Registrazione_anagrafica' ;
+          caption :: 'Registrazione anagrafica' ;
+          metaprops :: 'ae.private.component.id=1702810497380150
+ontology.coding=
+' ;
+          task_definition :: 'Registrazione_anagrafica' ;
+          ltwh :: 10,115,0,0;
+     component :: 'Caratteristiche_sonno_funzionale' ;
+          caption :: 'Sintomi relativi al disturbo del sonno' ;
+          description :: 'Inserire i sintomi che il paziente presenta' ;
+          metaprops :: 'ae.private.component.id=1702811036779254
+ontology.coding=
+' ;
+          task_definition :: 'Caratteristiche_sonno_funzionale' ;
+          schedule_constraint :: completed('Registrazione_anagrafica') ;
+          ltwh :: 177,115,0,0;
+     component :: 'Patologie_atipiche_OSA' ;
+          caption :: 'Patologie atipiche OSA' ;
+          description :: 'Inserire tra i seguenti sintomi e patologie non correlati all\'OSA quelli da cui eventualmente e\' affetto il paziente' ;
+          metaprops :: 'ae.private.component.id=1702811174048255
+ontology.coding=
+' ;
+          task_definition :: 'Patologie_atipiche_OSA' ;
+          schedule_constraint :: completed('Patologie_tipiche_OSA') ;
+          ltwh :: 570,115,0,0;
+     component :: 'Caratteristiche_sonno_anatomiche' ;
+          caption :: 'Deformazioni anatomiche' ;
+          description :: 'Inserire eventuali deformazioni anatomiche presenti nel paziente' ;
+          metaprops :: 'ae.private.component.id=1702811517785257
+ontology.coding=
+' ;
+          task_definition :: 'Caratteristiche_sonno_anatomiche' ;
+          schedule_constraint :: completed('Patologie_atipiche_OSA') ;
+          ltwh :: 532,267,0,0;
+     component :: 'No_sintomi' ;
+          caption :: 'Caso paziente senza sintomi correllati OSA' ;
+          metaprops :: 'ae.private.component.id=1705143893334272
+ontology.coding=
+' ;
+          task_definition :: 'No_sintomi' ;
+          schedule_constraint :: completed('Patologie_tipiche_OSA') ;
+          ltwh :: 457,19,0,0;
+     component :: 'Patologie_tipiche_OSA' ;
+          caption :: 'Patologie tipiche OSA' ;
+          description :: 'Inserire tra le seguenti patogie correlate all\'OSA quelle da cui eventualmente e\' affetto il paziente' ;
+          metaprops :: 'ae.private.component.id=17052323341922252
+ontology.coding=
+' ;
+          task_definition :: 'Patologie_tipiche_OSA' ;
+          schedule_constraint :: completed('Caratteristiche_sonno_funzionale') ;
+          ltwh :: 419,115,0,0;
+end plan.
+
+action  :: 'Visita_anatomica' ;
+     precondition ::is_selected(Scelta_tipo_visita,Visita_anatomica);
+     procedure :: 'Il paziente presenta delle malformazioni anatomiche. Si consiglia di procedere con un intervento chirurgico e una visita specialistica' ;
+end action.
+
+action  :: 'Visita_atipica' ;
+     precondition ::is_selected(Scelta_tipo_visita,Visita_atipica);
+     procedure :: 'Il paziente presenta dei sintomi e/o patologie atipiche. Si raccomanda di procedere con una visita specialistica' ;
+end action.
+
+decision  :: 'Scelta_tipo_visita' ;
+     precondition ::('Apnee_notturne' = "yes" or 'Circonferenza_collo_elevata' = "yes" or 'Risveglio_soffocamento' = "yes" or 'Russamento_intenso' = "yes" or 'Sonnolenza_diurna' = "yes" or 'CAD' = "yes" or 'CVD' = "yes" or 'Diabete_tipo_2' = "yes" or 'Fibrillazione_atriale' = "yes" or 'BMI' > 30 or 'Ossimetria' = "Positiva");
+     candidate :: 'Visita_anatomica' ;
+          caption :: 'Visita Anatomica' ;
+          metaprops :: 'ae.private.component.id=17028283977703
+ontology.coding=
+' ;
+          argument :: for,('Faringe_ridondante' = "yes" or 'Ipertrofia_tonsillare' = "yes" or 'Neoplasia' = "yes" or 'Ostruzione_nasale' = "yes" or 'Base_linguale_grande' = "yes" or 'Ipoplasia_medio_facciale' = "yes" or 'Laringotracheomalacia' = "yes" or 'Lunghezza_uvulare_eccessiva' = "yes" or 'Macroglossia' = "yes" or 'Micrognazia' = "yes" or 'Retrognazia' = "yes" or 'Retrusione_ioidea' = "yes") attributes
+               argument_name :: 'Visita_anatomica_favore' ;
+               caption :: 'La visita dovrebbe essere di tipo anatomico in quanto il paziente presenta malformazioni anatomiche.' ;
+               metaprops :: 'ae.private.component.id=17028284763276
+' ;
+          end attributes
+          ;
+          argument :: against,'Faringe_ridondante' = "no" and 'Ipertrofia_tonsillare' = "no" and 'Neoplasia' = "no" and 'Ostruzione_nasale' = "no" and 'Base_linguale_grande' = "no" and 'Ipoplasia_medio_facciale' = "no" and 'Laringotracheomalacia' = "no" and 'Lunghezza_uvulare_eccessiva' = "no" and 'Macroglossia' = "no" and 'Micrognazia' = "no" and 'Retrognazia' = "no" and 'Retrusione_ioidea' = "no" attributes
+               argument_name :: 'Visita_anatomica_contro' ;
+               caption :: 'La visita non dovrebbe essere di tipo anatomico in quanto il paziente non possiede malformazioni anatomiche.' ;
+               metaprops :: 'ae.private.component.id=17028285015328
+' ;
+          end attributes
+          ;
+          recommendation ::netsupport() > 0;
+     candidate :: 'Visita_atipica' ;
+          caption :: 'Visita Atipica' ;
+          metaprops :: 'ae.private.component.id=17028284069914
+ontology.coding=
+' ;
+          argument :: for,('Apnea_notturna_severa' = "yes" or 'Scompenso_cardiaco' = "yes" or 'Malattia_neurologica' = "yes" or 'Malattia_polmonare' = "yes" or 'Parasomnia' = "yes") and ('Faringe_ridondante' = "no" and 'Ipertrofia_tonsillare' = "no" and 'Neoplasia' = "no" and 'Ostruzione_nasale' = "no" and 'Base_linguale_grande' = "no" and 'Ipoplasia_medio_facciale' = "no" and 'Laringotracheomalacia' = "no" and 'Lunghezza_uvulare_eccessiva' = "no" and 'Macroglossia' = "no" and 'Micrognazia' = "no" and 'Retrognazia' = "no" and 'Retrusione_ioidea' = "no") attributes
+               argument_name :: 'Visita_atipica_favore' ;
+               caption :: 'La visita dovrebbe essere di tipo atipico in quanto il paziente presenta sintomi e/o patologie atipiche' ;
+               metaprops :: 'ae.private.component.id=170282873086910
+' ;
+          end attributes
+          ;
+          argument :: against,('Apnea_notturna_severa' = "no" and 'Scompenso_cardiaco' = "no" and 'Malattia_neurologica' = "no" and 'Malattia_polmonare' = "no" and 'Parasomnia' = "no") or (('Faringe_ridondante' = "yes" or 'Ipertrofia_tonsillare' = "yes" or 'Neoplasia' = "yes" or 'Ostruzione_nasale' = "yes" or 'Base_linguale_grande' = "yes" or 'Ipoplasia_medio_facciale' = "yes" or 'Laringotracheomalacia' = "yes" or 'Lunghezza_uvulare_eccessiva' = "yes" or 'Macroglossia' = "yes" or 'Micrognazia' = "yes" or 'Retrognazia' = "yes" or 'Retrusione_ioidea' = "yes") and ('Apnea_notturna_severa' = "yes" or 'Scompenso_cardiaco' = "yes" or 'Malattia_neurologica' = "yes" or 'Malattia_polmonare' = "yes" or 'Parasomnia' = "yes")) attributes
+               argument_name :: 'Visita_atipica_contro' ;
+               caption :: 'La visita non dovrebbe essere di tipo atipico in quanto il paziente non presenta sintomi e/o patologie atipiche, oppure presenta una o piu malformazione/i anatomica/he.' ;
+               metaprops :: 'ae.private.component.id=170282877982912
+' ;
+          end attributes
+          ;
+          recommendation ::netsupport() > 0;
+     candidate :: 'Visita_tipica' ;
+          caption :: 'Visita Tipica' ;
+          metaprops :: 'ae.private.component.id=1702830039372284
+ontology.coding=
+' ;
+          argument :: for,('Apnee_notturne' = "yes" or 'Circonferenza_collo_elevata' = "yes" or 'Risveglio_soffocamento' = "yes" or 'Russamento_intenso' = "yes" or 'Sonnolenza_diurna' = "yes" or 'CAD' = "yes" or 'CVD' = "yes" or 'Diabete_tipo_2' = "yes" or 'Fibrillazione_atriale' = "yes" or 'BMI' > 30 or 'Ossimetria' = "Positiva") and ('Faringe_ridondante' = "no" and 'Ipertrofia_tonsillare' = "no" and 'Neoplasia' = "no" and 'Ostruzione_nasale' = "no" and 'Base_linguale_grande' = "no" and 'Ipoplasia_medio_facciale' = "no" and 'Laringotracheomalacia' = "no" and 'Lunghezza_uvulare_eccessiva' = "no" and 'Macroglossia' = "no" and 'Micrognazia' = "no" and 'Retrognazia' = "no" and 'Retrusione_ioidea' = "no" and 'Apnea_notturna_severa' = "no" and 'Scompenso_cardiaco' = "no" and 'Malattia_neurologica' = "no" and 'Malattia_polmonare' = "no" and 'Parasomnia' = "no") attributes
+               argument_name :: 'Visita_tipica_favore' ;
+               caption :: 'La visita dovrebbe essere di tipo tipico in quanto il paziente presenta sintomi e/o patologie tipiche dell\'OSA.' ;
+               metaprops :: 'ae.private.component.id=1702830058100286
+' ;
+          end attributes
+          ;
+          argument :: against,('Apnee_notturne' = "no" and 'Circonferenza_collo_elevata' = "no" and 'Risveglio_soffocamento' = "no" and 'Russamento_intenso' = "no" and 'Sonnolenza_diurna' = "no" and 'CAD' = "no" and 'CVD' = "no" and 'Diabete_tipo_2' = "no" and 'Fibrillazione_atriale' = "no" and 'BMI' < 30 and 'Ossimetria' = "Negativa") or ('Faringe_ridondante' = "yes" or 'Ipertrofia_tonsillare' = "yes" or 'Neoplasia' = "yes" or 'Ostruzione_nasale' = "yes" or 'Base_linguale_grande' = "yes" or 'Ipoplasia_medio_facciale' = "yes" or 'Laringotracheomalacia' = "yes" or 'Lunghezza_uvulare_eccessiva' = "yes" or 'Macroglossia' = "yes" or 'Micrognazia' = "yes" or 'Retrognazia' = "yes" or 'Retrusione_ioidea' = "yes") or ('Apnea_notturna_severa' = "yes" or 'Scompenso_cardiaco' = "yes" or 'Malattia_neurologica' = "yes" or 'Malattia_polmonare' = "yes" or 'Parasomnia' = "yes") attributes
+               argument_name :: 'Visita_tipica_contro' ;
+               caption :: 'La visita non dovrebbe essere di tipo tipico in quanto il paziente non presenta sintomi e/o patologie tipiche dell\'OSA o presenta sintomi e/o patologie atipiche e/o anatomiche.' ;
+               metaprops :: 'ae.private.component.id=1702830083730288
+' ;
+          end attributes
+          ;
+          recommendation ::netsupport() > 0;
+end decision.
+
+action  :: 'Visita_tipica' ;
+     precondition ::is_selected(Scelta_tipo_visita,Visita_tipica);
+     procedure :: 'Il paziente presenta dei sintomi e/o patologie tipiche. Si prosegue con la Visita Diagnostica' ;
+end action.
+
+enquiry  :: 'Polisonnografia' ;
+     source :: 'AHI' ;
+          caption :: 'AHI' ;
+          description :: 'L\'indice AHI puo essere sostituito in maniera equivalente dall\'indice RDI' ;
+          metaprops :: 'ae.private.component.id=170280884253551
+' ;
+          data_definition :: 'AHI' ;
+     source :: 'Data_polisonnografia' ;
+          caption :: 'Data polisonnografia' ;
+          metaprops :: 'ae.private.component.id=17028327675051485
+' ;
+          data_definition :: 'Data_polisonnografia' ;
+end enquiry.
+
+enquiry  :: 'Sonnolenza' ;
+     source :: 'Guardando_la_TV' ;
+          caption :: 'Guardando la televisione' ;
+          metaprops :: 'ae.private.component.id=170309669229014
+' ;
+          data_definition :: 'Guardando_la_TV' ;
+          mandatory :: no ;
+     source :: 'Sdraiato_pomeriggio' ;
+          caption :: 'Sdraiato o seduto durante il pomeriggio se le circostanze lo permettono' ;
+          metaprops :: 'ae.private.component.id=170309674322117
+' ;
+          data_definition :: 'Sdraiato_pomeriggio' ;
+          mandatory :: no ;
+     source :: 'Seduto_auto_traffico' ;
+          caption :: 'Seduti in macchina in situazioni di traffico intenso' ;
+          metaprops :: 'ae.private.component.id=170309678642120
+' ;
+          data_definition :: 'Seduto_auto_traffico' ;
+          mandatory :: no ;
+     source :: 'Seduto_conversando' ;
+          caption :: 'Seduti conversando con qualcuno' ;
+          metaprops :: 'ae.private.component.id=170309675457218
+' ;
+          data_definition :: 'Seduto_conversando' ;
+          mandatory :: no ;
+     source :: 'Seduto_dopo_pasti' ;
+          caption :: 'Seduti dopo un pasto senza consumo di alcol' ;
+          metaprops :: 'ae.private.component.id=170309676842119
+' ;
+          data_definition :: 'Seduto_dopo_pasti' ;
+          mandatory :: no ;
+     source :: 'Seduto_esterno' ;
+          caption :: 'Seduti in ambienti pubblici come teatri o riunioni' ;
+          metaprops :: 'ae.private.component.id=170309670994215
+' ;
+          data_definition :: 'Seduto_esterno' ;
+          mandatory :: no ;
+     source :: 'Seduto_leggendo' ;
+          caption :: 'Seduti intenti a leggere' ;
+          metaprops :: 'ae.private.component.id=170309667908313
+' ;
+          data_definition :: 'Seduto_leggendo' ;
+          mandatory :: no ;
+     source :: 'Seduto_passeggero' ;
+          caption :: 'Seduti come passeggeri in auto, per almeno un\'ora senza pause' ;
+          metaprops :: 'ae.private.component.id=170309672304916
+' ;
+          data_definition :: 'Seduto_passeggero' ;
+          mandatory :: no ;
+end enquiry.
+
+enquiry  :: 'Saturazione' ;
+     source :: 'Saturazione_media' ;
+          caption :: 'Saturazione media' ;
+          metaprops :: 'ae.private.component.id=170280890064953
+' ;
+          data_definition :: 'Saturazione_media' ;
+     source :: 'Saturazione_minima' ;
+          caption :: 'Saturazione minima' ;
+          metaprops :: 'ae.private.component.id=170280902370154
+' ;
+          data_definition :: 'Saturazione_minima' ;
+end enquiry.
+
+action  :: 'Polisonnografia_positiva' ;
+     precondition ::AHI >= 5;
+     procedure :: 'L\'esame risulta positivo. Si prosegue con la diagnosi' ;
+end action.
+
+action  :: 'Punteggio_epworth_grave' ;
+     precondition ::Epworth >= 18 AND Epworth <= 24;
+     procedure :: 'Il punteggio ottenuto e\' grave' ;
+end action.
+
+action  :: 'Punteggio_epworth_moderato' ;
+     precondition ::Epworth >= 13 AND Epworth <= 17;
+     procedure :: 'Il punteggio ottenuto e\' moderato' ;
+end action.
+
+action  :: 'Punteggio_epworth_lieve' ;
+     precondition ::Epworth <= 12 AND Epworth >= 10;
+     procedure :: 'Il punteggio ottenuto e\' lieve' ;
+end action.
+
+action  :: 'Punteggio_epworth_normale' ;
+     precondition ::Epworth < 10;
+     procedure :: 'Il punteggio ottenuto e\' normale' ;
+end action.
+
+action  :: 'Polisonnografia__negativa' ;
+     precondition ::AHI >= 0 AND AHI < 5;
+     procedure :: 'L\'esame risulta negativo. Si consiglia di procedere con una visita specialistica' ;
+end action.
+
+plan  :: 'Visita_diagnostica' ;
+     component :: 'Polisonnografia' ;
+          caption :: 'Polisonnografia' ;
+          description :: 'Inserire i rusultati ottenuti dalla Polisonnografia' ;
+          metaprops :: 'ae.private.component.id=1702831187739811
+ontology.coding=
+' ;
+          task_definition :: 'Polisonnografia' ;
+          ltwh :: 52,59,0,0;
+     component :: 'Sonnolenza' ;
+          caption :: 'Sonnolenza' ;
+          description :: 'E\' necessario porre delle domande al paziente per compilare il questionario Epwoth. L\'obiettivo è quello di valutare quanto è probabile che il paziente si appisoli o addormenti nelle situazioni riportate di seguito. Per ogni valore inserire un numero da 0 a 3.
+0 --> improbabile
+1 --> poco probabile
+2 --> possibile
+3 --> molto possibile
+Il punteggio massimo ottenibile e\' 24' ;
+          metaprops :: 'ae.private.component.id=1702831309160812
+ontology.coding=
+' ;
+          task_definition :: 'Sonnolenza' ;
+          schedule_constraint :: completed('Polisonnografia_positiva') ;
+          ltwh :: 52,274,0,0;
+     component :: 'Saturazione' ;
+          caption :: 'Saturazione' ;
+          description :: 'Inserire i valori della saturazione del paziente.
+ATTENZIONE:Inserire valori compresi tra 0 e 1.' ;
+          metaprops :: 'ae.private.component.id=1702831481355867
+ontology.coding=
+' ;
+          task_definition :: 'Saturazione' ;
+          schedule_constraint :: completed('Polisonnografia_positiva') ;
+          ltwh :: 470,105,0,0;
+     component :: 'Polisonnografia_positiva' ;
+          caption :: 'Esito polisonnografia' ;
+          metaprops :: 'ae.private.component.id=1702831702313986
+ontology.coding=
+' ;
+          task_definition :: 'Polisonnografia_positiva' ;
+          schedule_constraint :: completed('Polisonnografia') ;
+          ltwh :: 173,111,0,0;
+     component :: 'Punteggio_epworth_grave' ;
+          caption :: 'Esito questionario epworth' ;
+          metaprops :: 'ae.private.component.id=1702831918438987
+ontology.coding=
+' ;
+          task_definition :: 'Punteggio_epworth_grave' ;
+          schedule_constraint :: completed('Sonnolenza') ;
+          ltwh :: 273,244,0,0;
+     component :: 'Punteggio_epworth_moderato' ;
+          caption :: 'Esito questionario Epworth' ;
+          metaprops :: 'ae.private.component.id=1702831966110988
+ontology.coding=
+' ;
+          task_definition :: 'Punteggio_epworth_moderato' ;
+          schedule_constraint :: completed('Sonnolenza') ;
+          ltwh :: 261,303,0,0;
+     component :: 'Punteggio_epworth_lieve' ;
+          caption :: 'Esito questionario Epworth' ;
+          metaprops :: 'ae.private.component.id=1702832020675989
+ontology.coding=
+' ;
+          task_definition :: 'Punteggio_epworth_lieve' ;
+          schedule_constraint :: completed('Sonnolenza') ;
+          ltwh :: 277,380,0,0;
+     component :: 'Punteggio_epworth_normale' ;
+          caption :: 'Esito questionario Epworth' ;
+          metaprops :: 'ae.private.component.id=17028323674901098
+ontology.coding=
+' ;
+          task_definition :: 'Punteggio_epworth_normale' ;
+          schedule_constraint :: completed('Sonnolenza') ;
+          ltwh :: 266,439,0,0;
+     component :: 'Polisonnografia__negativa' ;
+          caption :: 'Esito Polisonnografia' ;
+          metaprops :: 'ae.private.component.id=1702831700366985
+ontology.coding=
+' ;
+          task_definition :: 'Polisonnografia__negativa' ;
+          schedule_constraint :: completed('Polisonnografia') ;
+          ltwh :: 166,0,0,0;
+end plan.
+
+decision  :: 'Diagnosi' ;
+     precondition ::AHI >= 5;
+     candidate :: 'Disgnosi_OSA_lieve' ;
+          caption :: 'Diagnosi OSA Lieve' ;
+          metaprops :: 'ae.private.component.id=17028330898381541
+ontology.coding=
+' ;
+          argument :: confirming,('AHI' >= 5 and 'AHI' <= 15) and 'Saturazione_media' >= 0.9 and 'Saturazione_minima' >= 0.85 and 'Epworth' <= 12 attributes
+               argument_name :: 'OSA_lieve_favore' ;
+               caption :: 'Gli indici considerati suggeriscono una diagnosi di OSA lieve.' ;
+               metaprops :: 'ae.private.component.id=17028332215061765
+' ;
+          end attributes
+          ;
+          argument :: against,'AHI' > 15 or 'Saturazione_media' < 0.9 or 'Saturazione_minima' < 0.85 or 'Epworth' > 12 attributes
+               argument_name :: 'OSA_lieve_contro' ;
+               caption :: 'Gli indici considerati non suggeriscono una diagnosi di OSA lieve.' ;
+               metaprops :: 'ae.private.component.id=17031531742501165
+' ;
+          end attributes
+          ;
+          recommendation ::netsupport() > 0;
+     candidate :: 'Diagnosi_OSA_moderata' ;
+          caption :: 'Diagnosi OSA Moderata' ;
+          metaprops :: 'ae.private.component.id=17028331007391542
+ontology.coding=
+' ;
+          argument :: confirming,((('AHI' >= 16 and 'AHI' <= 30) or ('Saturazione_minima' >= 0.7 and 'Saturazione_minima' < 0.85) or ('Epworth' >= 13 and 'Epworth' <= 17)) and 'Saturazione_media' >= 0.9) and ('AHI' < 30 and 'Saturazione_minima' >= 0.7 and 'Epworth' < 18) attributes
+               argument_name :: 'OSA_moderata_favore' ;
+               caption :: 'Gli indici considerati suggeriscono una diagnosi di OSA moderata.' ;
+               metaprops :: 'ae.private.component.id=17028332777711767
+' ;
+          end attributes
+          ;
+          argument :: against,(('AHI' >= 5 and 'AHI' <= 15) and 'Saturazione_media' >= 0.9 and 'Saturazione_minima' >= 0.85 and 'Epworth' <= 12) or (('AHI' >= 30 or 'Saturazione_media' < 0.9 or 'Saturazione_minima' < 0.7) or ('Epworth' >= 18 and 'Epworth' <= 24)) attributes
+               argument_name :: 'OSA_moderata_contro' ;
+               caption :: 'Gli indici considerati non suggeriscono una diagnosi di OSA moderata.' ;
+               metaprops :: 'ae.private.component.id=17031534959721167
+' ;
+          end attributes
+          ;
+          recommendation ::netsupport() > 0;
+     candidate :: 'Diagnosi_OSA_grave' ;
+          caption :: 'Diagnosi OSA Grave' ;
+          metaprops :: 'ae.private.component.id=17028331138401543
+ontology.coding=
+' ;
+          argument :: confirming,('AHI' >= 30 or 'Saturazione_media' < 0.9 or 'Saturazione_minima' < 0.7) or ('Epworth' >= 18 and 'Epworth' <= 24) attributes
+               argument_name :: 'OSA_grave_favore' ;
+               caption :: 'Gli indici considerati suggeriscono una diagnosi di OSA grave.' ;
+               metaprops :: 'ae.private.component.id=17028333290041769
+' ;
+          end attributes
+          ;
+          argument :: against,'AHI' < 30 and 'Saturazione_media' >= 0.9 and 'Saturazione_minima' >= 0.7 and 'Epworth' < 18 attributes
+               argument_name :: 'OSA_grave_contro' ;
+               caption :: 'Gli indici considerati non suggeriscono una diagnosi di OSA grave.' ;
+               metaprops :: 'ae.private.component.id=17031539318601169
+' ;
+          end attributes
+          ;
+          recommendation ::netsupport() > 0;
+end decision.
+
+enquiry  :: 'Modifiche_stile_vita' ;
+     source :: 'AWAKE_support_group' ;
+          caption :: 'Partecipazione ai gruppi di supporto A.W.A.K.E' ;
+          metaprops :: 'ae.private.component.id=17036087011161120
+' ;
+          data_definition :: 'AWAKE_support_group' ;
+          mandatory :: no ;
+     source :: 'Migliorare_igene_sonno' ;
+          caption :: 'Migliorare igene sonno' ;
+          metaprops :: 'ae.private.component.id=17028345028092714
+' ;
+          data_definition :: 'Migliorare_igene_sonno' ;
+          mandatory :: no ;
+     source :: 'Perdita_peso' ;
+          caption :: 'Perdita peso' ;
+          metaprops :: 'ae.private.component.id=17028345152502715
+' ;
+          data_definition :: 'Perdita_peso' ;
+          mandatory :: no ;
+     source :: 'Posizione_laterale_sonno' ;
+          caption :: 'Posizione laterale sonno' ;
+          metaprops :: 'ae.private.component.id=17028345812972717
+' ;
+          data_definition :: 'Posizione_laterale_sonno' ;
+          mandatory :: no ;
+     source :: 'Preparazione_ambiente_notturno' ;
+          caption :: 'Preparazione ambiente notturno' ;
+          metaprops :: 'ae.private.component.id=17028346076682718
+' ;
+          data_definition :: 'Preparazione_ambiente_notturno' ;
+          mandatory :: no ;
+     source :: 'Riduzione_consumo_alcol' ;
+          caption :: 'Riduzione consumo alcol' ;
+          metaprops :: 'ae.private.component.id=17028345435362716
+' ;
+          data_definition :: 'Riduzione_consumo_alcol' ;
+          mandatory :: no ;
+end enquiry.
+
+decision  :: 'Scelta_trattamento' ;
+     candidate :: 'PAP' ;
+          caption :: 'Terapia PAP' ;
+          metaprops :: 'ae.private.component.id=17028349267863200
+ontology.coding=
+' ;
+          argument :: for,is_selected('Diagnosi','Diagnosi_OSA_grave') or is_selected('Diagnosi','Diagnosi_OSA_moderata') or is_selected('Diagnosi','Disgnosi_OSA_lieve') attributes
+               argument_name :: 'pap_favore' ;
+               caption :: 'Considerata la diagnosi di OSA e\' norma un trattamento con PAP. E\' possibile scegliere tra tre tiplogie di trattamento PAP: CPAP, AutoPAP, Bi-level PAP.' ;
+               metaprops :: 'ae.private.component.id=1703106136808539
+' ;
+          end attributes
+          ;
+          recommendation ::netsupport() > 0;
+     candidate :: 'Dispositivi_orali' ;
+          caption :: 'Dispositivi orali' ;
+          metaprops :: 'ae.private.component.id=17028351384123324
+ontology.coding=
+' ;
+          argument :: for,is_selected('Diagnosi','Disgnosi_OSA_lieve') attributes
+               argument_name :: 'dispositivi_orali_favore' ;
+               caption :: 'Considerata la gravita\' della diagnosi di OSA e\' consigliato un trattamento con dispositivi orali.' ;
+               metaprops :: 'ae.private.component.id=1703106397444541
+' ;
+          end attributes
+          ;
+          argument :: against,is_selected('Diagnosi','Diagnosi_OSA_grave') or is_selected('Diagnosi','Diagnosi_OSA_moderata') attributes
+               argument_name :: 'dispositivi_orali_contro' ;
+               caption :: 'Considerata la gravita\' della diagnosi di OSA non e\' consigliato un trattamento con dispositivi orali.' ;
+               metaprops :: 'ae.private.component.id=1703107615324771
+' ;
+          end attributes
+          ;
+          recommendation ::is_selected(Diagnosi,Disgnosi_OSA_lieve);
+end decision.
+
+enquiry  :: 'Valutazione_trattamento' ;
+     source :: 'Aderenza_trattamento' ;
+          caption :: 'Aderenza al trattamento' ;
+          metaprops :: 'ae.private.component.id=17028358489613395
+' ;
+          data_definition :: 'Aderenza_trattamento' ;
+          mandatory :: no ;
+     source :: 'Complicanze_trattamento' ;
+          caption :: 'Complicanze nel trattamento' ;
+          metaprops :: 'ae.private.component.id=17028358181933394
+' ;
+          data_definition :: 'Complicanze_trattamento' ;
+          mandatory :: no ;
+     source :: 'Ossimetria_follow_up' ;
+          caption :: 'Ossimetria follow up' ;
+          metaprops :: 'ae.private.component.id=17028359170763397
+' ;
+          data_definition :: 'Ossimetria_follow_up' ;
+          mandatory :: no ;
+     source :: 'Qualita_vita' ;
+          caption :: 'Buona qualita della vita' ;
+          metaprops :: 'ae.private.component.id=17028358661133396
+' ;
+          data_definition :: 'Qualita_vita' ;
+          mandatory :: no ;
+     source :: 'Soddisfazione_partner' ;
+          caption :: 'Soddisfazione del partner' ;
+          metaprops :: 'ae.private.component.id=17028358007123393
+' ;
+          data_definition :: 'Soddisfazione_partner' ;
+          mandatory :: no ;
+end enquiry.
+
+enquiry  :: 'Epworth_follow_up' ;
+     source :: 'auto_passeggero_fp' ;
+          caption :: 'Seduti come passeggeri in auto, per almeno un\'ora senza pause' ;
+          metaprops :: 'ae.private.component.id=170334766581686
+' ;
+          data_definition :: 'auto_passeggero_fp' ;
+          mandatory :: no ;
+     source :: 'guardare_tv_fp' ;
+          caption :: 'Guardando la TV' ;
+          metaprops :: 'ae.private.component.id=170334747517183
+' ;
+          data_definition :: 'guardare_tv_fp' ;
+          mandatory :: no ;
+     source :: 'sdraiato_pomeriggio_fp' ;
+          caption :: 'Sdraiato o seduto durante il pomeriggio se le circostanze lo permettono' ;
+          metaprops :: 'ae.private.component.id=170334830251591
+' ;
+          data_definition :: 'sdraiato_pomeriggio_fp' ;
+          mandatory :: no ;
+     source :: 'seduto_dopo_pranzo_fp' ;
+          caption :: 'Seduti dopo un pasto senza consumo di alcol' ;
+          metaprops :: 'ae.private.component.id=170334774841489
+' ;
+          data_definition :: 'seduto_dopo_pranzo_fp' ;
+          mandatory :: no ;
+     source :: 'Seduto_leggendo_fp' ;
+          caption :: 'Seduti intenti a leggere' ;
+          metaprops :: 'ae.private.component.id=170334758223184
+' ;
+          data_definition :: 'Seduto_leggendo_fp' ;
+          mandatory :: no ;
+     source :: 'seduto_parlando' ;
+          caption :: 'Seduti conversando con qualcuno' ;
+          metaprops :: 'ae.private.component.id=170334771948188
+' ;
+          data_definition :: 'seduto_parlando' ;
+          mandatory :: no ;
+     source :: 'seduto_pubblico_fp' ;
+          caption :: 'Seduti in ambienti pubblici come teatri o riunioni' ;
+          metaprops :: 'ae.private.component.id=170334762251585
+' ;
+          data_definition :: 'seduto_pubblico_fp' ;
+          mandatory :: no ;
+     source :: 'traffico_fp' ;
+          caption :: 'Seduti in macchina in situazioni di traffico intenso' ;
+          metaprops :: 'ae.private.component.id=170334779563790
+' ;
+          data_definition :: 'traffico_fp' ;
+          mandatory :: no ;
+end enquiry.
+
+decision  :: 'Scelta_test' ;
+     candidate :: 'Polisonnografia' ;
+          caption :: 'Polisonnografia' ;
+          metaprops :: 'ae.private.component.id=17028362379463535
+ontology.coding=
+' ;
+          recommendation ::netsupport() > 0;
+     candidate :: 'Monitoraggio_non_assistito' ;
+          caption :: 'Monitoraggio non assistito' ;
+          metaprops :: 'ae.private.component.id=17028362493273536
+ontology.coding=
+' ;
+          recommendation ::netsupport() > 0;
+end decision.
+
+enquiry  :: 'Polisonnografia_follow_up' ;
+     precondition ::is_selected(Scelta_test,Polisonnografia);
+     source :: 'AHI_follow_up' ;
+          caption :: 'AHI follow up' ;
+          description :: 'Questo indice AHI e\' ottenuto dalle Polisonnografie eseguite durante le visite di follow up' ;
+          metaprops :: 'ae.private.component.id=17028355453133332
+' ;
+          data_definition :: 'AHI_follow_up' ;
+     source :: 'Data_polisonnografia_FP' ;
+          caption :: 'Data polisonnografia' ;
+          metaprops :: 'ae.private.component.id=1703156987043320
+' ;
+          data_definition :: 'Data_polisonnografia_FP' ;
+end enquiry.
+
+enquiry  :: 'Monitoraggio_non_assistito' ;
+     precondition ::is_selected(Scelta_test,Monitoraggio_non_assistito);
+     source :: 'AHI_monitoraggio' ;
+          caption :: 'AHI monitoraggio' ;
+          metaprops :: 'ae.private.component.id=17028355301103331
+' ;
+          data_definition :: 'AHI_monitoraggio' ;
+     source :: 'Data_monitoraggio_FP' ;
+          caption :: 'Data monitoraggio FP' ;
+          metaprops :: 'ae.private.component.id=1703157058253321
+' ;
+          data_definition :: 'Data_monitoraggio_FP' ;
+end enquiry.
+
+action  :: 'Consiglio_questionario_PAP' ;
+     precondition ::is_selected(Scelta_trattamento,PAP);
+     procedure :: 'Avendo optato per un protocollo di trattamento PAP, si raccomanda che il paziente proceda con la compilazione del questionario ad esso associato al fine di consentire una valutazione dettagliata.' ;
+end action.
+
+action  :: 'Epworth_normale' ;
+     precondition ::Epworth_follow_up < 10;
+     procedure :: 'Il punteggio ottenuto e\' normale' ;
+end action.
+
+action  :: 'Epworth_lieve' ;
+     precondition ::Epworth_follow_up >= 10 AND Epworth_follow_up < 12;
+     procedure :: 'Il punteggio ottenuto e\' lieve' ;
+end action.
+
+action  :: 'Epworth_moderato' ;
+     precondition ::Epworth_follow_up >= 12 AND Epworth_follow_up < 18;
+     procedure :: 'Il punteggio ottenuto e\' moderato' ;
+end action.
+
+action  :: 'Epworth_grave' ;
+     precondition ::Epworth_follow_up >= 18 AND Epworth_follow_up <= 24;
+     procedure :: 'Il punteggio ottenuto e\' grave' ;
+end action.
+
+plan  :: 'Visita_follow_up' ;
+     component :: 'Valutazione_trattamento' ;
+          caption :: 'Valutazione trattamento' ;
+          description :: 'Valutare il trattamento prescritto al paziente' ;
+          metaprops :: 'ae.private.component.id=17028352228643326
+ontology.coding=
+' ;
+          task_definition :: 'Valutazione_trattamento' ;
+          ltwh :: 11,78,0,0;
+     component :: 'Epworth_follow_up' ;
+          caption :: 'Epworth follow up' ;
+          description :: 'Eseguire nuovamente il questionario Epworth' ;
+          metaprops :: 'ae.private.component.id=17028352488163327
+ontology.coding=
+' ;
+          task_definition :: 'Epworth_follow_up' ;
+          schedule_constraint :: completed('Valutazione_trattamento') ;
+          schedule_constraint :: completed('Consiglio_questionario_PAP') ;
+          ltwh :: 158,175,0,0;
+     component :: 'Scelta_test' ;
+          caption :: 'Scelta test' ;
+          description :: 'Decidere se effettuare una Polisonnografia o un Monitoraggio non Assistito. Si tratta di una scelta arbitraria del medico.' ;
+          metaprops :: 'ae.private.component.id=17028353038093328
+ontology.coding=
+' ;
+          task_definition :: 'Scelta_test' ;
+          schedule_constraint :: completed('Epworth_normale') ;
+          schedule_constraint :: completed('Epworth_grave') ;
+          schedule_constraint :: completed('Epworth_moderato') ;
+          schedule_constraint :: completed('Epworth_lieve') ;
+          ltwh :: 476,154,0,0;
+     component :: 'Polisonnografia_follow_up' ;
+          caption :: 'Polisonnografia Follow Up' ;
+          metaprops :: 'ae.private.component.id=17028353983673329
+ontology.coding=
+' ;
+          task_definition :: 'Polisonnografia_follow_up' ;
+          schedule_constraint :: completed('Scelta_test') ;
+          ltwh :: 584,84,0,0;
+     component :: 'Monitoraggio_non_assistito' ;
+          caption :: 'Monitoraggio non assistito' ;
+          metaprops :: 'ae.private.component.id=17028354006473330
+ontology.coding=
+' ;
+          task_definition :: 'Monitoraggio_non_assistito' ;
+          schedule_constraint :: completed('Scelta_test') ;
+          ltwh :: 584,213,0,0;
+     component :: 'Consiglio_questionario_PAP' ;
+          caption :: 'Questionario PAP' ;
+          metaprops :: 'ae.private.component.id=1703157325332322
+ontology.coding=
+' ;
+          task_definition :: 'Consiglio_questionario_PAP' ;
+          schedule_constraint :: completed('Valutazione_trattamento') ;
+          ltwh :: 75,25,0,0;
+     component :: 'Epworth_normale' ;
+          caption :: 'Esito questionario epworth' ;
+          metaprops :: 'ae.private.component.id=1703349707821477
+ontology.coding=
+' ;
+          task_definition :: 'Epworth_normale' ;
+          schedule_constraint :: completed('Epworth_follow_up') ;
+          ltwh :: 341,136,0,0;
+     component :: 'Epworth_lieve' ;
+          caption :: 'Esito questionario epworth' ;
+          metaprops :: 'ae.private.component.id=1703349721067478
+ontology.coding=
+' ;
+          task_definition :: 'Epworth_lieve' ;
+          schedule_constraint :: completed('Epworth_follow_up') ;
+          ltwh :: 356,51,0,0;
+     component :: 'Epworth_moderato' ;
+          caption :: 'Esito questionario epworth' ;
+          metaprops :: 'ae.private.component.id=1703349735408479
+ontology.coding=
+' ;
+          task_definition :: 'Epworth_moderato' ;
+          schedule_constraint :: completed('Epworth_follow_up') ;
+          ltwh :: 341,297,0,0;
+     component :: 'Epworth_grave' ;
+          caption :: 'Esito questionario epworth' ;
+          metaprops :: 'ae.private.component.id=1703349756151480
+ontology.coding=
+' ;
+          task_definition :: 'Epworth_grave' ;
+          schedule_constraint :: completed('Epworth_follow_up') ;
+          ltwh :: 349,213,0,0;
+end plan.
+
+decision  :: 'Risposta_trattamento' ;
+     candidate :: 'Risposta_trattamento_buona' ;
+          caption :: 'Risposta trattamento buona' ;
+          metaprops :: 'ae.private.component.id=17028365496883676
+ontology.coding=
+' ;
+          argument :: confirming,'Aderenza_trattamento' = "Presente" and 'Complicanze_trattamento' = "Assente" and ('AHI_follow_up' < 20 or 'AHI_monitoraggio' < 20) and 'Epworth_follow_up' < 12 attributes
+               argument_name :: 'risposta_buona_F' ;
+               caption :: 'Gli elementi valutati durante la visita suggeriscono una buona risposta al trattamento' ;
+               metaprops :: 'ae.private.component.id=170310110183779
+' ;
+          end attributes
+          ;
+          argument :: against,'Aderenza_trattamento' = "Assente" or 'Complicanze_trattamento' = "Presente" or ('AHI_follow_up' >= 20 or 'AHI_monitoraggio' >= 20) attributes
+               argument_name :: 'risposta_buona_C' ;
+               caption :: 'Gli elementi valutati durante la visita non suggeriscono una buona risposta al trattamento' ;
+               metaprops :: 'ae.private.component.id=170310117093180
+' ;
+          end attributes
+          ;
+          recommendation ::netsupport() > 0;
+     candidate :: 'Risposta_trattamento_scarsa' ;
+          caption :: 'Risposta trattamento scarsa' ;
+          metaprops :: 'ae.private.component.id=17028365618883677
+ontology.coding=
+' ;
+          argument :: confirming,'Aderenza_trattamento' = "Assente" or 'Complicanze_trattamento' = "Presente" or ('AHI_follow_up' >= 20 or 'AHI_monitoraggio' >= 20) or 'Epworth_follow_up' >= 12 attributes
+               argument_name :: 'risposta_scarsa_F' ;
+               caption :: 'Gli elementi valutati durante la visita suggeriscono una scarsa risposta al trattamento' ;
+               metaprops :: 'ae.private.component.id=170310127085483
+' ;
+          end attributes
+          ;
+          argument :: against,'Aderenza_trattamento' = "Presente" and 'Complicanze_trattamento' = "Assente" and ('AHI_follow_up' < 20 or 'AHI_monitoraggio' < 20) and 'Epworth_follow_up' < 12 attributes
+               argument_name :: 'risposta_scarsa_C' ;
+               caption :: 'Gli elementi valutati durante la visita non suggeriscono una scarsa risposta al trattamento' ;
+               metaprops :: 'ae.private.component.id=170310140487785
+' ;
+          end attributes
+          ;
+          recommendation ::netsupport() > 0;
+end decision.
+
+action  :: 'Visita_specialistica' ;
+     precondition ::is_selected(Risposta_trattamento,Risposta_trattamento_scarsa);
+     procedure :: 'Il trattamento terapeutico non ha manifestato successo nel conseguimento degli obiettivi clinici, indicando un esito negativo nella gestione della malattia. Pertanto, si raccomanda di procedere con una visita specialistica.' ;
+end action.
+
+action  :: 'Follow_up_annuale' ;
+     precondition ::is_selected(Risposta_trattamento,Risposta_trattamento_buona);
+     procedure :: 'Il trattamento terapeutico ha manifestato successo nel conseguimento degli obiettivi clinici, indicando un esito positivo nella gestione della malattia. Pertanto, si consigliano visite di follow up annuali.' ;
+end action.
+
+action  :: 'Consiglio_pap' ;
+     precondition ::is_selected(Scelta_trattamento,PAP);
+     procedure :: 'Si raccomanda di fornire al paziente tutte le indicazioni per poter gestire al meglio la terapia PAP e ottenere una buona aderenza alla terapia.' ;
+end action.
+
+
+data  :: 'CVD' ;
+     type :: text ;
+     caption :: 'Cerebrovascular Disease' ;
+     metaprops :: 'ae.private.component.id=170280720433711
+ontology.coding=SCT\\:62914000 [Cerebrovascular disease]
+' ;
+     range ::"yes||Yes","no||No";
+     default_value ::"no";
+end data.
+
+data  :: 'CAD' ;
+     type :: text ;
+     caption :: 'Coronary Artery Disease' ;
+     metaprops :: 'ae.private.component.id=170280721289112
+ontology.coding=SCT\\:16891151000119103 [Coronary artery disease due to type 2 diabetes mellitus]
+' ;
+     range ::"yes||Yes","no||No";
+     default_value ::"no";
+end data.
+
+data  :: 'Fibrillazione_atriale' ;
+     type :: text ;
+     caption :: 'Fibrillazione atriale' ;
+     metaprops :: 'ae.private.component.id=170280764122018
+ontology.coding=SCT\\:49436004 [Atrial fibrillation]
+' ;
+     range ::"yes||Yes","no||No";
+     default_value ::"no";
+end data.
+
+data  :: 'Ipertensione' ;
+     type :: text ;
+     caption :: 'Ipertensione' ;
+     metaprops :: 'ae.private.component.id=170280765860119
+ontology.coding=SCT\\:702867002 [Hypertension clinic]
+' ;
+     range ::"yes||Yes","no||No";
+     default_value ::"no";
+end data.
+
+data  :: 'Diabete_tipo_2' ;
+     type :: text ;
+     caption :: 'Diabete tipo 2' ;
+     metaprops :: 'ae.private.component.id=170280768482720
+ontology.coding=SCT\\:44054006 [Type 2 diabetes mellitus]
+' ;
+     range ::"yes||Yes","no||No";
+     default_value ::"no";
+end data.
+
+data  :: 'Circonferenza_collo_elevata' ;
+     type :: text ;
+     caption :: 'Circonferenza collo elevata' ;
+     metaprops :: 'ae.private.component.id=170280771697221
+ontology.coding=SCT\\:420236003 [Neck circumference]
+' ;
+     range ::"yes||Yes","no||No";
+     default_value ::"no";
+end data.
+
+data  :: 'Risveglio_soffocamento' ;
+     type :: text ;
+     caption :: 'Risveglio soffocamento' ;
+     metaprops :: 'ae.private.component.id=170280777781922
+ontology.coding=SCT\\:111489007 [Breathing-related sleep disorder]
+' ;
+     range ::"yes||Yes","no||No";
+     default_value ::"no";
+end data.
+
+data  :: 'Russamento_intenso' ;
+     type :: text ;
+     caption :: 'Russamento iintenso' ;
+     metaprops :: 'ae.private.component.id=170280790829140
+ontology.coding=SCT\\:72863001 [Snoring]
+' ;
+     range ::"yes||Yes","no||No";
+     default_value ::"no";
+end data.
+
+data  :: 'Apnee_notturne' ;
+     type :: text ;
+     caption :: 'Apnee notturne' ;
+     metaprops :: 'ae.private.component.id=170280802181943
+ontology.coding=SCT\\:73430006 [Sleep apnea]
+' ;
+     range ::"yes||Yes","no||No";
+     default_value ::"no";
+end data.
+
+data  :: 'Sonnolenza_diurna' ;
+     type :: text ;
+     caption :: 'Sonnolenza diurna' ;
+     metaprops :: 'ae.private.component.id=170280810110444
+ontology.coding=SCT\\:230489007 [Excessive daytime sleepiness - normal night sleep]
+' ;
+     range ::"yes||Yes","no||No";
+     default_value ::"no";
+end data.
+
+data  :: 'Ossimetria' ;
+     type :: text ;
+     caption :: 'Ossimetria' ;
+     description :: 'L\'ossimetria notturna, quando presenta un determinato pattern, puo essere un fattore di rischio per OSA' ;
+     metaprops :: 'ae.private.component.id=170280852106245
+ontology.coding=SCT\\:264598005 [Oximetry]
+' ;
+     range ::"Positiva||Positiva","Negativa||Negativa","Esame non presente||Esame non presente";
+     default_value ::"Esame non presente";
+end data.
+
+data  :: 'Malattia_polmonare' ;
+     type :: text ;
+     caption :: 'Malattia polmonare' ;
+     description :: 'Malattie Polmonari comprese: 
+Disturbi Ostruttivi Polmonari, Baseline Hypoxemia, Hypercapnia, Polmonary Hypertension' ;
+     metaprops :: 'ae.private.component.id=170280861713746
+ontology.coding=SCT\\:161920001 [Respiratory symptom]
+' ;
+     range ::"yes||Yes","no||No";
+     default_value ::"no";
+end data.
+
+data  :: 'Parasomnia' ;
+     type :: text ;
+     caption :: 'Parasomnia' ;
+     description :: 'Con il termine parasomnia si indica un gruppo di disturbi del sonno associati a movimenti, comportamenti, percezioni e sogni del tutto innaturali e indesiderati che si verificano mentre ci si addormenta, durante il sonno o al risveglio.' ;
+     metaprops :: 'ae.private.component.id=170280863700947
+ontology.coding=SCT\\:58690002 [Parasomnia]
+' ;
+     range ::"yes||Yes","no||No";
+     default_value ::"no";
+end data.
+
+data  :: 'Malattia_neurologica' ;
+     type :: text ;
+     caption :: 'Malattia_neurologica' ;
+     description :: 'Malattie neurologiche comprese:
+Miopatie, ALS, Disturbo Neurologico Degenerativo' ;
+     metaprops :: 'ae.private.component.id=170280865944248
+ontology.coding=SCT\\:264552009 [Neurological deficit]
+' ;
+     range ::"yes||Yes","no||No";
+     default_value ::"no";
+end data.
+
+data  :: 'Scompenso_cardiaco' ;
+     type :: text ;
+     caption :: 'Scompenso cardiaco' ;
+     metaprops :: 'ae.private.component.id=170280869667949
+ontology.coding=SCT\\:84114007 [Heart failure]
+' ;
+     range ::"yes||Yes","no||No";
+     default_value ::"no";
+end data.
+
+data  :: 'Esito_polisonnografia' ;
+     type :: text ;
+     caption :: 'Esito polisonnografia' ;
+     metaprops :: 'ae.private.component.id=170280883270150
+ontology.coding=
+' ;
+     range ::"Positivo||Positivo","Negativo||Negativo","Esito assente||Esito assente";
+     default_value ::"Esito assente";
+end data.
+
+data  :: 'AHI' ;
+     type :: real ;
+     caption :: 'AHI' ;
+     description :: 'L\'indice AHI può essere sostituito in maniere equivalente dall\'indice RDI' ;
+     metaprops :: 'ae.private.component.id=170280884253551
+ontology.coding=SCT\\:774099003 [Apnea Hypopnea Index]
+' ;
+end data.
+
+data  :: 'RDI' ;
+     type :: real ;
+     caption :: 'RDI' ;
+     metaprops :: 'ae.private.component.id=170280885487152
+ontology.coding=
+' ;
+end data.
+
+data  :: 'Saturazione_media' ;
+     type :: real ;
+     caption :: 'Saturazione media' ;
+     metaprops :: 'ae.private.component.id=170280890064953
+ontology.coding=
+' ;
+end data.
+
+data  :: 'Saturazione_minima' ;
+     type :: real ;
+     caption :: 'Saturazione minima' ;
+     metaprops :: 'ae.private.component.id=170280902370154
+ontology.coding=
+' ;
+end data.
+
+data  :: 'Sesso' ;
+     type :: text ;
+     caption :: 'Sesso' ;
+     metaprops :: 'ae.private.component.id=170280959775956
+ontology.coding=
+' ;
+     range ::"F||F","M||M","No specificato||No specificato";
+end data.
+
+data  :: 'Altezza' ;
+     type :: real ;
+     caption :: 'Altezza' ;
+     metaprops :: 'ae.private.component.id=1702810600676151
+ontology.coding=
+' ;
+end data.
+
+data  :: 'CF' ;
+     type :: text ;
+     caption :: 'Codice Fiscale' ;
+     metaprops :: 'ae.private.component.id=1702810627673152
+ontology.coding=
+' ;
+end data.
+
+data  :: 'Codice_fascicolo_sanitario' ;
+     type :: text ;
+     caption :: 'Codice Fascicolo Sanitario' ;
+     metaprops :: 'ae.private.component.id=1702810679212154
+ontology.coding=
+' ;
+end data.
+
+data  :: 'Nome' ;
+     type :: text ;
+     caption :: 'Nome' ;
+     metaprops :: 'ae.private.component.id=1702810709218155
+ontology.coding=
+' ;
+end data.
+
+data  :: 'Cognome' ;
+     type :: text ;
+     caption :: 'Cognome' ;
+     metaprops :: 'ae.private.component.id=1702810720709156
+ontology.coding=
+' ;
+end data.
+
+data  :: 'Data_nascita' ;
+     type :: date ;
+     caption :: 'Data di nascita' ;
+     metaprops :: 'ae.private.component.id=1702810736853157
+ontology.coding=
+' ;
+end data.
+
+data  :: 'Data_prima_visita' ;
+     type :: date ;
+     caption :: 'Data prima visita' ;
+     metaprops :: 'ae.private.component.id=1702810766026158
+ontology.coding=
+' ;
+end data.
+
+data  :: 'Peso' ;
+     type :: real ;
+     caption :: 'Peso' ;
+     metaprops :: 'ae.private.component.id=1702810846660159
+ontology.coding=
+' ;
+end data.
+
+data  :: 'Residenza' ;
+     type :: text ;
+     caption :: 'Residenza' ;
+     metaprops :: 'ae.private.component.id=1702810860447160
+ontology.coding=
+' ;
+end data.
+
+data  :: 'Telefono' ;
+     type :: text ;
+     caption :: 'Telefono' ;
+     metaprops :: 'ae.private.component.id=1702810874813161
+ontology.coding=
+' ;
+end data.
+
+data  :: 'Apnea_notturna_severa' ;
+     type :: text ;
+     caption :: 'Apnea notturna severa' ;
+     metaprops :: 'ae.private.component.id=1702811403342256
+ontology.coding=SCT\\:27405005 [Central sleep apnea syndrome]
+' ;
+     range ::"yes||Yes","no||No";
+     default_value ::"no";
+end data.
+
+data  :: 'Faringe_ridondante' ;
+     type :: text ;
+     caption :: 'Faringe ridondante' ;
+     metaprops :: 'ae.private.component.id=1702811701524258
+ontology.coding=SCT\\:129259001 [Redundant mucosa]
+' ;
+     range ::"yes||Yes","no||No";
+     default_value ::"no";
+end data.
+
+data  :: 'Ipertrofia_tonsillare' ;
+     type :: text ;
+     caption :: 'Ipertrofia tonsillare' ;
+     metaprops :: 'ae.private.component.id=1702811718818259
+ontology.coding=SCT\\:46689006 [Hypertrophy of tonsils]
+' ;
+     range ::"yes||Yes","no||No";
+     default_value ::"no";
+end data.
+
+data  :: 'Neoplasia' ;
+     type :: text ;
+     caption :: 'Neoplasia' ;
+     metaprops :: 'ae.private.component.id=1702811745130260
+ontology.coding=SCT\\:55342001 [Neoplastic disease]
+' ;
+     range ::"yes||Yes","no||No";
+     default_value ::"no";
+end data.
+
+data  :: 'Ostruzione_nasale' ;
+     type :: text ;
+     caption :: 'Ostruzione nasale' ;
+     metaprops :: 'ae.private.component.id=1702811769065261
+ontology.coding=SCT\\:232209000 [Nasal obstruction]
+' ;
+     range ::"yes||Yes","no||No";
+     default_value ::"no";
+end data.
+
+data  :: 'Data_polisonnografia' ;
+     type :: date ;
+     caption :: 'Data polisonnografia' ;
+     metaprops :: 'ae.private.component.id=17028327675051485
+ontology.coding=
+' ;
+end data.
+
+data  :: 'Migliorare_igene_sonno' ;
+     type :: text ;
+     caption :: 'Migliorare igene sonno' ;
+     metaprops :: 'ae.private.component.id=17028345028092714
+ontology.coding=
+' ;
+     range ::"yes||Yes","no||No";
+     default_value ::"no";
+end data.
+
+data  :: 'Perdita_peso' ;
+     type :: text ;
+     caption :: 'Perdita peso' ;
+     metaprops :: 'ae.private.component.id=17028345152502715
+ontology.coding=
+' ;
+     range ::"yes||Yes","no||No";
+     default_value ::"no";
+end data.
+
+data  :: 'Riduzione_consumo_alcol' ;
+     type :: text ;
+     caption :: 'Riduzione consumo alcol' ;
+     metaprops :: 'ae.private.component.id=17028345435362716
+ontology.coding=
+' ;
+     range ::"yes||Yes","no||No";
+     default_value ::"no";
+end data.
+
+data  :: 'Posizione_laterale_sonno' ;
+     type :: text ;
+     caption :: 'Posizione laterale sonno' ;
+     metaprops :: 'ae.private.component.id=17028345812972717
+ontology.coding=
+' ;
+     range ::"yes||Yes","no||No";
+     default_value ::"no";
+end data.
+
+data  :: 'Preparazione_ambiente_notturno' ;
+     type :: text ;
+     caption :: 'Preparazione ambiente notturno' ;
+     metaprops :: 'ae.private.component.id=17028346076682718
+ontology.coding=
+' ;
+     range ::"yes||Yes","no||No";
+     default_value ::"no";
+end data.
+
+data  :: 'AHI_monitoraggio' ;
+     type :: real ;
+     caption :: 'AHI monitoraggio' ;
+     metaprops :: 'ae.private.component.id=17028355301103331
+ontology.coding=SCT\\:774099003 [Apnea Hypopnea Index]
+' ;
+end data.
+
+data  :: 'AHI_follow_up' ;
+     type :: real ;
+     caption :: 'AHI follow up' ;
+     description :: 'Questo indice AHI e\' ottenuto dalle Polisonnografie eseguite durante le visite di follow up' ;
+     metaprops :: 'ae.private.component.id=17028355453133332
+ontology.coding=
+' ;
+end data.
+
+data  :: 'Soddisfazione_partner' ;
+     type :: text ;
+     caption :: 'Soddisfazione del partner' ;
+     metaprops :: 'ae.private.component.id=17028358007123393
+ontology.coding=
+' ;
+     range ::"Positiva||Positiva","Negativa||Negativa";
+     default_value ::"Negativa";
+end data.
+
+data  :: 'Complicanze_trattamento' ;
+     type :: text ;
+     caption :: 'Complicanze_trattamento' ;
+     metaprops :: 'ae.private.component.id=17028358181933394
+ontology.coding=
+' ;
+     range ::"Presente||Presente","Assente||Assente";
+     default_value ::"Assente";
+end data.
+
+data  :: 'Aderenza_trattamento' ;
+     type :: text ;
+     caption :: 'Aderenza_trattamento' ;
+     metaprops :: 'ae.private.component.id=17028358489613395
+ontology.coding=
+' ;
+     range ::"Presente||Presente","Assente||Assente";
+     default_value ::"Assente";
+end data.
+
+data  :: 'Qualita_vita' ;
+     type :: text ;
+     caption :: 'Qualita_vita' ;
+     metaprops :: 'ae.private.component.id=17028358661133396
+ontology.coding=
+' ;
+     range ::"Positiva||Positiva","Negativa||Negativa";
+     default_value ::"Negativa";
+end data.
+
+data  :: 'Ossimetria_follow_up' ;
+     type :: text ;
+     caption :: 'Ossimetria follow up' ;
+     metaprops :: 'ae.private.component.id=17028359170763397
+ontology.coding=
+' ;
+     range ::"Positiva||Positiva","Negativa||Negativa","Esame non presente||Esame non presente";
+     default_value ::"Esame non presente";
+end data.
+
+data  :: 'Sedersi_leggere' ;
+     type :: text ;
+     caption :: 'Sedersi_leggere' ;
+     metaprops :: 'ae.private.component.id=17030963715806
+ontology.coding=
+' ;
+end data.
+
+data  :: 'Seduto_leggendo' ;
+     type :: integer ;
+     caption :: 'Seduto_leggendo' ;
+     metaprops :: 'ae.private.component.id=170309667908313
+ontology.coding=
+' ;
+     default_value ::0;
+end data.
+
+data  :: 'Guardando_la_TV' ;
+     type :: integer ;
+     caption :: 'Guardando_la_TV' ;
+     metaprops :: 'ae.private.component.id=170309669229014
+ontology.coding=
+' ;
+     default_value ::0;
+end data.
+
+data  :: 'Seduto_esterno' ;
+     type :: integer ;
+     caption :: 'Seduto_esterno' ;
+     metaprops :: 'ae.private.component.id=170309670994215
+ontology.coding=
+' ;
+     default_value ::0;
+end data.
+
+data  :: 'Seduto_passeggero' ;
+     type :: integer ;
+     caption :: 'Seduto_passeggero' ;
+     metaprops :: 'ae.private.component.id=170309672304916
+ontology.coding=
+' ;
+     default_value ::0;
+end data.
+
+data  :: 'Sdraiato_pomeriggio' ;
+     type :: integer ;
+     caption :: 'Sdraiato_pomeriggio' ;
+     metaprops :: 'ae.private.component.id=170309674322117
+ontology.coding=
+' ;
+     default_value ::0;
+end data.
+
+data  :: 'Seduto_conversando' ;
+     type :: integer ;
+     caption :: 'Seduto_conversando' ;
+     metaprops :: 'ae.private.component.id=170309675457218
+ontology.coding=
+' ;
+     default_value ::0;
+end data.
+
+data  :: 'Seduto_dopo_pasti' ;
+     type :: integer ;
+     caption :: 'Seduto_dopo_pasti' ;
+     metaprops :: 'ae.private.component.id=170309676842119
+ontology.coding=
+' ;
+     default_value ::0;
+end data.
+
+data  :: 'Seduto_auto_traffico' ;
+     type :: integer ;
+     caption :: 'Seduto_auto_traffico' ;
+     metaprops :: 'ae.private.component.id=170309678642120
+ontology.coding=
+' ;
+     default_value ::0;
+end data.
+
+data  :: 'Menopausa' ;
+     type :: text ;
+     caption :: 'Menopausa' ;
+     metaprops :: 'ae.private.component.id=17031495400524
+ontology.coding=SCT\\:161712005 [Menopause]
+' ;
+     range ::"yes||Yes","no||No";
+     default_value ::"no";
+end data.
+
+data  :: 'Data_polisonnografia_FP' ;
+     type :: date ;
+     caption :: 'Data polisonnografia' ;
+     metaprops :: 'ae.private.component.id=1703156987043320
+ontology.coding=
+' ;
+end data.
+
+data  :: 'Data_monitoraggio_FP' ;
+     type :: date ;
+     caption :: 'Data monitoraggio FP' ;
+     metaprops :: 'ae.private.component.id=1703157058253321
+ontology.coding=
+' ;
+end data.
+
+data  :: 'guardare_tv_fp' ;
+     type :: integer ;
+     caption :: 'Guardando la TV' ;
+     metaprops :: 'ae.private.component.id=170334747517183
+ontology.coding=
+' ;
+     default_value ::0;
+end data.
+
+data  :: 'Seduto_leggendo_fp' ;
+     type :: integer ;
+     caption :: 'Seduto_leggendo_fp' ;
+     metaprops :: 'ae.private.component.id=170334758223184
+ontology.coding=
+' ;
+     default_value ::0;
+end data.
+
+data  :: 'seduto_pubblico_fp' ;
+     type :: integer ;
+     caption :: 'seduto_pubblico_fp' ;
+     metaprops :: 'ae.private.component.id=170334762251585
+ontology.coding=
+' ;
+     default_value ::0;
+end data.
+
+data  :: 'auto_passeggero_fp' ;
+     type :: integer ;
+     caption :: 'auto_passeggero_fp' ;
+     metaprops :: 'ae.private.component.id=170334766581686
+ontology.coding=
+' ;
+     default_value ::0;
+end data.
+
+data  :: 'seduto_parlando' ;
+     type :: integer ;
+     caption :: 'seduto_parlando' ;
+     metaprops :: 'ae.private.component.id=170334771948188
+ontology.coding=
+' ;
+     default_value ::0;
+end data.
+
+data  :: 'seduto_dopo_pranzo_fp' ;
+     type :: integer ;
+     caption :: 'seduto_dopo_pranzo_fp' ;
+     metaprops :: 'ae.private.component.id=170334774841489
+ontology.coding=
+' ;
+     default_value ::0;
+end data.
+
+data  :: 'traffico_fp' ;
+     type :: integer ;
+     caption :: 'traffico_fp' ;
+     metaprops :: 'ae.private.component.id=170334779563790
+ontology.coding=
+' ;
+     default_value ::0;
+end data.
+
+data  :: 'sdraiato_pomeriggio_fp' ;
+     type :: integer ;
+     caption :: 'sdraiato_pomeriggio_fp' ;
+     metaprops :: 'ae.private.component.id=170334830251591
+ontology.coding=
+' ;
+     default_value ::0;
+end data.
+
+data  :: 'AWAKE_support_group' ;
+     type :: text ;
+     caption :: 'AWAKE_support_group' ;
+     metaprops :: 'ae.private.component.id=17036087011161120
+ontology.coding=
+' ;
+     range ::"yes||Yes","no||No";
+     default_value ::"no";
+end data.
+
+data  :: 'Macroglossia' ;
+     type :: text ;
+     caption :: 'Macroglossia' ;
+     metaprops :: 'ae.private.component.id=17051710929763905
+ontology.coding=SCT\\:402455004 [Macroglossia due to amyloidosis]
+' ;
+     range ::"yes||Yes","no||No";
+     default_value ::"no";
+end data.
+
+data  :: 'Retrognazia' ;
+     type :: text ;
+     caption :: 'Retrognazia' ;
+     metaprops :: 'ae.private.component.id=17051711391153906
+ontology.coding=SCT\\:109515000 [Congenital retrognathism]
+' ;
+     range ::"yes||Yes","no||No";
+     default_value ::"no";
+end data.
+
+data  :: 'Micrognazia' ;
+     type :: text ;
+     caption :: 'Micrognazia' ;
+     metaprops :: 'ae.private.component.id=17051711758223907
+ontology.coding=SCT\\:1187114007 [Micrognathia, recurrent infections, behavioral abnormalities, mild intellectual disability syndrome]
+' ;
+     range ::"yes||Yes","no||No";
+     default_value ::"no";
+end data.
+
+data  :: 'Ipoplasia_medio_facciale' ;
+     type :: text ;
+     caption :: 'Ipoplasia medio facciale' ;
+     metaprops :: 'ae.private.component.id=17051712543033908
+ontology.coding=SCT\\:720982007 [Alport syndrome, intellectual disability, midface hypoplasia, elliptocytosis syndrome]
+' ;
+     range ::"yes||Yes","no||No";
+     default_value ::"no";
+end data.
+
+data  :: 'Lunghezza_uvulare_eccessiva' ;
+     type :: text ;
+     caption :: 'Lunghezza uvulare eccessiva' ;
+     metaprops :: 'ae.private.component.id=17051714028023909
+ontology.coding=
+' ;
+     range ::"yes||Yes","no||No";
+     default_value ::"no";
+end data.
+
+data  :: 'Retrusione_ioidea' ;
+     type :: text ;
+     caption :: 'Retrusione ioidea' ;
+     metaprops :: 'ae.private.component.id=17051714472393910
+ontology.coding=
+' ;
+     range ::"yes||Yes","no||No";
+     default_value ::"no";
+end data.
+
+data  :: 'Base_linguale_grande' ;
+     type :: text ;
+     caption :: 'Base linguale grande' ;
+     metaprops :: 'ae.private.component.id=17051714986013911
+ontology.coding=
+' ;
+     range ::"yes||Yes","no||No";
+     default_value ::"no";
+end data.
+
+data  :: 'Laringotracheomalacia' ;
+     type :: text ;
+     caption :: 'Laringotracheomalacia' ;
+     metaprops :: 'ae.private.component.id=17051715528953912
+ontology.coding=
+' ;
+     range ::"yes||Yes","no||No";
+     default_value ::"no";
+end data.
+
+data  :: 'Epworth_follow_up' ;
+     type :: integer ;
+     caption :: 'Epworth follow up' ;
+     metaprops :: 'ae.private.component.id=17028360711093398
+ontology.coding=SCT\\:708735004 [Epworth Sleepiness Scale]
+' ;
+     derivation ::(Seduto_leggendo_fp+auto_passeggero_fp+guardare_tv_fp+sdraiato_pomeriggio_fp+seduto_dopo_pranzo_fp+seduto_parlando+seduto_pubblico_fp+traffico_fp);
+     dynamic :: yes ;
+end data.
+
+data  :: 'Epworth' ;
+     type :: integer ;
+     caption :: 'Epworth' ;
+     metaprops :: 'ae.private.component.id=170280907830955
+ontology.coding=SCT\\:708735004 [Epworth Sleepiness Scale]
+' ;
+     default_value ::0;
+     derivation ::(Guardando_la_TV+Sdraiato_pomeriggio+Seduto_auto_traffico+Seduto_conversando+Seduto_dopo_pasti+Seduto_esterno+Seduto_leggendo+Seduto_passeggero);
+     dynamic :: yes ;
+end data.
+
+data  :: 'BMI' ;
+     type :: real ;
+     caption :: 'Indice di massa corporea.' ;
+     metaprops :: 'ae.private.component.id=170310210823286
+ontology.coding=
+' ;
+     derivation ::bmi;
+     dynamic :: yes ;
+end data.
+
+
+function  :: 'bmi' ;
+     type :: real ;
+     function_body ::if(Altezza = 0,0,Peso/(Altezza*Altezza));
+end function.
