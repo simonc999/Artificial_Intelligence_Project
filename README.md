@@ -39,6 +39,7 @@ docker exec -it osa_app ./start.sh
 
 ```mermaid
 flowchart TD
+    %% ─── Layers ────────────────────────────────
     subgraph Knowledge Layer
         OSA_Ontology[(OWL/RDF)]
         Rules[Jena Rules]
@@ -47,7 +48,9 @@ flowchart TD
         YAWL_Engine((YAWL))
         Codelets{{Java Codelets}}
     end
-    UI[Java/Swing GUI] -->|REST/JSON| Backend(:"OSA‑CDSS Service":)
+
+    %% ─── Data flow ────────────────────────────
+    UI["Java/Swing GUI"] -->|REST / JSON| Backend["OSA-CDSS Service"]
     Backend -->|SPARQL| OSA_Ontology
     Backend -->|invoke| YAWL_Engine
     YAWL_Engine --> Codelets
